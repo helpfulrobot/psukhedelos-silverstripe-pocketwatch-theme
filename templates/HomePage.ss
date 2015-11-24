@@ -33,7 +33,18 @@
 </head>
 <body>
 <div class="wrapper">
-    <% include Header %>
+    <header class="hidden-xs hidden-sm">
+        <div id="main-logo " class="main-wrapper">
+            <div class="container">
+                <div class="top-logo">
+                    <% if $Logo_Image %>
+                        <img class="main-logo img-responsive center-block" src="$Logo_Image.Url" />
+                    <% end_if %>
+
+                </div>
+            </div>
+        </div>
+    </header>
 
     <div id="nav">
         <div class="navbar-wrapper main-nav">
@@ -56,11 +67,10 @@
                     </div>
                     <div id="navbar" class="navbar-collapse collapse ">
                         <ul class="nav navbar-nav nav-ul col-xs-12">
-                            <li class="active"><a href="#">Home</a></li>
-                            <li><a href="#work">Work</a><li>
-                            <li><a href="#about">About</a></li>
-                            <li><a href="#blog">Blog</a></li>
-                            <li><a href="#contact">Contact</a></li>
+                            <% loop $Menu(1) %>
+                                <li class="$LinkingMode"><a href="$Link" title="$Title.XML">$MenuTitle.XML</a></li>
+                            <% end_loop %>
+
                         </ul>
 
                     </div>
