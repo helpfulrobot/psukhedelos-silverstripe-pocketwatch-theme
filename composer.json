@@ -1,23 +1,27 @@
 {
-	"name": "silverstripe/installer",
-	"description": "The SilverStripe Framework Installer",
-	"require": {
-		"php": ">=5.3.3",
-		"silverstripe/cms": "3.2.1",
-		"silverstripe/framework": "3.2.1",
-		"silverstripe/reports": "3.2.1",
-		"silverstripe/siteconfig": "3.2.1",
-		"silverstripe-themes/simple": "3.1.*",
-		"undefinedoffset/sortablegridfield": "dev-master",
+  "name": "white-rabbits/pocket-watch",
+  "description": "A Simple SilverStripe Bootstrap Theme",
+  "type": "silverstripe-module",
+  "homepage": "https://code.platform.silverstripe.com/white-rabbits/pocket-watch",
+  "keywords": ["silverstripe", "pocketwatch", "bootstrap"],
+  "license": "BSD-3-Clause",
+  "authors": [
+    {
+      "name": "Glen Peek","email": "glen@silverstripe.com",
+      "name": "Yar Htut", "email": "yar@silverstripe.com"
+    }
+  ],
+  "support": {
+    "issues": "https://code.platform.silverstripe.com/white-rabbits/pocket-watch/issues"
+  },
+  "require": {
+    "silverstripe/cms": "~3.1",
+    "silverstripe/framework": "~3.1",
+    "undefinedoffset/sortablegridfield": "dev-master",
 		"silverstripe/userforms": "dev-master",
 		"silverstripe/blog": "~2.2@dev"
-	},
-	"require-dev": {
-		"phpunit/PHPUnit": "~3.7"
-	},
-	"config": {
-		"process-timeout": 600
-	},
-	"prefer-stable": true,
-	"minimum-stability": "dev"
+  },
+  "extra": {
+    "installer-name": "pocket-watch"
+  }
 }
