@@ -35,7 +35,8 @@ class GalleryPage extends Page {
         $dataColumns = $config->getComponentByType('GridFieldDataColumns');
 
         $dataColumns->setDisplayFields(array(
-          'Description' => "Description",
+          'Title' => 'Title',
+          'Description' => 'Description',
           'Image' => 'Image'
         ));
 
@@ -48,31 +49,10 @@ class GalleryPage extends Page {
 
 }
 
-/*
-    An object in a Gallery, an image with a description.
-*/
-class GalleryObject extends DataObject {
+class GalleryPage_Controller extends ContentController {
 
-    public static $db=array(
-        'Description'=>'Text'
-    );
-    private static $has_one = array(
-      'Image' => 'Image'
-    );
-    function getCMSFields() {
-      $fields = parent::getCMSFields();
-
-      $fields->addFieldToTab(
-          'Root.Main',
-          $uploadField = new UploadField(
-              $name = 'Image',
-              $title = 'Please upload an image to display showcase in your gallery.')
-      );
-
-      $uploadField->setFolderName('GalleryImages');
-      $uploadField->setAllowedFileCategories('image');
-
-      return $fields;
-    }
+	public function init() {
+		parent::init();
+	}
 
 }
