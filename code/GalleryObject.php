@@ -9,7 +9,7 @@ class GalleryObject extends DataObject {
         'Description'=>'Text'
     );
     private static $has_one = array(
-      'Image' => 'Image'
+      'GalleryImage' => 'Image'
     );
     function getCMSFields() {
       $fields = parent::getCMSFields();
@@ -17,7 +17,7 @@ class GalleryObject extends DataObject {
       $fields->addFieldToTab(
           'Root.Main',
           $uploadField = new UploadField(
-              $name = 'Image',
+              $name = 'Gallery',
               $title = 'Please upload an image to display showcase in your gallery.')
       );
 

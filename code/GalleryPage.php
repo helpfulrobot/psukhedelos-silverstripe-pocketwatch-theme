@@ -37,7 +37,7 @@ class GalleryPage extends Page {
         $dataColumns->setDisplayFields(array(
           'Title' => 'Title',
           'Description' => 'Description',
-          'Image' => 'Image'
+          'GalleryImage' => 'Image'
         ));
 
         return $fields;
