@@ -1,11 +1,26 @@
 <?php
-class Homepage extends Page {
+class Home_Page extends Page {
+
+  private static $description = "The Pocketwatch Homepage";
+
+  private static $can_be_root = true;
 
 	private static $db = array(
 	);
 
 	private static $has_one = array(
+    'Logo_Image' => 'Image'
 	);
+
+  function getCMSFields() {
+    $fields = parent::getCMSFields();
+    $fields->addFieldToTab(
+        'Root.Main',
+        UploadField::create('Logo_Image'),
+        'Content'
+    );
+    return $fields;
+  }
 
 }
 class Homepage_Controller extends ContentController {
