@@ -1,7 +1,7 @@
 <?php
 class HomePage extends Page {
 
-  private static $description = "The Pocketwatch Homepage";
+  private static $description = "The Pocketwatch ";
 
   private static $can_be_root = true;
 
