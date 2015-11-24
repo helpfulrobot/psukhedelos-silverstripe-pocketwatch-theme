@@ -17,7 +17,7 @@ class GalleryObject extends DataObject {
       $fields->addFieldToTab(
           'Root.Main',
           $uploadField = new UploadField(
-              $name = 'Gallery',
+              $name = 'GalleryImage',
               $title = 'Please upload an image to display showcase in your gallery.')
       );
 
