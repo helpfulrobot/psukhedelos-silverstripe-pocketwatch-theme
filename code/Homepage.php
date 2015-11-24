@@ -1,5 +1,5 @@
 <?php
-class Home_Page extends Page {
+class HomePage extends Page {
 
   private static $description = "The Pocketwatch Homepage";
 
@@ -23,7 +23,7 @@ class Home_Page extends Page {
   }
 
 }
-class Homepage_Controller extends ContentController {
+class HomePage_Controller extends ContentController {
 
 	/**
 	 * An array of actions that can be accessed via a request. Each array element should be an action name, and the
