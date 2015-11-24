@@ -49,9 +49,10 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
+                        <% if $Logo_Image %>
+                            <img class="main-logo-in-mobile hidden-lg hidden-md img-responsive" src="$Logo_Image.Url" />
+                        <% end_if %>
 
-                        <img class="main-logo-in-mobile hidden-lg hidden-md img-responsive"
-                             src="$ThemeDir/images/logo.png" />
                     </div>
                     <div id="navbar" class="navbar-collapse collapse ">
                         <ul class="nav navbar-nav nav-ul col-xs-12">

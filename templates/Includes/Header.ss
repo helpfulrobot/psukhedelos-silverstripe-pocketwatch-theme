@@ -2,7 +2,10 @@
     <div id="main-logo " class="main-wrapper">
         <div class="container">
             <div class="top-logo   ">
-                <img class="main-logo img-responsive center-block" src="$ThemeDir/images/logo.png" />
+                <% if $Logo_Image %>
+                    <img class="main-logo img-responsive center-block" src="$Logo_Image.Url" />
+                <% end_if %>
+
             </div>
         </div>
     </div>
