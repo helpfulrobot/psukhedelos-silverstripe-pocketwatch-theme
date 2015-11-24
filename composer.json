@@ -8,7 +8,8 @@
 		"silverstripe/reports": "3.2.1",
 		"silverstripe/siteconfig": "3.2.1",
 		"silverstripe-themes/simple": "3.1.*",
-		"undefinedoffset/sortablegridfield": "dev-master"
+		"undefinedoffset/sortablegridfield": "dev-master",
+		"silverstripe/userforms": "dev-master"
 	},
 	"require-dev": {
 		"phpunit/PHPUnit": "~3.7"
