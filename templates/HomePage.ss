@@ -10,14 +10,11 @@
     <title>Pocket - Watch</title>
 
     <!-- Bootstrap -->
-    <link href="$ThemeDir/css/bootstrap.min.css" rel="stylesheet">
+    <% require css('pocket-watch/css/bootstrap.min.css') %>
     <%--<% require themedCSS("bootstrap.min") %>--%>
     <!--- Custom -->
     <% require css('pocket-watch/css/main.css') %>
-    <% require themedCSS('main') %>
-    <% require themedCSS("responsive") %>
-
-
+    <% require css('pocket-watch/css/responsive.css') %>
 
     <!-- font-awesome -->
     <%--<% require css("https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css") %>--%>
@@ -98,8 +95,8 @@
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <% require javascript("https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js") %>
-    <% require javascript("bootstrap.min.js") %>
-    <% require javascript("main.js") %>
+    <% require javascript("pocket-watch/js/bootstrap.min.js") %>
+    <% require javascript("pocket-watch/js/main.js") %>
     <%--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>--%>
     <%--<!-- Include all compiled plugins (below), or include individual files as needed -->--%>
     <%--<script src="$ThemeDir/js/bootstrap.min.js"></script>--%>
