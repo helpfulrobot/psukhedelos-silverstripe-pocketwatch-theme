@@ -9,16 +9,22 @@ class HomePage extends Page {
 	);
 
 	private static $has_one = array(
-    'Logo_Image' => 'Image'
+    'HeaderImage' => 'Image'
 	);
 
   function getCMSFields() {
     $fields = parent::getCMSFields();
+
     $fields->addFieldToTab(
-        'Root.Main',
-        UploadField::create('Logo_Image'),
-        'Content'
+        'Root.Upload',
+        $uploadField = new UploadField(
+            $name = 'HeaderImage',
+            $title = 'Please upload an image to display in your header.')
     );
+
+    $uploadField->setFolderName('Header');
+    $uploadField->setAllowedFileCategories('image');
+
     return $fields;
   }
 
