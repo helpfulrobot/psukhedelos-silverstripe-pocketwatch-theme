@@ -3,6 +3,7 @@
         <div class="row col-md-3 col-md-offset-5">
             <div>
                 <img class="img-responsive" src="$ThemeDir/images/logo.png" alt=""/>
+
             </div>
 
             <div class="footer-social">

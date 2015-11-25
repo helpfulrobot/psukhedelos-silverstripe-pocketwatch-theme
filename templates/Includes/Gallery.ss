@@ -9,27 +9,18 @@
                     <div class="carousel-inner">
                         <div class="item  active">
                             <div class="row">
-                                <div class="col-md-4 ">
-                                    <% loop $SlideShows %>
-                                        <% if Pos = 1 %>
-                                            <div class="item active img-responsive">
-                                                $SlideShowImage.CroppedImage(1700,630)
-                                            </div>
-                                        <% else %>
-                                            <div class="item img-responsive">
-                                                $SlideShowImage.CroppedImage(1700,630)
-                                            </div>
-                                        <% end_if %>
-                                    <% end_loop %>
-                                    <a class="thumbnail " href="#">
+
+
+                                <div class="col-md-4">
+                                    <a class="thumbnail" href="#">
                                         <img alt="" src="http://placehold.it/350x150">
                                         <h4>Gallery Work</h4>
                                         <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                                             Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
                                         </p>
                                     </a>
-
                                 </div>
+
                                 <div class="col-md-4">
                                     <a class="thumbnail" href="#">
                                         <img alt="" src="http://placehold.it/350x150">

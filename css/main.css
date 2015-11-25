@@ -34,7 +34,10 @@ h1,h2,h4 ,li>a{
   min-height:100%;
 }
 .main-nav{
-  background:rgba(242,242,242,1);
+  background:rgba(255,255,255,1);
+}
+.main-nav li>a {
+  color:#383838;
 }
 .main-logo{
   width:250px;
@@ -73,7 +76,7 @@ header {
   background:#efefef;
 }
 .nav-ul li{
-  margin-left:110px;
+  margin-left:50px;
 
 }
 .nav-ul li>a {
@@ -121,6 +124,9 @@ header {
 }
 .gallery-view-more img{
   width:100%;
+}
+.gallery-view-more p{
+  min-height:120px;
 }
 .work-gallery-section .view-more{
   margin-bottom:20px;
