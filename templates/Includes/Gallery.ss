@@ -9,36 +9,18 @@
                     <div class="carousel-inner">
                         <div class="item  active">
                             <div class="row">
+                                <% loop $LatestGallery(3) %>
+                                    <div class="col-md-4 ">
+                                        <a class="thumbnail " href="#">
+                                            <img class="main-logo img-responsive center-block" src="$GalleryImage.Url" />
+                                            <h4>$Title</h4>
+                                            <p> $Description </p>
+                                        </a>
+
+                                    </div>
+                                <% end_loop %>
 
 
-                                <div class="col-md-4">
-                                    <a class="thumbnail" href="#">
-                                        <img alt="" src="http://placehold.it/350x150">
-                                        <h4>Gallery Work</h4>
-                                        <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                                        </p>
-                                    </a>
-                                </div>
-
-                                <div class="col-md-4">
-                                    <a class="thumbnail" href="#">
-                                        <img alt="" src="http://placehold.it/350x150">
-                                        <h4>Gallery Work</h4>
-                                        <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                                        </p>
-                                    </a>
-                                </div>
-                                <div class="col-md-4">
-                                    <a class="thumbnail" href="#">
-                                        <img alt="" src="http://placehold.it/350x150">
-                                        <h4>Gallery Work</h4>
-                                        <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                                        </p>
-                                    </a>
-                                </div>
                             </div>
                         </div>
                         <div class="item">
