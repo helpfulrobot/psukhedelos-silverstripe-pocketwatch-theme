@@ -18,7 +18,10 @@ class GalleryPage extends Page {
         $fields=parent::getCMSFields();
 
         $conf=GridFieldConfig_RelationEditor::create(10);
-        $conf->addComponent(new GridFieldSortableRows('SortOrder'));
+        $conf->addComponent($sortable=new GridFieldSortableRows('SortOrder'));
+
+        //Append new records to the top
+        $sortable->setAppendToTop(true);
 
         $fields->addFieldToTab('Root.MyGallery',
           $grid = new GridField('GalleryObjects', 'My Gallery', $this->GalleryObjects(), $conf)
@@ -33,12 +36,6 @@ class GalleryPage extends Page {
         // you can do.
         //
         $dataColumns = $config->getComponentByType('GridFieldDataColumns');
-
-        $dataColumns->setDisplayFields(array(
-          'Title' => 'Title',
-          'Description' => 'Description',
-          'GalleryImage' => 'Image'
-        ));
 
         return $fields;
     }
