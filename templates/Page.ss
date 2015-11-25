@@ -38,23 +38,32 @@
                     </div>
                     <div id="navbar" class="navbar-collapse collapse nav-main-ul">
                         <ul class="nav navbar-nav">
-                            <% loop $Menu(1) %>
-                                <li>
-                                    <a href="$Link" title="Go to the $Title page" class="$LinkingMode">
-                                        $MenuTitle
-                                    </a>
 
-                                    <% if $LinkOrSection == section %>
-                                        <% if $Children %>
-                                            <ul class="secondary">
-                                                <% loop $Children %>
-                                                    <li class="$LinkingMode"><a href="$Link">$MenuTitle</a></li>
-                                                <% end_loop %>
+
+
+
+                                <% control $Menu(1) %>
+                                    <% if $Children %>
+                                        <li class="$LinkingMode dropdown">
+                                            <a href="$Link" title="$Title"  class="$LinkingMode ">
+                                                $MenuTitle
+                                            </a>
+                                            <ul class="dropdown">
+                                                <% control $Children %>
+                                                    <li><a href="$Link" title="$Title" class="$LinkingMode">$MenuTitle</a></li>
+                                                <% end_control %>
                                             </ul>
-                                        <% end_if %>
+                                        </li>
+                                    <% else %>
+                                        <li class="$LinkingMode"><a href="$Link" title="$Title"><b>$MenuTitle</b></a></li>
                                     <% end_if %>
-                                </li>
-                            <% end_loop %>
+                                <% end_control %>
+
+
+
+
+
+
 
                         </ul>
 

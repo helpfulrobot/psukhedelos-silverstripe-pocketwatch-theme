@@ -17,8 +17,6 @@
     }
 
 
-
-
 }
 @media(max-width:768px){
     .main-logo-in-mobile{
@@ -49,5 +47,17 @@
     }
     .nav-ul li{
       margin:10px;
+
+    }
+    .main-nav li>a{
+        padding-left:45px;
+    }
+    .dropdown-menu>li>a{
+        padding-left:100px !important;
+        margin-top:-5px;
+    }
+    .navbar .navbar-collapse {
+        text-align: left;
+
     }
 }

@@ -34,3 +34,11 @@ $('.gallery-view-more .btn').on('click', function(e) {
     var $collapse = $this.closest('.collapse-group').find('.collapse');
     $collapse.collapse('toggle');
 });
+
+
+//dropdown hover show function
+//$('ul.nav li.dropdown').hover(function() {
+//    $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn(500);
+//}, function() {
+//    $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(500);
+//});
