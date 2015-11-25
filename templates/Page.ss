@@ -36,10 +36,24 @@
                         <% end_if %>
 
                     </div>
-                    <div id="navbar" class="navbar-collapse collapse ">
-                        <ul class="nav navbar-nav nav-ul col-xs-12">
+                    <div id="navbar" class="navbar-collapse collapse nav-main-ul">
+                        <ul class="nav navbar-nav">
                             <% loop $Menu(1) %>
-                                <li class="$LinkingMode"><a href="$Link" title="$Title.XML">$MenuTitle.XML</a></li>
+                                <li>
+                                    <a href="$Link" title="Go to the $Title page" class="$LinkingMode">
+                                        $MenuTitle
+                                    </a>
+
+                                    <% if $LinkOrSection == section %>
+                                        <% if $Children %>
+                                            <ul class="secondary">
+                                                <% loop $Children %>
+                                                    <li class="$LinkingMode"><a href="$Link">$MenuTitle</a></li>
+                                                <% end_loop %>
+                                            </ul>
+                                        <% end_if %>
+                                    <% end_if %>
+                                </li>
                             <% end_loop %>
 
                         </ul>

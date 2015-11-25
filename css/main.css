@@ -75,12 +75,19 @@ header {
 .icon-bar{
   background:#efefef;
 }
-.nav-ul li{
-  margin-left:50px;
+.nav-main-ul{
+
+  margin:0px auto;
+  border:1px solid red;
 
 }
-.nav-ul li>a {
-  font-size:24px;
+.navbar .navbar-nav {
+  display: inline-block;
+  float: none;
+}
+
+.navbar .navbar-collapse {
+  text-align: center;
 }
 .nav-collapsed{
   background:#aaa;
@@ -112,7 +119,6 @@ header {
 }
 /*-------------------gallery-section-----------------*/
 .work-gallery-section{
-
   text-align:center;
   background:#cdcdcd;
 }

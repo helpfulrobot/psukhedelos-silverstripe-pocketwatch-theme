@@ -50,9 +50,8 @@ class HomePage_Controller extends ContentController {
 	private static $allowed_actions = array (
 	);
 	public function LatestGallery() {
-		
 		return GalleryObject::get()
-				->sort('SortOrder', 'ASC')
+				->sort('Created', 'DESC')
 				->limit(3);
 	}
 
