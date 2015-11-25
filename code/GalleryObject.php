@@ -1,6 +1,6 @@
 <?php
 /*
-    An object in a Gallery, an image with a description.
+    An object in a Gallery, an image with a title and a description.
 */
 class GalleryObject extends DataObject {
 
@@ -29,16 +29,16 @@ class GalleryObject extends DataObject {
     return $fields;
   }
 
-  // this function get the cms thumbnail for the summary fields to use
+  //this function gets the CMS thumbnail for the summary fields to use
   public function ImageThumbnail() {
     return $this->GalleryImage()->CMSThumbnail();
   }
 
-    // Tell the datagrid what fields to show in the table
+  // Tell the datagrid what fields to show in the table
   public static $summary_fields = array(
-    'ImageThumbnail' => 'Thumbnail',
+    'ImageThumbnail' => 'Image',
     'Title' => 'Title',
-    'Description' => 'Type'
+    'Description' => 'Description'
   );
 
   static $searchable_fields = array(

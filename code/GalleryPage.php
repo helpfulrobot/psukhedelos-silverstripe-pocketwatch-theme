@@ -20,7 +20,7 @@ class GalleryPage extends Page {
         $conf=GridFieldConfig_RelationEditor::create(10);
         $conf->addComponent($sortable=new GridFieldSortableRows('SortOrder'));
 
-        //Append new records to the top
+        //Append new GalleryObjects to the top
         $sortable->setAppendToTop(true);
 
         $fields->addFieldToTab('Root.MyGallery',
