@@ -2,44 +2,41 @@
 /*
 An object in a Gallery, an image with a title and a description.
 */
-class GalleryObject extends DataObject {
+class GalleryItem extends DataObject {
 
     public static $db=array(
-        'Title' => 'Varchar',
-        'Description'=>'Text',
         'SortID' => 'Int'
     );
 
     private static $has_one = array(
         'GalleryImage' => 'Image',
-        'GalleryPage' => 'GalleryPage'
+        'GalleryAlbum' => 'GalleryAlbum'
     );
+
+    static $allowed_children = 'none';
 
     // Tell the datagrid what fields to show in the table
     public static $summary_fields = array(
-        'ImageThumbnail' => 'Image',
-        'Title' => 'Title',
-        'Description' => 'Description'
-    );
-
-    static $searchable_fields = array(
-        'Title',
-        'Description'
+        'ImageThumbnail' => 'Image'
     );
 
     function getCMSFields() {
 
         $fields = parent::getCMSFields();
         $fields->removeByName('SortID');
+        $fields->removeByName('GalleryAlbum');
         $fields->addFieldToTab(
         'Root.Main',
         $uploadField = new UploadField(
                 'GalleryImage',
-                'Please upload an image to display showcase in your gallery.'
+                'Please upload an image to showcase in your gallery.'
             )
         );
 
-        $uploadField->setFolderName('GalleryImages');
+//        $uploadField->setFolderName('Gallery/' .  $this->Gallery()->Title());
+
+//        $album = $this->GalleryAlbum()->Title();
+        $uploadField->setFolderName('Gallery');
         $uploadField->setAllowedFileCategories('image');
 
         return $fields;

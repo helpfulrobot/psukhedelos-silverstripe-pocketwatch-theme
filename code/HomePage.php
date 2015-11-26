@@ -28,7 +28,7 @@ class HomePage extends Page {
 class HomePage_Controller extends ContentController {
 
 	 public function LatestGallery() {
-	 	return GalleryObject::get()
+	 	return GalleryItem::get()
 	 			->sort('SortID', 'ASC')
 	 			->limit(3);
 	 }
