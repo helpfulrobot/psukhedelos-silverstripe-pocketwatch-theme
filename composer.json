@@ -18,8 +18,8 @@
     "silverstripe/cms": "~3.1",
     "silverstripe/framework": "~3.1",
     "undefinedoffset/sortablegridfield": "dev-master",
-		"silverstripe/userforms": "dev-master",
-		"silverstripe/blog": "~2.2@dev"
+    "silverstripe/userforms": "dev-master",
+	"silverstripe/blog": "~2.2@dev"
   },
   "extra": {
     "installer-name": "pocket-watch"
