@@ -23,9 +23,14 @@
         width:110px;
         max-height:100px;
         margin:5px;
+        margin-left:20px;
     }
     .nav-collapsed{
       margin-top:18px;
+    }
+
+    #navbar{
+       max-height:auto;
     }
     nav{
       margin-left:-15px;
@@ -48,6 +53,9 @@
     .nav-ul li{
       margin:10px;
 
+    }
+    .navbar-nav {
+        z-index:999;
     }
     .main-nav li>a{
         padding-left:45px;
