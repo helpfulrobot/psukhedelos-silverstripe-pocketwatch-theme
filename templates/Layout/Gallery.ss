@@ -1,9 +1,6 @@
 <div class="work-gallery-section">
-    <div class="">
-        <div class="container">
-            <h2>WORK</h2>
-        </div>
-
+    <div class="container  gallery-top ">
+        <div class="gallery-seperator container"></div>
         <div class="controls">
 
             <button class="filter" data-filter="all">All</button>

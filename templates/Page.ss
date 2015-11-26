@@ -8,7 +8,7 @@
             <div class="container">
                 <div class="top-logo">
                     <% if $HeaderImage %>
-                        <img class=" img-responsive center-block" src="$HeaderImage.Url" />
+                        <img class=" img-responsive center-block" src="$HeaderImage.SetSize(160,160).Url" />
                     <% end_if %>
 
                 </div>
