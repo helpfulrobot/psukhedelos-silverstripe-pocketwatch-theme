@@ -1,13 +1,8 @@
-
-
-
 // On document ready:
 $(function(){
     // Instantiate MixItUp:
     $('#Container').mixItUp();
-
 });
-
 $('#nav').affix({
     offset: {
         top: $('header').height()
