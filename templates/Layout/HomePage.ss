@@ -1,15 +1,10 @@
+<% include Hero %>
+<% include Gallery %>
+<% include Award %>
+<% include MyBlog %>
+<% include Contact %>
+<% include Video %>
 
 
-<div class="content-wrapper">
-
-    <% include Hero %>
-    <% include Gallery %>
-    <% include Award %>
-    <% include MyBlog %>
-    <% include Contact %>
-    <% include Video %>
-
-
-</div>
 
 
