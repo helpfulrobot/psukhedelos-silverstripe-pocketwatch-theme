@@ -65,7 +65,9 @@ h1,h2,h4 ,li>a{
   border:1px solid red;
   width:100%;
 }
-
+#Container .mix{
+  display: none;
+}
 
 .icon-bar{
   background:#efefef;
@@ -260,7 +262,13 @@ h1,h2,h4 ,li>a{
   margin-top: 80px;
 }
 /*-------------------------media carousel---------------*/
-
+/* gallery */
+.album-container{
+  margin-top:20px;
+}
+.work-gallery-section h2{
+  margin-top:60px;
+}
 /* carousel */
 .media-carousel
 {

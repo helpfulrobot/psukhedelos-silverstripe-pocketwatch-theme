@@ -35,6 +35,8 @@ class Gallery_Controller extends ContentController {
 
     public function init() {
         parent::init();
+
     }
+
 
 }

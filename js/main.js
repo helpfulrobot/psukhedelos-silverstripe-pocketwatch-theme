@@ -1,22 +1,18 @@
-////navbar-collapse hide if select
-//$(document).on('click','.navbar-collapse.in',function(e) {
-//    if( $(e.target).is('a') && $(e.target).attr('class') != 'dropdown-toggle' ) {
-//        $(this).collapse('hide');
-//    }
-//});
+
+
+
+// On document ready:
+$(function(){
+    // Instantiate MixItUp:
+    $('#Container').mixItUp();
+
+});
+
 $('#nav').affix({
     offset: {
         top: $('header').height()
     }
 });
-
-///* affix the navbar after scroll below header */
-//$('#nav').affix({
-//      offset: {
-//        top: $('header').height()-$('#nav').height()
-//      }
-//});
-
 
 /* highlight the top nav as scrolling occurs */
 $('body').scrollspy({ target: '#nav' })
