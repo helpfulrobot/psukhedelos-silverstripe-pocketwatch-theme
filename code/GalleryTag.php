@@ -1,6 +1,6 @@
 <?php
 /**
- * A Tag for categorising Galleries
+ * A Tag for categorising Gallery Albums
  **/
 class GalleryTag extends DataObject {
 

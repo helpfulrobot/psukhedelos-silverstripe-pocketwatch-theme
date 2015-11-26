@@ -1,7 +1,7 @@
 <?php
-/*
-An object in a Gallery, an image with a title and a description.
-*/
+/**
+ * An item in a Gallery Album
+ **/
 class GalleryItem extends DataObject {
 
     public static $db=array(

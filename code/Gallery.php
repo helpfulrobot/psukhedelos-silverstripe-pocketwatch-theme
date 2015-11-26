@@ -1,8 +1,7 @@
 <?php
 /**
- * Gallery Holder
- * This contains a sortable gridfield of Gallerys.
- * The Gallery Holder holds all of our Galleries.
+ * Gallery
+ * This holds all of our Gallery Albums.
  *
  * @package white-rabbits
  * @subpackage pocket-watch

@@ -1,8 +1,8 @@
 <?php
 /**
- * Gallery
- * This contains a sortable gridfield of Gallery Objects.
- * Think of the Gallery as an album.  Users can also define tags on this album for categorisation.
+ * Gallery Album
+ * This contains a sortable gridfield of Gallery Items.
+ * Users can also define tags on this album for categorisation.
  *
  * @package white-rabbits
  * @subpackage pocket-watch
