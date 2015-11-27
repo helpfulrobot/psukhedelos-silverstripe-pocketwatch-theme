@@ -1,20 +1,25 @@
 <footer class="footer-section">
     <div class="container">
-        <div class="row col-md-3 col-md-offset-5">
+        <div class=" col-md-3 col-md-offset-5">
             <div>
-                <img class="img-responsive" src="$ThemeDir/images/logo.png" alt=""/>
-
+            <% if $HeaderImage %>
+                <img class=" img-responsive center-block" src="$HeaderImage.SetSize(120,120).Url" />
+            <% end_if %>
             </div>
 
             <div class="footer-social">
                 <ul class="nav nav-pills">
-                    <li><a href="#" class="i fa fa-2x fa-facebook"></a></li>
+                        <li><a href="#" class="i fa fa-2x fa-facebook"></a></li>
                     <li><a href="#" class="i fa fa-2x fa-twitter"></a></li>
                     <li><a href="#" class="i fa fa-2x fa-google-plus"></a></li>
                     <li><a href="#" class="i fa fa-2x fa-youtube"></a></li>
                 </ul>
+
+            </div>
+            <div>
                 <strong><i>silverstripe@silverstripe.com</i></strong>
             </div>
+
         </div>
 
     </div>

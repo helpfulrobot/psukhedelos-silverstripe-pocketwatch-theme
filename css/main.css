@@ -1,5 +1,4 @@
 body{
-
   /*font-family: 'roboto', Fallback, sans-serif;*/
 }
 
@@ -16,7 +15,9 @@ p ,strong,small{
   font-style:italic;
   font-size:16px;
 }
-
+a{
+  color:black;
+}
 h1,h2,h4 ,li>a{
   font-family: 'roboto', Fallback, sans-serif;
 }
@@ -94,46 +95,9 @@ header {
 .nav-collapsed{
   background:#aaa;
 }
-/*-------------dropdown menu hover and current page-------*/
-/*ul li.current .dropdown-menu {*/
-  /*display:block;*/
-/*}*/
-/*ul li.current>li.current .dropdown-menu{*/
-  /*display:block;*/
-/*}*/
-/*ul li ul.dropdown-menu{*/
-  /*min-width: 125px; !* Set width of the dropdown *!*/
-  /*background: #f2f2f2;*/
-  /*display: none;*/
-  /*position: absolute;*/
-  /*z-index: 999;*/
-  /*left: 0;*/
-/*}*/
-
-/*ul li:hover ul.dropdown-menu{*/
-  /*display:block ;*/
-  /*min-width:125px;*/
-  /*text-align: center;*/
-  /*left:0;*/
-  /*right:0;	!* Display the dropdown *!*/
-/*}*/
-/*ul li ul.dropdown-menu li{*/
-  /*display: block;*/
-  /*padding:0px;*/
-
-/*}*/
-/*ul li.current {*/
-  /*border-bottom:3px solid #333;*/
-/*}*/
-/*ul li.current li.current a {*/
-  /*border: 1px solid #1b6d85;*/
-/*}*/
 
 .about-in-home-section{
-  /*background: url('../images/Two.jpg');
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  min-height:100%;*/
+
 }
 .about-text{
   padding-top:200px;
@@ -232,9 +196,7 @@ header {
   padding-bottom:50px;
 }
 .footer-section img{
-  width:200px;
-  margin-top:100px;
-  margin-left:30px;
+
 }
 .footer-section i,strong{
   margin-left:15px;
@@ -243,23 +205,23 @@ header {
 .footer-social{
   margin:0px auto;
 }
+.footer-social a{
+  text-align:center;
+  color:#eee;
+  background:#222;
+}
+.footer-social a:hover{
+  color:#333;
+  background:#ddd;
+}
+.footer-section a{
+
+}
 /*--------------------out-source----------------------*/
 #nav{
   width:100%;
 }
-#main-nav {
-   z-index:1;
-}
-#nav-separator {
-  display: none;
-  height: 10px;
-}
-#main-logo {
-  margin-bottom: 15px;
-}
-#content-wrapper {
-  margin-top: 80px;
-}
+
 /*-------------------------media carousel---------------*/
 /* gallery */
 .album-container{
@@ -369,11 +331,7 @@ header {
 .thumbnail {
   color:#383838;
 }
-.media-carousel img
-{
 
-  height: 200px
-}
 /* End carousel */
 
 

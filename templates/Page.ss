@@ -3,6 +3,7 @@
  <% include Head %>
 
 <body id="body_wrapper">
+
     <header class="masthead hidden-xs hidden-sm ">
         <div id=" " >
             <div class="container">
@@ -35,7 +36,6 @@
                     <div id="navbar" class="navbar-collapse collapse ">
                         <div class="row">
                             <ul class="nav navbar-nav">
-
                                 <% control $Menu(1) %>
                                     <% if $Children %>
                                         <li class="$LinkingMode dropdown ">
@@ -60,14 +60,17 @@
         </nav>
     </div>
 
-
     <div class="container-fluid">
+
     <div class="row">
     $Layout
+    </div>
+    </div>
 
-    </div>
-    </div>
-        <% include Footer %>
+
+    <div class="gallery-seperator container"></div>
+    <% include Footer %>
+
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <% require javascript("https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js") %>
     <% require javascript("pocket-watch/js/bootstrap.min.js") %>
