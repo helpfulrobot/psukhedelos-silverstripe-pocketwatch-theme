@@ -222,6 +222,12 @@ header {
 #nav{
   width:100%;
 }
+.navbar{
+  -webkit-box-shadow: 0 8px 6px -6px #ccc;
+  -moz-box-shadow: 0 8px 6px -6px #ccc;
+  box-shadow: 0 8px 6px -6px #ccc;
+
+}
 
 /*-------------------------media carousel---------------*/
 /* gallery */
