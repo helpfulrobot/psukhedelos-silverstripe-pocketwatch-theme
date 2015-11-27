@@ -31,6 +31,9 @@
     #navbar ul{
         width:100%;
            }
+    .dropdwon{
+        width:100%;
+    }
 
     .nav-collapsed{
       margin-top:18px;
@@ -45,15 +48,14 @@
        max-height:800px !important;
         background:#ccc;
     }
-    .navbar-nav{
-
-    }
+    
     .nav-ul li{
       margin:10px;
     }
 
     .main-nav li>a{
         padding-left:45px;
+        text-align:left;
 
     }
     .dropdown-menu>li>a{
@@ -61,6 +63,6 @@
         margin-top:-5px;
     }
     .navbar .navbar-collapse {
-        text-align: left;
+
     }
 }

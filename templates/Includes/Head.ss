@@ -13,8 +13,9 @@
     <%--<% require themedCSS("bootstrap.min") %>--%>
     <!--- Custom -->
     <% require css('pocket-watch/css/main.css') %>
-    <% require css('pocket-watch/css/responsive.css') %>
+
     <% require css('pocket-watch/css/typography.css') %>
+    <% require css('pocket-watch/css/responsive.css') %>
 
     <!-- font-awesome -->
     <%--<% require css("https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css") %>--%>
