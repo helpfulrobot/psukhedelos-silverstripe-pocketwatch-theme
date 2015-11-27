@@ -16,7 +16,7 @@
                 <div class="mix <% loop $GalleryTags %>category-$Title <% end_loop %> col-md-4" data-myorder="$Pos">
                     <div class="col-md-10">
                         <a class="thumbnail box" href="#">
-                            <img class="img-responsive name" alt="" src="http://placehold.it/350x350">
+                            <img class="img-responsive name" alt="" src="$GalleryImage.Url">
                             <div id="overlay">
                                 <h2>$Title</h2>
                             </div>
