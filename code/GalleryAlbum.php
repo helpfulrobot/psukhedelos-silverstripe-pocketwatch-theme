@@ -20,10 +20,6 @@ class GalleryAlbum extends Page {
         'Description'=>'Text',
     );
 
-    private static $has_one = array(
-        'Gallery' => 'Gallery'
-    );
-
     public static $has_many = array(
         'GalleryItems'=>'GalleryItem'
     );
