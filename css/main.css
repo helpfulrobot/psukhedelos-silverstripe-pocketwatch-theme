@@ -34,14 +34,19 @@ h1,h2,h4 ,li>a{
   margin-top:5px;
   }
 .main-logo{
-  width:250px;
+  width:160px;
   margin-top:15px;
   margin-bottom:15px;
 }
 .main-logo-in-mobile{
   width:100px;
+  margin-top:25px;
 }
+.fall-back-logo{
+  width:160px;
+  padding-top:33px;
 
+}
 #nav {
   position:static;
   top:-32px;
@@ -95,7 +100,7 @@ header {
 .nav-collapsed{
   background:#aaa;
 }
-
+/*------------about -------*/
 .about-in-home-section{
 
 }
@@ -195,8 +200,13 @@ header {
   min-height:300px;
   padding-bottom:50px;
 }
+.footer{
+  width:260px;
+  margin:0px auto;
+}
 .footer-section img{
   margin-top:20px;
+  width:120px;
 }
 .footer-section p{
   text-align:center;

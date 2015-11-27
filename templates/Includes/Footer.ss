@@ -1,10 +1,14 @@
 <footer class="footer-section">
     <div class="container">
-        <div class="col-md-3 col-md-offset-5">
+        <div class="footer">
             <div>
-            <% if $HeaderImage %>
-                <img class=" img-responsive center-block" src="$HeaderImage.SetSize(120,120).Url" />
-            <% end_if %>
+
+                <% if $HeaderImage %>
+                    <img class=" img-responsive center-block" src="$HeaderImage.SetSize(120,120).Url" />
+                <% else %>
+                    <img class=" img-responsive center-block " src="./pocket-watch/images/logo.png" />
+                <% end_if %>
+
             </div>
 
             <div class="footer-social">
