@@ -196,10 +196,11 @@ header {
   padding-bottom:50px;
 }
 .footer-section img{
-
+  margin-top:20px;
 }
-.footer-section i,strong{
-  margin-left:15px;
+.footer-section p{
+  text-align:center;
+  margin-left:5%;
 
 }
 .footer-social{
@@ -214,8 +215,8 @@ header {
   color:#333;
   background:#ddd;
 }
-.footer-section a{
-
+.footer-section .nav-pills{
+  margin-left:10%;
 }
 /*--------------------out-source----------------------*/
 #nav{

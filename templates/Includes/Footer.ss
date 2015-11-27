@@ -1,6 +1,6 @@
 <footer class="footer-section">
     <div class="container">
-        <div class=" col-md-3 col-md-offset-5">
+        <div class="col-md-3 col-md-offset-5">
             <div>
             <% if $HeaderImage %>
                 <img class=" img-responsive center-block" src="$HeaderImage.SetSize(120,120).Url" />
@@ -15,9 +15,11 @@
                     <li><a href="#" class="i fa fa-2x fa-youtube"></a></li>
                 </ul>
 
+
             </div>
             <div>
-                <strong><i>silverstripe@silverstripe.com</i></strong>
+                <p>silverstripe@silverstripe.com</p>
+
             </div>
 
         </div>
