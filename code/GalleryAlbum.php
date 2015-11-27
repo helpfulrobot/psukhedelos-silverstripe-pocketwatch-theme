@@ -74,7 +74,12 @@ class GalleryAlbum extends Page {
         );
 
         return $fields;
+    }
 
+    public function AlbumCover(){
+        if(count($this->GalleryItems())>0) {
+            return $this->GalleryItems()->first()->GalleryImage();
+        }
     }
 
 }

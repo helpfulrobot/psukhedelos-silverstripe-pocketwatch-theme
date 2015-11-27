@@ -24,10 +24,9 @@ class Gallery extends Page {
     }
 
     public function ActiveGalleryTags(){
-
         /**
          *  @TODO: think about caching this
-         * @TODO: Also currently these are not unique nor in order
+         * @TODO: Also currently these are not order
          *
          * */
         $ids = array_values($this->Children()->column('ID'));
