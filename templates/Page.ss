@@ -36,26 +36,26 @@
                     <% end_if %>
                 </div>
                 <div id="navbar" class="navbar-collapse collapse ">
-                    <div class="row">
-                        <ul class="nav navbar-nav">
-                            <% cached 'Menu', $List('SiteTree').max('LastEdited'), $CurrentMember.ID %>
+                    <div class="row nav-header-shadow">
+                        <ul class="nav navbar-nav ">
+                            <% cached 'Menu', $List('SiteTree').max('LastEdited') %>
 
                             <% control $Menu(1) %>
                                 <% if $Children %>
                                     <li class="$LinkingMode dropdown ">
                                         <a href="$Link"  class="$LinkingMode " data-toggle="dropdown"
                                            aria-haspopup="true" aria-expanded="false">
-                                            $MenuTitle
+                                            $MenuTitle.UpperCase
                                         </a>
                                         <ul class="container-fluid dropdown-menu" role="menu">
-                                            <li class="$LinkingMode"><a href="$Link" ><b>$MenuTitle</b></a></li>
+                                            <li class="$LinkingMode"><a href="$Link" ><b>$MenuTitle.UpperCase</b></a></li>
                                             <% control $Children %>
-                                                <li><a href="$Link"  class="$LinkingMode ">$MenuTitle</a></li>
+                                                <li><a href="$Link"  class="$LinkingMode ">$MenuTitle.UpperCase</a></li>
                                             <% end_control %>
                                         </ul>
                                     </li>
                                 <% else %>
-                                    <li class="$LinkingMode"><a href="$Link" title="$Title"><b>$MenuTitle</b></a></li>
+                                    <li class="$LinkingMode"><a href="$Link" title="$Title"><b>$MenuTitle.UpperCase</b></a></li>
                                 <% end_if %>
                             <% end_control %>
                         <% end_cached %>
@@ -66,7 +66,7 @@
         </nav>
     </div>
 
-    <div class="container-fluid">
+    <div class="container-fluid content-wrapper">
 
     <div class="row">
     $Layout

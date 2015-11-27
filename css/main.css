@@ -1,37 +1,47 @@
 body{
-  /*font-family: 'roboto', Fallback, sans-serif;*/
 }
 
-@font-face {
-    font-family: playfair;
-    src: url(../fonts/playfair.otf);
-}
-@font-face {
-    font-family: roboto;
-    src: url(../fonts/roboto-thin.ttf);
-}
-p ,strong,small{
-  font-family: PT Serif Italic;
-  font-style:italic;
-  font-size:16px;
-}
-a{
-  color:black;
-}
-h1,h2,h4 ,li>a{
-  font-family: 'roboto', Fallback, sans-serif;
-}
+/*font-family: 'roboto', Fallback, sans-serif;*/
+/* Typography stylesheet for pocket watch */
+/* Hero text style */
+
+
+/*@font-face {*/
+    /*font-family: playfair;*/
+    /*src: url(../fonts/playfair.otf);*/
+/*}*/
+/*@font-face {*/
+    /*font-family: roboto;*/
+    /*src: url(../fonts/roboto-thin.ttf);*/
+/*}*/
+/*p ,strong,small{*/
+  /*font-family: PT Serif Italic;*/
+  /*font-style:italic;*/
+  /*font-size:16px;*/
+/*}*/
+/*a{*/
+  /*color:black;*/
+/*}*/
+/*h1,h2,h4 ,li>a{*/
+  /*font-family: 'roboto', Fallback, sans-serif;*/
+/*}*/
 
 .home-section{
   min-height:100%;
 }
-.main-nav{
-  background:rgba(255,255,255,1);
+
+#body_wrapper{
+  display:block;
+  position:inherit;
+  border:1px solid red;
+  width:100%;
 }
 .main-nav li>a {
-  color: #383838;
-
-  margin-top:5px;
+  font-family: Roboto;
+  color:  #000000;
+  font-size: 18px;/* Approximation due to font substitution */
+  font-weight: 100;
+  text-align: center;
   }
 .main-logo{
   width:160px;
@@ -45,7 +55,9 @@ h1,h2,h4 ,li>a{
 .fall-back-logo{
   width:160px;
   padding-top:33px;
-
+}
+.main-nav{
+  background:rgba(255,255,255,1);
 }
 #nav {
   position:static;
@@ -65,20 +77,12 @@ header {
 .navbar{
   margin-bottom:0px;
 }
-#body_wrapper{
-  display:block;
-  position:inherit;
-  border:1px solid red;
-  width:100%;
-}
+
 #Container .mix{
   display: none;
 }
 .icon-bar{
   background:#efefef;
-}
-.carousel-inner > .item > img {
-  margin: 0 auto;
 }
 .nav-main-ul{
   margin:0px auto;
@@ -103,7 +107,19 @@ header {
 .nav-collapsed{
   background:#aaa;
 }
-/*------------about -------*/
+#nav{
+  width:100%;
+}
+  .navbar{
+  -webkit-box-shadow: 0 8px 6px -6px #ccc;
+  -moz-box-shadow: 0 8px 6px -6px #ccc;
+  box-shadow: 0 8px 6px -6px #ccc;
+
+}
+.content-wrapper{
+  overflow: hidden;
+}
+/*----------------------about ---------------------*/
 .about-in-home-section{
 
 }
@@ -123,6 +139,7 @@ header {
 .about-text p{
   padding:5px 25px 25px 25px;
 }
+
 /*-------------------gallery-section-----------------*/
 .work-gallery-section{
   text-align:center;
@@ -221,32 +238,22 @@ header {
 }
 .footer-social a{
   text-align:center;
-  color:#eee;
-  background:#222;
+  color:#eee !important;
+  background:#222 ;
 }
 .footer-social a:hover{
-  color:#333;
+  color:#333 !important;
   background:#ddd;
 }
 .footer-section .nav-pills{
   margin-left:10%;
 }
-/*--------------------out-source----------------------*/
-#nav{
-  width:100%;
-}
-.navbar{
-  -webkit-box-shadow: 0 8px 6px -6px #ccc;
-  -moz-box-shadow: 0 8px 6px -6px #ccc;
-  box-shadow: 0 8px 6px -6px #ccc;
-
-}
-
 /*-------------------------media carousel---------------*/
 /* gallery */
 .album-container{
   margin-top:20px;
 }
+.
 .gallery-child {
   margin-top:50px;
   padding-bottom:50px;
@@ -254,6 +261,14 @@ header {
 .gallery-child img{
   margin-top:40px;
   margin-bottom:40px;
+}
+.work-gallery-section button{
+  font-family: Roboto;
+  color:  #000000;
+  font-size: 18px;/* Approximation due to font substitution */
+  font-weight: 100;
+  text-align: left;
+  margin-left:12px;
 }
 .gallery-seperator{
 

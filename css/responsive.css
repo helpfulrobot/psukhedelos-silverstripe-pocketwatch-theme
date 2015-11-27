@@ -10,6 +10,15 @@
     .nav-ul li>a {
         font-size:18px;
     }
+    #navbar{
+        margin-top:30px;
+    }
+    .main-logo-in-mobile{
+        width:120px;
+        max-height:100px;
+        margin:5px;
+
+    }
 
 }
 @media(max-width:768px){
@@ -19,12 +28,17 @@
         margin:5px;
 
     }
+    #navbar ul{
+        width:100%;
+           }
 
     .nav-collapsed{
       margin-top:18px;
     }
     .navbar-toggle{
         background:#ddd;
+        margin-top:22px;
+        margin-right:22px;
     }
 
     #navbar{

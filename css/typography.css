@@ -1,0 +1,144 @@
+/* Typography stylesheet for pocket watch */
+
+/* Hero text style */
+
+@font-face {
+    font-family: 'playfair';
+    src: url('../fonts/custom-fonts/playfairdisplay-italic-webfont.eot');
+    src: url('../fonts/custom-fonts/playfairdisplay-italic-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/custom-fonts/playfairdisplay-italic-webfont.woff2') format('woff2'),
+    url('../fonts/custom-fonts/playfairdisplay-italic-webfont.woff') format('woff'),
+    url('../fonts/custom-fonts/playfairdisplay-italic-webfont.ttf') format('truetype'),
+    url('../fonts/custom-fonts/playfairdisplay-italic-webfont.svg#playfair_displayitalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* Slice heading style */
+@font-face {
+    font-family: 'roboto condensed';
+    src: url('../fonts/custom-fonts/robotocondensed-regular-webfont.eot');
+    src: url('../fonts/custom-fonts/robotocondensed-regular-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/custom-fonts/robotocondensed-regular-webfont.woff2') format('woff2'),
+    url('../fonts/custom-fonts/robotocondensed-regular-webfont.woff') format('woff'),
+    url('../fonts/custom-fonts/robotocondensed-regular-webfont.ttf') format('truetype'),
+    url('../fonts/custom-fonts/robotocondensed-regular-webfont.svg#roboto_condensedregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/*Body Text Styles*/
+
+@font-face {
+    font-family: 'roboto';
+    src: url('../fonts/custom-fonts/roboto-medium-webfont.eot');
+    src: url('../fonts/custom-fonts/roboto-medium-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/custom-fonts/roboto-medium-webfont.woff2') format('woff2'),
+    url('../fonts/custom-fonts/roboto-medium-webfont.woff') format('woff'),
+    url('../fonts/custom-fonts/roboto-medium-webfont.ttf') format('truetype'),
+    url('../fonts/custom-fonts/roboto-medium-webfont.svg#robotomedium') format('svg');
+    font-weight: bold;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'roboto';
+    src: url('../fonts/custom-fonts/roboto-mediumitalic-webfont.eot');
+    src: url('../fonts/custom-fonts/roboto-mediumitalic-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/custom-fonts/roboto-mediumitalic-webfont.woff2') format('woff2'),
+    url('../fonts/custom-fonts/roboto-mediumitalic-webfont.woff') format('woff'),
+    url('../fonts/custom-fonts/roboto-mediumitalic-webfont.ttf') format('truetype'),
+    url('../fonts/custom-fonts/roboto-mediumitalic-webfont.svg#robotomedium_italic') format('svg');
+    font-weight: bold;
+    font-style: italic;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'roboto';
+    src: url('../fonts/custom-fonts/roboto-thin-webfont.eot');
+    src: url('../fonts/custom-fonts/roboto-thin-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/custom-fonts/roboto-thin-webfont.woff2') format('woff2'),
+    url('../fonts/custom-fonts/roboto-thin-webfont.woff') format('woff'),
+    url('../fonts/custom-fonts/roboto-thin-webfont.ttf') format('truetype'),
+    url('../fonts/custom-fonts/roboto-thin-webfont.svg#robotothin') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'roboto';
+    src: url('../fonts/custom-fonts/roboto-thinitalic-webfont.eot');
+    src: url('../fonts/custom-fonts/roboto-thinitalic-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/custom-fonts/roboto-thinitalic-webfont.woff2') format('woff2'),
+    url('../fonts/custom-fonts/roboto-thinitalic-webfont.woff') format('woff'),
+    url('../fonts/custom-fonts/roboto-thinitalic-webfont.ttf') format('truetype'),
+    url('../fonts/custom-fonts/roboto-thinitalic-webfont.svg#robotothin_italic') format('svg');
+    font-weight: normal;
+    font-style: italic;
+
+}
+
+body,p,table {
+    font-family: "roboto", "Arial", sans-serif;
+    font-size: 16px;
+    line-height: 1.4;
+    color:#000;
+
+}
+
+h1,h2,h3 {
+    font-weight: normal;
+    color:#000;
+}
+
+h1{
+
+
+}
+
+h2{
+    font-family: "roboto condensed", "Arial", sans-serif;
+    font-size: 30px;
+    line-height:1.3;
+
+
+
+}
+
+h3 {
+    font-family:"roboto", "Arial", sans-serif;
+    font-size: 24px;
+    line-height:1.3;
+
+}
+
+.hero-text {
+    font-family: "playfair", serif;
+    line-height:1.3;
+    font-size:36px;
+}
+
+a {
+    color: #000;
+    text-decoration: underline;
+
+}
+
+a:hover,a:focus,a:active,a:visited {
+    color:#000;
+    text-decoration:none;
+}
