@@ -32,10 +32,14 @@
                         <span class="icon-bar"></span>
                     </button>
                     <% if $HeaderImage %>
+                      <a href="index.html">
                         <img class="main-logo-in-mobile hidden-lg hidden-md img-responsive" src="$HeaderImage.Url" />
+                      </a>
                         <% else %>
+                        <a href="/home">
                         <img class=" main-logo-in-mobile hidden-lg hidden-md img-responsive"
                          src="./pocket-watch/images/logo.png" />
+                       </a>
                     <% end_if %>
                 </div>
                 <div id="navbar" class="navbar-collapse collapse ">

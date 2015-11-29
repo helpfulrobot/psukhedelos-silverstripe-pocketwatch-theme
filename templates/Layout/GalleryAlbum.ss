@@ -26,19 +26,7 @@
 
                               <img  class="img-responsive center-block" alt="540%x540"
                                     src=" $GalleryImage.SetSize(540,540).Url" >
-                              <div class="container">
-                                  <h3>Blog One Gallery Header</h3>
-                                  <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec
-                                      id elit non mi porta gravida at eget metus. Nullam id dolor id nibh
-                                      ultricies vehicula ut id elit.
-                                      Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec
-                                      id elit non mi porta gravida at eget metus. Nullam id dolor id nibh
-                                    ultricies vehicula ut id elit.
-                                      Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec
-                                      id elit non mi porta gravida at eget metus. Nullam id dolor id nibh
-                                      ultricies vehicula ut id elit.
-                                  </p>
-                              </div>
+
                           </div>
                       <% else %>
                           <div class="item">
@@ -61,25 +49,16 @@
           </div>
 
 
-
+          <div class="container">
+              <h3>$Title</h3>
+              <p>$Content</p>
+          </div>
 
     </div>
     </div>
 
-    
+
     </div>
 
 
 </div>
-
-
-
-
-
-<%--<div class="row">--%>
-    <%--<if $GalleryItems >--%>
-
-    <%--</if>--%>
-    <%--<img  class="img-responsive center-block" alt="450%x450"--%>
-          <%--src=" $GalleryImage.SetSize(450,450).Url" >--%>
-<%--</div>--%>
