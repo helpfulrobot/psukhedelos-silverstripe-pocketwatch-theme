@@ -5,14 +5,13 @@
 
     <div class="row gallery-child">
         <div class="controls">
-          <% control Parent %>
-          <a href="$Link" class="filter btn btn-default" data-filter="all">All</a>
-          <% control Children %>
-          <a href="$Link" class="filter btn btn-default $LinkingMode" data-filter=".category-$Title">
-            $Title.UpperCase
-          </a>
-          <% end_control %>
-          <% end_control %>
+          <a href="$Parent.Link" class="filter btn btn-default" data-filter="all">All</a>
+          <% loop $Parent.ActiveGalleryTags %>
+          <!-- Check if $Title is in $GalleryTags -->
+            <a href="$Up.Link" class="filter btn btn-default" data-filter=".category-$Title">
+              $Title
+            </a>
+          <% end_loop %>
 
         </div>
       <div class="container ">
