@@ -8,11 +8,15 @@
             <div class="container">
                 <div class="top-logo">
                     <% if $HeaderImage %>
+                      <a href="home">
                         <img class="main-logo img-responsive center-block"
                         src="$HeaderImage.Url" />
+                      </a>
                     <% else %>
+                      <a href="home">
                         <img class=" main-logo img-responsive center-block fall-back-logo"
                          src="./pocket-watch/images/logo.png" />
+                       </a>
                     <% end_if %>
 
                 </div>
@@ -23,7 +27,7 @@
   <div id="nav" class="navbar-wrapper main-nav  navbar-static-top">
         <nav id="nav" class="navbar ">
             <div class="container">
-                <div class="navbar-header ">
+                <div class="navbar-header row">
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
                             data-target="#navbar" aria-expanded="false" aria-controls="navbar">
                         <span class="sr-only">Toggle navigation</span>
@@ -46,7 +50,6 @@
                     <div class="row nav-header-shadow">
                         <ul class="nav navbar-nav ">
                             <% cached 'Menu', $List('SiteTree').max('LastEdited') %>
-
                             <% control $Menu(1) %>
                                 <% if $Children %>
                                     <li class="$LinkingMode dropdown ">
@@ -57,7 +60,6 @@
                                         <ul class="container-fluid dropdown-menu" role="menu">
                                             <li class="$LinkingMode"><a href="$Link" >$MenuTitle.UpperCase</a></li>
                                             <% control $Children %>
-
                                                 <li><a href="$Link"  class="$LinkingMode ">$MenuTitle.UpperCase</a></li>
                                             <% end_control %>
                                         </ul>

@@ -6,7 +6,7 @@
         <div class="controls ">
           <a class="filter btn btn-default" data-filter="all">All</a>
           <% loop $ActiveGalleryTags %>
-              <a class="filter btn btn-default" data-filter=".category-$Title">
+              <a class="filter btn btn-default btn-tags" data-filter=".category-$Title">
                 $Title.UpperCase</a>
           <% end_loop %>
 

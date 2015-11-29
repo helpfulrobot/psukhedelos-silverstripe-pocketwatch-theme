@@ -9,7 +9,7 @@
           <% loop $Parent.ActiveGalleryTags %>
           <!-- Check if $Title is in $GalleryTags -->
             <a href="$Up.Link" class="filter btn btn-default" data-filter=".category-$Title">
-              $Title
+              $Title.UpperCase
             </a>
           <% end_loop %>
 

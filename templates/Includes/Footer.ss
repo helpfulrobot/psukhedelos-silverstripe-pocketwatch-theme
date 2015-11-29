@@ -1,7 +1,7 @@
-<footer class="footer-section">
-  <div class="container">
+<footer class="footer-section container-fluid">
+  <div class="container ">
 
-    <div class="row footer-line">
+    <div class="row  footer-line">
         <div class="footer ">
             <div>
 

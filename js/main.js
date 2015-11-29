@@ -1,5 +1,4 @@
-// Instantiate MixItUp:
-$('#Container').mixItUp();
+
 
 $('#nav').affix({
     offset: {
