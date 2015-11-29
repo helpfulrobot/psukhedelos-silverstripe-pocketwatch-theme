@@ -32,7 +32,7 @@
                         <span class="icon-bar"></span>
                     </button>
                     <% if $HeaderImage %>
-                      <a href="index.html">
+                      <a href="home">
                         <img class="main-logo-in-mobile hidden-lg hidden-md img-responsive" src="$HeaderImage.Url" />
                       </a>
                         <% else %>
