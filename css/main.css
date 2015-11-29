@@ -477,12 +477,31 @@ section:active{
 section:visited{
   background:red !imortant;
 }
-.parallax-1 {
+.top-section{
+  height:550px;
+  margin:0px;
+  padding:0px;
+  border:1px solid blue;
+  display:block;
+  position:relative;
+}
+.about-img{
+  width:100%;
+  height:auto;
+  position:absolute;
+  z-index: -1;
+}
+.about-img img{
+  width:100%;
+  height:550px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.parallax-1{
 	background: url('../images/Three.jpeg') no-repeat center center fixed;
-    -webkit-background-size: cover;
-  	-moz-background-size: cover;
-  	-o-background-size: cover;
-  	background-size: cover;
+
 }
 .parallax-2 {
 	background: url('../images/Two.jpg') no-repeat center center fixed;
