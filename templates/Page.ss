@@ -4,7 +4,7 @@
 <body id="body_wrapper">
 
   <header class="masthead hidden-xs hidden-sm ">
-        <div id=" " >
+        <div id=" ">
             <div class="container">
                 <div class="top-logo">
                     <% if $HeaderImage %>

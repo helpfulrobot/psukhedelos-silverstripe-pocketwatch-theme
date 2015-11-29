@@ -94,9 +94,7 @@ header {
   width:100%;
 }
 #navbar{
-  -webkit-box-shadow: 0 8px 6px -6px #ccc;
-  -moz-box-shadow: 0 8px 6px -6px #ccc;
-  box-shadow: 0 8px 6px -6px #ccc;
+  border-bottom:1px solid #000;
 }
 .content-wrapper{
   overflow: hidden;
@@ -202,9 +200,7 @@ header {
 }
 .footer-line{
   margin-left:15px;
-  -webkit-box-shadow: -6px -6px 6px -3px #ccc;
-  -moz-box-shadow: -2px -6px 6px -6px #ccc;
-  box-shadow: -2px -8px 6px -6px #ccc;
+  border-top:1px solid #000;
 }
 .footer{
   width:240px;
