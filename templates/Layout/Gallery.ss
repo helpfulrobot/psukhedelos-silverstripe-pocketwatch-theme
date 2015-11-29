@@ -21,12 +21,10 @@
                    <div class="box ">
                      <a  href="$Link">
                      <img class="img-responsive  name"
-                      alt="" src="$AlbumCover.Url">
+                      alt="" src="$AlbumCover.SetWidth(220).Url">
                      <div class="overbox">
 
-                       <div class="title overtext"> $Title </div>
-
-
+                      <div class="title overtext"> $Title </div>
 
                      </div>
                    </a>
