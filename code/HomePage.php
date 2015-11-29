@@ -13,22 +13,26 @@ class HomePage extends Page {
 
 		$fields->addFieldToTab(
 			'Root.Upload',
-			$uploadField = new UploadField(
+			$uploadHeaderField = new UploadField(
 				'HeaderImage',
 				'Please upload the logo you would like to display in your header.'
 			)
 		);
 
+		$uploadHeaderField->setFolderName('Header');
+		$uploadHeaderField->setAllowedFileCategories('image');
+
 		$fields->addFieldToTab(
 				'Root.Upload',
-				$uploadField = new UploadField(
+				$uploadHeroField = new UploadField(
 						'HeroImage',
 						'Please upload an image to be used as your Hero Image.  Remember, this is usually the first thing your visitors will see.'
 				)
 		);
 
-		$uploadField->setFolderName('Header');
-		$uploadField->setAllowedFileCategories('image');
+		$uploadHeroField->setFolderName('Hero');
+		$uploadHeroField->setAllowedFileCategories('image');
+
 
 		return $fields;
 	}
