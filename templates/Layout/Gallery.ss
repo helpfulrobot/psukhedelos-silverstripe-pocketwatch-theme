@@ -1,30 +1,52 @@
 <div class="work-gallery-section">
     <div class="container  gallery-top ">
-        <div class="gallery-seperator container"></div>
 
-        <div class="controls">
+      <div class="row gallery-child">
 
-            <button class="filter" data-filter="all">All</button>
-            <% loop $ActiveGalleryTags %>
-                <button class="filter" data-filter=".category-$Title">$Title.UpperCase</button>
-            <% end_loop %>
+        <div class="controls ">
+          <a class="filter btn btn-default" data-filter="all">All</a>
+          <% loop $ActiveGalleryTags %>
+              <a class="filter btn btn-default" data-filter=".category-$Title">
+                $Title.UpperCase</a>
+          <% end_loop %>
 
         </div>
 
-        <div id="Container" class="container album-container">
+        <div id="Container" class="col-md-10 col-md-offset-1 album-container">
             <% loop $Children %>
-                <div class="mix <% loop $GalleryTags %>category-$Title <% end_loop %> col-md-4" data-myorder="$Pos">
-                    <div class="col-md-10">
-                        <a class="thumbnail box" href="#">
-                            <img class="img-responsive name" alt="" src="$AlbumCover.Url">
-                            <div id="overlay">
-                                <h2>$Title</h2>
-                            </div>
-                        </a>
-                    </div>
+                <div class="mix <% loop $GalleryTags %>category-$Title <% end_loop %> col-md-4"
+                   data-myorder="$Pos">
+
+
+                   <div class="box ">
+                     <a  href="$Link">
+                     <img class="img-responsive  name"
+                      alt="" src="$AlbumCover.Url">
+                     <div class="overbox">
+
+                       <div class="title overtext"> $Title </div>
+
+
+
+                     </div>
+                   </a>
                 </div>
+
+
+              </div>
+
             <% end_loop %>
         </div>
-
+      </div>
     </div>
 </div>
+<!--
+<div class="col-md-offset-2 ">
+    <a class="box" href="$Link">
+      <div class="box-img">
+        <img class="img-responsive  name"
+         alt="" src="$AlbumCover.Url">
+      </div>
+
+    </a>
+</div> -->

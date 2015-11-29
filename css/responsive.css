@@ -20,6 +20,7 @@
 
     }
 
+
 }
 @media(max-width:768px){
     .main-logo-in-mobile{
@@ -43,12 +44,16 @@
         margin-top:22px;
         margin-right:22px;
     }
-
+    .navbar-header{
+      -webkit-box-shadow: 0 8px 6px -6px #ccc;
+      -moz-box-shadow: 0 8px 6px -6px #ccc;
+      box-shadow: 0 8px 6px -6px #ccc;
+    }
     #navbar{
        max-height:800px !important;
         background:#ccc;
     }
-    
+
     .nav-ul li{
       margin:10px;
     }

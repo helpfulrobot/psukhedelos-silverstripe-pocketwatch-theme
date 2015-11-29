@@ -1,6 +1,4 @@
-// On document ready:
-
-    // Instantiate MixItUp:
+// Instantiate MixItUp:
 $('#Container').mixItUp();
 
 $('#nav').affix({

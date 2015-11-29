@@ -1,26 +1,26 @@
-
 <!DOCTYPE html>
 <html lang="$ContentLocale">
- <% include Head %>
-
+<% include Head %>
 <body id="body_wrapper">
 
-    <header class="masthead hidden-xs hidden-sm ">
+  <header class="masthead hidden-xs hidden-sm ">
         <div id=" " >
             <div class="container">
                 <div class="top-logo">
                     <% if $HeaderImage %>
-                        <img class="main-logo img-responsive center-block" src="$HeaderImage.SetSize(160,160).Url" />
+                        <img class="main-logo img-responsive center-block"
+                        src="$HeaderImage.Url" />
                     <% else %>
-                        <img class=" main-logo img-responsive center-block fall-back-logo" src="./pocket-watch/images/logo.png" />
+                        <img class=" main-logo img-responsive center-block fall-back-logo"
+                         src="./pocket-watch/images/logo.png" />
                     <% end_if %>
 
                 </div>
             </div>
         </div>
-    </header>
+  </header>
 
-    <div id="nav" class="navbar-wrapper main-nav  navbar-static-top">
+  <div id="nav" class="navbar-wrapper main-nav  navbar-static-top">
         <nav id="nav" class="navbar ">
             <div class="container">
                 <div class="navbar-header ">
@@ -33,6 +33,9 @@
                     </button>
                     <% if $HeaderImage %>
                         <img class="main-logo-in-mobile hidden-lg hidden-md img-responsive" src="$HeaderImage.Url" />
+                        <% else %>
+                        <img class=" main-logo-in-mobile hidden-lg hidden-md img-responsive"
+                         src="./pocket-watch/images/logo.png" />
                     <% end_if %>
                 </div>
                 <div id="navbar" class="navbar-collapse collapse ">
@@ -48,14 +51,15 @@
                                             $MenuTitle.UpperCase
                                         </a>
                                         <ul class="container-fluid dropdown-menu" role="menu">
-                                            <li class="$LinkingMode"><a href="$Link" ><b>$MenuTitle.UpperCase</b></a></li>
+                                            <li class="$LinkingMode"><a href="$Link" >$MenuTitle.UpperCase</a></li>
                                             <% control $Children %>
+
                                                 <li><a href="$Link"  class="$LinkingMode ">$MenuTitle.UpperCase</a></li>
                                             <% end_control %>
                                         </ul>
                                     </li>
                                 <% else %>
-                                    <li class="$LinkingMode"><a href="$Link" title="$Title"><b>$MenuTitle.UpperCase</b></a></li>
+                                    <li class="$LinkingMode $MenuTitle"><a href="$Link" >$MenuTitle.UpperCase</a></li>
                                 <% end_if %>
                             <% end_control %>
                         <% end_cached %>
@@ -64,7 +68,7 @@
                 </div>
             </div>
         </nav>
-    </div>
+  </div>
 
     <div class="container-fluid content-wrapper">
 
@@ -74,7 +78,7 @@
     </div>
 
 
-    <div class="gallery-seperator container"></div>
+
     <% include Footer %>
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
