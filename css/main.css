@@ -110,9 +110,9 @@ header {
 .about-in-home-section{
 }
 .about-text{
-  padding-top:200px;
+  margin-top:200px;
   text-align:center;
-  padding-bottom:200px;
+
 }
 .about-text h1,p{
   margin-bottom:0px;
@@ -478,10 +478,9 @@ section:visited{
   background:red !imortant;
 }
 .top-section{
-  height:550px;
+  height:600px;
   margin:0px;
   padding:0px;
-  border:1px solid blue;
   display:block;
   position:relative;
 }
@@ -493,15 +492,15 @@ section:visited{
 }
 .about-img img{
   width:100%;
-  height:550px;
+  height:600px;
+
+}
+.parallax-1{
+	background: url('../images/Three.jpeg') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-}
-.parallax-1{
-	background: url('../images/Three.jpeg') no-repeat center center fixed;
-
 }
 .parallax-2 {
 	background: url('../images/Two.jpg') no-repeat center center fixed;
