@@ -45,9 +45,7 @@
         margin-right:22px;
     }
     .navbar-header{
-      -webkit-box-shadow: 0 8px 6px -6px #ccc;
-      -moz-box-shadow: 0 8px 6px -6px #ccc;
-      box-shadow: 0 8px 6px -6px #ccc;
+      border-bottom:1px solid #333;
     }
     #navbar{
        max-height:800px !important;
