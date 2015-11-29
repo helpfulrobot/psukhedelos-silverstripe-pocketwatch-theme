@@ -4,7 +4,8 @@ class HomePage extends Page {
 	private static $description = "The Pocketwatch Home Page";
 
 	private static $has_one = array(
-		'HeaderImage' => 'Image'
+		'HeaderImage' => 'Image',
+		'HeroImage' => 'Image'
 	);
 
 	function getCMSFields() {
@@ -14,8 +15,16 @@ class HomePage extends Page {
 			'Root.Upload',
 			$uploadField = new UploadField(
 				'HeaderImage',
-				'Please upload an image to display in your header.'
+				'Please upload the logo you would like to display in your header.'
 			)
+		);
+
+		$fields->addFieldToTab(
+				'Root.Upload',
+				$uploadField = new UploadField(
+						'HeroImage',
+						'Please upload an image to be used as your Hero Image.  Remember, this is usually the first thing your visitors will see.'
+				)
 		);
 
 		$uploadField->setFolderName('Header');
