@@ -10,7 +10,7 @@
 
         <div class='row'>
             <div class='col-md-12'>
-                <div class="carousel slide media-carousel" id="media">
+                <div class="carousel slide media-carousel home-gallery" id="media">
 
                     <div class="carousel-inner">
                         <% loop $GalleryAlbums %>
@@ -24,6 +24,7 @@
                                 <a href="$Link">
                                     <img class="img-responsive center-block" src="$AlbumCover.CroppedImage(230,230).Url"/>
                                     <h4>$Title</h4>
+                                    <p>$Description</p>
                                 </a>
                             </div>
 
