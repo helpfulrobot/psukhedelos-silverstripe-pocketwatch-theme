@@ -45,4 +45,9 @@ class HomePage_Controller extends ContentController {
 	 			->limit(3);
 	 }
 
+	public function GalleryAlbums() {
+		return GalleryAlbum::get();
+	}
+
+
 }
