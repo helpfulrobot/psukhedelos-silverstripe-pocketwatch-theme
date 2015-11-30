@@ -24,13 +24,13 @@
                           <div class="item active">
 
                               <img  class="img-responsive center-block" alt="540%x540"
-                                    src=" $GalleryImage.SetSize(540,540).Url" >
+                                    src=" $GalleryImage.CroppedImage(540,540).Url" >
 
                           </div>
                       <% else %>
                           <div class="item">
                             <img  class="img-responsive center-block" alt="540%x540"
-                                  src=" $GalleryImage.SetSize(540,540).Url" >
+                                  src=" $GalleryImage.CroppedImage(540,540).Url" >
                           </div>
                       <% end_if %>
                   <% end_loop %>
