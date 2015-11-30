@@ -12,12 +12,12 @@
               <%--$Title.UpperCase--%>
             <%--</a>--%>
           <%--<% end_loop %>--%>
-            <div class="tags-display">
-                Tags:
-                <% loop $GalleryTags %>
-                    $Title.Lowercase<% if not $Last%>,<% end_if %>
-                <% end_loop %>
-            </div>
+
+        </div>
+        <div class="tags-display">
+            <% loop $GalleryTags %>
+                $Title.Lowercase<% if not $Last%>,<% end_if %>
+            <% end_loop %>
         </div>
       <div class="container ">
           <div id="myCarousel" class="carousel slide" data-ride="carousel">

@@ -281,7 +281,10 @@ header {
   padding-bottom:50px;
 }
 .gallery-child .controls{
-  margin-bottom:50px;
+  margin-bottom:20px;
+}
+.gallery-child .tags-display{
+  margin-bottom:20px;
 }
 .gallery-child .controls.btn{
 
