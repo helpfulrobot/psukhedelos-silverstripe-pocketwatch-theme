@@ -433,10 +433,6 @@ header {
 .carousel-control.left,.right span{
   color:#ccc;
 }
-.gallery-child .carousel-inner img{
-  width:540px;
-  height:540px!important;
-}
 /* carousel */
 .media-carousel
 {
