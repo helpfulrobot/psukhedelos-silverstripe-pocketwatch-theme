@@ -289,6 +289,10 @@ header {
 .gallery-child .controls.btn{
 
 }
+.active-tag{
+  background-color: rgba(235, 235, 235, 0.5);
+  border: none;
+}
 .btn-tags{
   font-family: Roboto;
   color:  #000000;

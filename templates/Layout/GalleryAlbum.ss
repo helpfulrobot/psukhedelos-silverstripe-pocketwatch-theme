@@ -3,18 +3,16 @@
         <div class="gallery-child">
             <div class="controls">
                 <a href="$Parent.Link" class="filter btn btn-default" data-filter="all">ALL</a>
+
                 <% loop $Parent.ActiveGalleryTags %>
                     <!-- Check if $Title is in $GalleryTags -->
-                    <a href="$Up.Link" class="filter btn btn-default" data-filter=".category-$Title">
+                    <a href="$Up.Link" class="filter btn btn-default <% if $Top.GalleryTags.filter('Title', $Title).Count > 0 %>active-tag<% end_if %>" data-filter=".category-$Title">
                         $Title.UpperCase
                     </a>
                 <% end_loop %>
+
             </div>
-            <%--<div class="tags-display">--%>
-                <%--<% loop $GalleryTags %>--%>
-                    <%--$Title.Lowercase<% if not $Last%>,<% end_if %>--%>
-                <%--<% end_loop %>--%>
-            <%--</div>--%>
+
             <div class="container ">
                 <div id="myCarousel" class="carousel slide" data-ride="carousel">
                     <!-- Wrapper for slides -->
