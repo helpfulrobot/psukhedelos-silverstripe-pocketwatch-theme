@@ -3,23 +3,28 @@
 
     <!-- <div class="gallery-seperator container"></div> -->
 
-    <div class="row gallery-child">
+    <div class="gallery-child">
         <div class="controls">
-          <a href="$Parent.Link" class="filter btn btn-default" data-filter="all">All</a>
-          <% loop $Parent.ActiveGalleryTags %>
-          <!-- Check if $Title is in $GalleryTags -->
-            <a href="$Up.Link" class="filter btn btn-default" data-filter=".category-$Title">
-              $Title.UpperCase
-            </a>
-          <% end_loop %>
-
+          <a href="$Parent.Link" class="filter btn btn-default" data-filter="all">View All</a>
+            <%--<% loop $Parent.ActiveGalleryTags %>--%>
+          <%--<!-- Check if $Title is in $GalleryTags -->--%>
+            <%--<a href="$Up.Link" class="filter btn btn-default" data-filter=".category-$Title">--%>
+              <%--$Title.UpperCase--%>
+            <%--</a>--%>
+          <%--<% end_loop %>--%>
+            <div class="tags-display">
+                Tags:
+                <% loop $GalleryTags %>
+                    $Title.Lowercase<% if not $Last%>,<% end_if %>
+                <% end_loop %>
+            </div>
         </div>
       <div class="container ">
           <div id="myCarousel" class="carousel slide" data-ride="carousel">
 
               <!-- Wrapper for slides -->
               <div class="carousel-inner" role="listbox">
-                  <% loop GalleryItems %>
+                  <% loop $GalleryItems %>
                       <% if $Pos == 1 %>
                           <div class="item active">
 
