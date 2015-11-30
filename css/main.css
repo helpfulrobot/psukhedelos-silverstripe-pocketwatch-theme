@@ -76,6 +76,9 @@ header {
   padding-top:16px;
   padding-bottom:17px;
 }
+.navbar-nav>li>a:hover{
+  background: rgba(235,235,235,0.5);
+}
 .navbar .navbar-nav {
   display: inline-block;
   float: none;
@@ -84,10 +87,10 @@ header {
   text-align: center;
 }
 .dropdown-menu{
-  background: rgba(232,232,232,0.6);
+  background: rgba(240,240,240,0.7);
 }
 .dropdown-menu li{
-  border-bottom:2px solid #fff;
+  border-bottom:1px solid #fff;
 }
 #navbar{
   max-height:54px;
@@ -116,9 +119,8 @@ header {
 .about-text h1,p{
   margin-bottom:0px;
 }
-
 .about-text p{
-  
+
   background:rgba(255,255,255,0.5);
   padding:15px 25px 15px 25px;
   font-family: playfair;
@@ -126,7 +128,6 @@ header {
   font-size: 36px;/* Approximation due to font substitution */
   font-style: italic;
   text-align: center;
-
 }
 
 /*-------------------gallery-section-----------------*/
