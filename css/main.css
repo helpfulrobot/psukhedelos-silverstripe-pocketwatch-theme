@@ -409,6 +409,13 @@ header {
 .gallery-child{
   margin-top:50px;
 }
+.home-gallery p{
+  
+  font-size: 14px;/* Approximation due to font substitution */
+  font-weight: 500;
+
+  margin:0px 55px 0px 55px;
+}
 .gallery-control{
   position:absolute;
 }
