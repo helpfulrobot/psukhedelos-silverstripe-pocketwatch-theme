@@ -15,7 +15,7 @@
 
 class GalleryAlbum extends Page {
 
-    public static $db=array(
+    public static $db = array(
         'Title' => 'Varchar(255)',
         'Description'=>'Text',
     );
@@ -46,6 +46,9 @@ class GalleryAlbum extends Page {
     public function getCMSFields() {
 
         $fields = parent::getCMSFields();
+
+        $fields->addFieldToTab("Root.Main", new TextField("Description", "Description", "", 100));
+
 
         $conf = GridFieldConfig_RelationEditor::create(10);
         $conf->addComponent($sortable=new GridFieldSortableRows('SortID'));
