@@ -34,13 +34,12 @@
 
                         <% end_loop %>
                     </div>
-                    
                         <a data-slide="prev" href="#media" class="left carousel-control gallery icon-left">
-                        <i class="fa fa-chevron-circle-left"></i>
+                        <i class="fa fa-angle-left"></i>
                       </a>
                         <a data-slide="next" href="#media" class="right carousel-control gallery icon-right">
 
-                            <i class="fa fa-chevron-circle-right"></i>
+                            <i class="fa fa-angle-right"></i>
                         </a>
 
                 </div>

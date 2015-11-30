@@ -411,22 +411,19 @@ header {
 .gallery-control{
   position:absolute;
 }
-.gallery-slice .icon-left{
-  font-size:45px;
-  text-align:center !important;
-  vertical-align: center !important;
-}
-.gallery i{
-  color:white;
-  font-weight: 900 !important
 
+.gallery i{
+  font-weight: 100;
+  background:#ddd;
+  color:white;
+  font-size: 39px;
+  width:39px;
+  height:39px;
+  border-radius:45px;
+  text-align:center ;
+  vertical-align:top;
 }
-.gallery-slice .icon-right{
-  font-size:45px;
-  font-weight:900;
-  text-align:center !important;
-  vertical-align: center !important;
-}
+
 .carousel-control.left,.right{
   background:none !important;
 }
