@@ -36,7 +36,6 @@ class HomePage extends Page {
 
 		return $fields;
 	}
-
 }
 class HomePage_Controller extends ContentController {
 
