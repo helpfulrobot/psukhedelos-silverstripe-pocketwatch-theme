@@ -30,6 +30,11 @@ $('.gallery-view-more .btn').on('click', function(e) {
     $collapse.collapse('toggle');
 });
 
+/* fade hero text on scroll*/
+$(window).scroll(function(){
+    $(".about-text").css("opacity", 1 - $(window).scrollTop() / 300);
+});
+
 
 //dropdown hover show function
 //$('ul.nav li.dropdown').hover(function() {
