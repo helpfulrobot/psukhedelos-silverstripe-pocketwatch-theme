@@ -20,7 +20,7 @@
                             <% end_if %>  
 
                             <div class="col-md-4 "> 
-                                <a class="thumbnail " href="$Link"> <img class="main-logo img-responsive center-block" src="$AlbumCover.Url" /> 
+                                <a class="thumbnail " href="$Link"> <img class="main-logo img-responsive center-block" src="$AlbumCover.CroppedImage(230,230).Url" /> 
                                     <h4>$Title</h4> 
                                 </a> 
                             </div>     
