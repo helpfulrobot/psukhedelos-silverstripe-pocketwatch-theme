@@ -6,7 +6,7 @@
             <div>
 
             <% if $HeaderImage %>
-                <img class="img-responsive center-block" src="$HeaderImage.SetSize(120,120).Url" />
+                <img class="img-responsive center-block" src="$HeaderImage.CroppedImage(84,47).Url" />
             <% else %>
                 <img class="img-responsive center-block " src="./pocket-watch/images/logo.png" />
             <% end_if %>
