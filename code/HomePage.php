@@ -39,14 +39,10 @@ class HomePage extends Page {
 }
 class HomePage_Controller extends ContentController {
 
-	 public function LatestGallery() {
-	 	return GalleryItem::get()
-	 			->sort('SortID', 'ASC')
-	 			->limit(3);
-	 }
-
 	public function GalleryAlbums() {
-		return GalleryAlbum::get();
+		return GalleryAlbum::get()
+				->sort('Sort', 'ASC')
+				->limit(12);
 	}
 
 
