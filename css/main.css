@@ -124,8 +124,8 @@ header {
 }
 .about-text p{
   padding:5px 25px 25px 25px;
-  font-family: PlayfairDisplay;
-  color:  #efefef;
+  font-family: playfair;
+  color:  #040303;
   font-size: 36px;/* Approximation due to font substitution */
   font-style: italic;
   text-align: center;
@@ -160,7 +160,6 @@ header {
   background:rgba(255,255,255,0.8);
 }
 .text-area-section h2,p{
-
   text-align:center;
 }
 .blockquote{
