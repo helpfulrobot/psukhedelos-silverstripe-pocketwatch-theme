@@ -34,7 +34,7 @@
 
                         <% end_loop %>
                     </div>
-
+                    
                         <a data-slide="prev" href="#media" class="left carousel-control gallery icon-left">
                         <i class="fa fa-chevron-circle-left"></i>
                       </a>
