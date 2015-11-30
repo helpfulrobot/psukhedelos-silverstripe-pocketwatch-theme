@@ -47,6 +47,14 @@ class Gallery_Controller extends ContentController {
 
     public function init() {
         parent::init();
+
+        Requirements::javascript("https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js");
+        Requirements::javascript("pocket-watch/js/bootstrap.min.js");
+        Requirements::javascript("pocket-watch/js/jquery.mixitup.min.js");
+        Requirements::javascript("pocket-watch/js/call.mixitup.js");
+
+
+
     }
 
 }

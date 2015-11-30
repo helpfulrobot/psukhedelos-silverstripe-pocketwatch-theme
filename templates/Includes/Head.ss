@@ -8,7 +8,8 @@
     <title>Pocket - Watch</title>
 
     <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
+
     <% require css('pocket-watch/css/bootstrap.min.css') %>
     <%--<% require themedCSS("bootstrap.min") %>--%>
     <!--- Custom -->

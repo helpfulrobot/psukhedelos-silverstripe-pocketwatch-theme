@@ -40,7 +40,7 @@
                         <img class="main-logo-in-mobile hidden-lg hidden-md img-responsive" src="$HeaderImage.Url" />
                       </a>
                         <% else %>
-                        <a href="/home">
+                        <a href="home">
                         <img class=" main-logo-in-mobile hidden-lg hidden-md img-responsive"
                          src="./pocket-watch/images/logo.png" />
                        </a>
@@ -90,7 +90,6 @@
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <% require javascript("https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js") %>
     <% require javascript("pocket-watch/js/bootstrap.min.js") %>
-    <% require javascript("pocket-watch/js/jquery.mixitup.min.js") %>
     <% require javascript("pocket-watch/js/main.js") %>
 
 </body>
