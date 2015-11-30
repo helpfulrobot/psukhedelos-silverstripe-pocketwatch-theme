@@ -110,25 +110,23 @@ header {
 .about-in-home-section{
 }
 .about-text{
-  padding-top:200px;
+  padding-top:80px;
   text-align:center;
-  padding-bottom:200px;
 }
 .about-text h1,p{
   margin-bottom:0px;
-//background:rgba(235,235,235,0.5);
 }
-.about-text h1{
-  color:#383838;
-  padding:25px 25px 5px 25px;
-}
+
 .about-text p{
-  padding:5px 25px 25px 25px;
+  max-height:130px;
+  background:rgba(255,255,255,0.5);
+  padding:15px 25px 15px 25px;
   font-family: playfair;
   color:  #040303;
   font-size: 36px;/* Approximation due to font substitution */
   font-style: italic;
   text-align: center;
+
 }
 
 /*-------------------gallery-section-----------------*/
@@ -407,7 +405,7 @@ header {
 .carousel-control.left,.right span{
   color:#ccc;
 }
-.carousel-inner img{
+.gallery-child .carousel-inner img{
   width:540px;
   height:540px!important;
 }
@@ -465,17 +463,12 @@ header {
 /* End carousel */
 section {
   color: #ffffff;
-  min-height: 500px;
+  min-height: 600px;
   height: auto !important;
   height: 100%;
   padding-top:100px;
 }
-section:active{
-  background:red !important;
-}
-section:visited{
-  background:red !important;
-}
+
 .parallax-1 {
   background: no-repeat center center fixed;
   -webkit-background-size: cover;

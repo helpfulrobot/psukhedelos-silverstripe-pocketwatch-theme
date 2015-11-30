@@ -21,7 +21,7 @@
                    <div class="box ">
                      <a  href="$Link">
                      <img class="img-responsive  name"
-                      alt="" src="$AlbumCover.SetWidth(220).Url">
+                      alt="" src="$AlbumCover.CroppedImage(220,220).Url">
                      <div class="overbox">
 
                       <div class="title overtext"> $Title </div>
