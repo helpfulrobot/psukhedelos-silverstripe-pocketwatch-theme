@@ -14,7 +14,6 @@
                                         <a class="thumbnail " href="#">
                                             <img class="main-logo img-responsive center-block" src="$GalleryImage.Url" />
                                             <h4>$Title</h4>
-                                            <p> $Description </p>
                                         </a>
 
                                     </div>
@@ -105,7 +104,7 @@
                                 <a class="thumbnail" href="#">
                                     <img class="img-responsive" alt="" src="http://placehold.it/350x150">
                                     <h4>Gallery Work</h4>
-                                    
+
                                 </a>
                             </div>
                         </div>

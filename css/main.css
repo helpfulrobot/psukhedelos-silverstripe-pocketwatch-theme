@@ -121,10 +121,10 @@ header {
 }
 .about-text p{
 
-  background:rgba(255,255,255,0.5);
+  text-shadow: 2px 2px 2px rgba(0,0,0,0.9);
   padding:15px 25px 15px 25px;
   font-family: playfair;
-  color:  #040303;
+  color:  #fff;
   font-size: 36px;/* Approximation due to font substitution */
   font-style: italic;
   text-align: center;
