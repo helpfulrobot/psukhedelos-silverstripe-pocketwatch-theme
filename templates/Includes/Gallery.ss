@@ -29,27 +29,21 @@
                                     <a class="thumbnail" href="#">
                                         <img alt="" src="http://placehold.it/350x150">
                                         <h4>Gallery Work</h4>
-                                        <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                                        </p>
+
                                     </a>
                                 </div>
                                 <div class="col-md-4">
                                     <a class="thumbnail" href="#">
                                         <img alt="" src="http://placehold.it/350x150">
                                         <h4>Gallery Work</h4>
-                                        <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                                        </p>
+
                                     </a>
                                 </div>
                                 <div class="col-md-4">
                                     <a class="thumbnail" href="#">
                                         <img class="img-responsive" alt="" src="http://placehold.it/350x150">
                                         <h4>Gallery Work</h4>
-                                        <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                                        </p>
+
                                     </a>
                                 </div>
                             </div>
@@ -69,9 +63,7 @@
                             <a class="thumbnail " href="#">
                                 <img class="img-responsive" alt="" src="http://placehold.it/350x150">
                                 <h4>Gallery Work</h4>
-                                <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                                </p>
+
                             </a>
 
                         </div>
@@ -79,18 +71,14 @@
                             <a class="thumbnail" href="#">
                                 <img class="img-responsive" alt="" src="http://placehold.it/350x150">
                                 <h4>Gallery Work</h4>
-                                <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                                </p>
+
                             </a>
                         </div>
                         <div class="col-md-4">
                             <a class="thumbnail" href="#">
                                 <img class="img-responsive" alt="" src="http://placehold.it/350x150">
                                 <h4>Gallery Work</h4>
-                                <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                                </p>
+
                             </a>
                         </div>
                     </div>
@@ -102,9 +90,7 @@
                                 <a class="thumbnail " href="#">
                                     <img class="img-responsive" alt="" src="http://placehold.it/350x150">
                                     <h4>Gallery Work</h4>
-                                    <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                                    </p>
+
                                 </a>
 
                             </div>
@@ -112,18 +98,14 @@
                                 <a class="thumbnail" href="#">
                                     <img class="img-responsive" alt="" src="http://placehold.it/350x150">
                                     <h4>Gallery Work</h4>
-                                    <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                                    </p>
+
                                 </a>
                             </div>
                             <div class="col-md-4">
                                 <a class="thumbnail" href="#">
                                     <img class="img-responsive" alt="" src="http://placehold.it/350x150">
                                     <h4>Gallery Work</h4>
-                                    <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                                    </p>
+                                    
                                 </a>
                             </div>
                         </div>

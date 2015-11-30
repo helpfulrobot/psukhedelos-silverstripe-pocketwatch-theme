@@ -9,7 +9,7 @@
 
     .navbar-nav li>a {
         font-size:14px;
-        
+
     }
     #navbar{
         margin-top:30px;
@@ -28,6 +28,10 @@
         max-height:100px;
         margin:5px;
 
+    }
+    .gallery-child .carousel-inner img{
+      width:220px;
+      height:220px !important;
     }
     #navbar ul{
         width:100%;
