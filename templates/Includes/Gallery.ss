@@ -1,4 +1,6 @@
 <div class="container-fluid work-gallery-section">
+  <div class="row gallery-slice">
+
     <div class="container">
 
         <div class="container">
@@ -19,7 +21,7 @@
                             <% end_if %>
 
                             <div class="col-md-4">
-                                <a class="thumbnail" href="$Link">
+                                <a href="$Link">
                                     <img class="img-responsive center-block" src="$AlbumCover.CroppedImage(230,230).Url"/>
                                     <h4>$Title</h4>
                                 </a>
@@ -32,12 +34,18 @@
                         <% end_loop %>
                     </div>
 
-                        <a data-slide="prev" href="#media" class="left carousel-control">‹</a>
-                        <a data-slide="next" href="#media" class="right carousel-control">›</a>
+                        <a data-slide="prev" href="#media" class="left carousel-control gallery icon-left">
+                        <i class="fa fa-chevron-circle-left"></i>
+                      </a>
+                        <a data-slide="next" href="#media" class="right carousel-control gallery icon-right">
+
+                            <i class="fa fa-chevron-circle-right"></i>
+                        </a>
 
                 </div>
             </div>
         </div>
 
     </div>
+  </div>
 </div>

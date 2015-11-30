@@ -13,9 +13,10 @@
     <% require css('pocket-watch/css/bootstrap.min.css') %>
     <%--<% require themedCSS("bootstrap.min") %>--%>
     <!--- Custom -->
-    <% require css('pocket-watch/css/main.css') %>
+  
 
     <% require css('pocket-watch/css/typography.css') %>
+      <% require css('pocket-watch/css/main.css') %>
     <% require css('pocket-watch/css/responsive.css') %>
 
     <!-- font-awesome -->
