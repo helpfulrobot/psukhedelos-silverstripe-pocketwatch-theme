@@ -33,7 +33,7 @@
                     </div>
 
                         <a data-slide="prev" href="#media" class="left carousel-control">‹</a>
-                        <a data-slide="next" href="#media" class="rigth carousel-control">›</a>
+                        <a data-slide="next" href="#media" class="right carousel-control">›</a>
 
                 </div>
             </div>
