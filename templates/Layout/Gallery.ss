@@ -6,7 +6,7 @@
         <div class="controls ">
           <a class="filter btn btn-default" data-filter="all">All</a>
           <% loop $ActiveGalleryTags %>
-              <a class="filter btn btn-default btn-tags" data-filter=".category-$Title">
+              <a class="filter btn btn-default btn-tags" data-filter=".category-$ID">
                 $Title.UpperCase</a>
           <% end_loop %>
 
@@ -14,7 +14,7 @@
 
         <div id="Container" class="col-md-10 col-md-offset-1 album-container">
             <% loop $Children %>
-                <div class="mix <% loop $GalleryTags %>category-$Title <% end_loop %> col-md-4"
+                <div class="mix <% loop $GalleryTags %>category-$ID <% end_loop %> col-md-4"
                    data-myorder="$Pos">
 
 
