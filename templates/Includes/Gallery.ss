@@ -6,7 +6,7 @@
         </div>
         <div class='row'>
             <div class='col-md-12'>
-                <div class="carousel slide media-carousel " id="media">
+                <div class="carousel slide media-carousel" id="media" data-ride="carousel">
                     <div class="carousel-inner">
                         <% loop $GalleryAlbums %>  
                             <% if $First %> 
