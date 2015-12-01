@@ -34,10 +34,10 @@
 
                         <% end_loop %>
                     </div>
-                        <a data-slide="prev" href="#media" class="left carousel-control gallery icon-left">
+                        <a data-slide="prev" href="#media" class="left carousel-control gallery icon-left hidden-xs">
                         <i class="fa fa-angle-left"></i>
                       </a>
-                        <a data-slide="next" href="#media" class="right carousel-control gallery icon-right">
+                        <a data-slide="next" href="#media" class="right carousel-control gallery icon-right hidden-xs">
 
                             <i class="fa fa-angle-right"></i>
                         </a>

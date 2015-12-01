@@ -82,9 +82,6 @@
     $Layout
     </div>
     </div>
-
-
-
     <% include Footer %>
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
