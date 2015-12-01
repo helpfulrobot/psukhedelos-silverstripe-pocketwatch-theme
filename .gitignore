@@ -9,3 +9,7 @@ _ss_environment.php
 
 # ignore composer vendor folder
 /vendor/
+
+# ignore sass files
+.sass-cache/
+*.css.map
