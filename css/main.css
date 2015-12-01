@@ -1,24 +1,23 @@
-.Home a {
-  display: none !important;
-  width: 0px; }
-
-.home-section {
-  min-height: 100%;
- }
 
 #body_wrapper {
   display: block;
   position: inherit;
   width: 100%; }
+.Home a {
+  display: none !important;
+  width: 0px; }
 
+.home-section {
+    min-height: 100%;
+}
 .main-nav li > a {
   font-family: Roboto;
   color: #000000;
   font-size: 18px;
   /* Approximation due to font substitution */
   font-weight: 100;
-  text-align: center; }
-
+  text-align: center;
+ }
 .top-logo {
   margin: 0px; }
 
