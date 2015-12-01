@@ -5,7 +5,7 @@
 
         <div class="container">
             <!-- This is not the proper title, we want to know the gallery's name it refers to-->
-            <h2>Gallery</h2>
+            <h2>WORK</h2>
         </div>
 
         <div class='row'>

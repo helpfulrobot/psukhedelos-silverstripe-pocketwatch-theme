@@ -24,7 +24,9 @@
         width:110px;
         max-height:100px;
         margin:5px;
-
+    }
+    .mobile-parallax {
+      margin:0px;
     }
     .gallery-child .carousel-inner img{
       width:220px;
@@ -36,7 +38,6 @@
     .dropdwon{
         width:100%;
     }
-
     .nav-collapsed{
       margin-top:18px;
     }
@@ -45,6 +46,7 @@
         margin-top:22px;
         margin-right:22px;
     }
+
     .navbar-header{
       border-bottom:1px solid #333;
     }
@@ -52,7 +54,6 @@
        max-height:800px !important;
         background:#ccc;
     }
-
     .nav-ul li{
       margin:10px;
     }
@@ -64,9 +65,14 @@
     }
     .dropdown-menu>li>a{
         padding-left:100px !important;
+        padding-top:10px !important;
+        padding-bottom:10px !important;
         margin-top:-5px;
     }
-    .navbar .navbar-collapse {
-
+    section{
+        height:550px !important;
+    }
+    .about-text p{
+      font-size:18px;
     }
 }
