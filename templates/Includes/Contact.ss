@@ -1,5 +1,6 @@
-<section class="parallax-3 contact-section" >
-    <div class="col-sm-6 col-sm-offset-3 text-center contact-section-text-area">
+<section class="parallax-1 contact-section" style="background-image: url($HeroImage.Url)" >
+  <div class="container">
+    <div class="col-sm-8 col-sm-offset-2 text-center contact-section-text-area">
         <h2>CONTACT</h2>
         <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
@@ -10,4 +11,5 @@
             n culpa qui officia deserunt mollit anim id est laborum.
         </p>
     </div>
+  </div>
 </section>

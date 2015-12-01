@@ -1,4 +1,4 @@
-<section class="parallax-2 contact-section" >
+<section class="parallax-1 contact-section" style="background-image: url($HeroImage.Url)">
     <div class="container-fluid  text-area-section">
         <div class="container col-md-offset-3 col-md-6 text-center">
             <div class='award-container row'>
