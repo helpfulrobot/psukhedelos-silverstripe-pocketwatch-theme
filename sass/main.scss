@@ -30,7 +30,10 @@ $nav-font-hover: rgba(242,242,242,0.7);
   font-style: italic;
   text-align: center;
 }
+.navbar-nav > li > a.current{
+  border-bottom:3px solid #333;
 
+}
 .nav-bottom-border{
   border-bottom: 1px solid #333;
 }
@@ -107,7 +110,7 @@ header {
 .navbar-nav > li > a:hover {
   background: none;}
 
-a:hover, .nav .open > a:focus{
+.navbar-nav > li >a:hover, .nav .open > a:focus{
     border-bottom: 3px solid #231f20;
     background: none;
   }
