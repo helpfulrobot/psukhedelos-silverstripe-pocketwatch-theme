@@ -7,23 +7,8 @@ s<head>
     <%--$MetaTags(false)--%>
     <title>Pocket - Watch</title>
 
-    <!-- Bootstrap -->
-    <%--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />--%>
-
-    <%--<% require css('pocket-watch/css/bootstrap.min.css') %>--%>
-    <%--<% require themedCSS("bootstrap.min") %>--%>
-    <!--- Custom -->
-  
-
-    <%--<% require css('pocket-watch/css/typography.css') %>--%>
-      <% require css('pocket-watch/css/main.css') %>
-    <%--<% require css('pocket-watch/css/responsive.css') %>--%>
-
-    <!-- font-awesome -->
-    <%--<% require css("https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css") %>--%>
-
-
-
+    <% require css('pocket-watch/css/main.css') %>
+    
     <%--<link href="$ThemeDir/css/main.css" rel="stylesheet"/>--%>
     <%--<link href="$ThemeDir/css/responsive.css" rel="stylesheet"/>--%>
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
