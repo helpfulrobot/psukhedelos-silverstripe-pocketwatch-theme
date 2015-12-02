@@ -8,7 +8,7 @@ s<head>
     <title>Pocket - Watch</title>
 
     <% require css('pocket-watch/css/main.css') %>
-    
+
     <%--<link href="$ThemeDir/css/main.css" rel="stylesheet"/>--%>
     <%--<link href="$ThemeDir/css/responsive.css" rel="stylesheet"/>--%>
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
