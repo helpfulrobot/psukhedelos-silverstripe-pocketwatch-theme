@@ -1,3 +1,11 @@
+// Import Bootstrap Compass integration
+@import "bootstrap-compass";
+
+// Import custom Bootstrap variables
+@import "utils/bootstrap-variables";
+
+// Import Bootstrap for Sass
+@import "bootstrap";
 
 $bg-white: #fff;
 $grey: #333;

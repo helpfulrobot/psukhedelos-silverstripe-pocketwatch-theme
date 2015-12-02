@@ -1,0 +1,9 @@
+//I think we can get rid of this now
+// Import Bootstrap Compass integration
+@import "../../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.3.6/assets/stylesheets/bootstrap-compass";
+
+// Import custom Bootstrap variables
+@import "bootstrap-variables";
+
+// Import Bootstrap for Sass
+@import "../../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.3.6/assets/stylesheets/bootstrap";
