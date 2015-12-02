@@ -32,7 +32,19 @@ $('.gallery-view-more .btn').on('click', function(e) {
 
 /* fade hero text on scroll*/
 $(window).scroll(function(){
-    $(".about-text").css("opacity", 1 - $(window).scrollTop() / 500);
+  var scroll = $(window).scrollTop();
+  $(".about-text").css("opacity", 1 - $(window).scrollTop() / 300);
+  if (scroll >= 200) {
+
+    $(".toggle-shadow").addClass("drop-shadow");
+    $(".tb-navbar-right").removeClass("nav-bottom-border");
+
+
+  } else {
+    $(".toggle-shadow").removeClass("drop-shadow");
+    $(".tb-navbar-right").addClass("nav-bottom-border");
+
+  }
 });
 
 

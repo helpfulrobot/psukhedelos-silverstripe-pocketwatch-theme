@@ -24,7 +24,7 @@
         </div>
   </header>
 
-  <div id="nav" class="navbar-wrapper main-nav  navbar-static-top">
+  <div id="nav" class="navbar-wrapper main-nav  navbar-static-top toggle-shadow">
         <nav id="nav" class="navbar ">
             <div class="container">
                 <div class="navbar-header row">
@@ -46,7 +46,7 @@
                        </a>
                     <% end_if %>
                 </div>
-                <div id="navbar" class="navbar-collapse collapse ">
+                <div id="navbar" class="navbar-collapse collapse  tb-navbar-right nav-bottom-border">
                     <div class="row nav-header-shadow">
                         <ul class="nav navbar-nav ">
                             <% cached 'Menu', $List('SiteTree').max('LastEdited') %>
