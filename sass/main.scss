@@ -105,12 +105,19 @@ header {
 
 .navbar-nav > li > a {
   @extend  .nav-font;
-  padding-top: 16px;
-  padding-bottom: 17px; }
+  }
 
 .navbar-nav > li > a:hover {
-  background: $bg-gradient-1; }
+  background: none;}
 
+a:hover, .nav .open > a:focus{
+    border-bottom: 3px solid #231f20;
+    background: none;
+  }
+.open>a:focus, .nav .open>a:hover{
+  border-bottom: 3px solid #231f20;
+  background: none;
+}
 .navbar .navbar-nav {
   display: inline-block;
   float: none;
@@ -120,6 +127,7 @@ header {
   text-align: center; }
 
 .dropdown-menu {
+  margin-top:2px !important;
   min-width:169px;
   margin-left:-20px;
   background: $dropdown-color;
@@ -132,7 +140,9 @@ header {
    padding:13px;
    font-size: 14px !important;
    font-weight: 100;
-   text-align: left;}
+   text-align: left;
+ margin-left:10px;
+margin-right:10px;}
 
 #navbar {
   max-height: 54px;
