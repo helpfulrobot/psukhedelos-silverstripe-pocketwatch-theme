@@ -11,7 +11,7 @@ $bg-white: #fff;
 $grey: #333;
 
 $bg-gradient-1 : rgba(232,232,232,0.5);
-$bg-gradient-2 : rgba(242,242,242,0.7);
+$dropdown-color: #fff;
 
 $nav-font-color: #000;
 $nav-font-hover: rgba(242,242,242,0.7);
@@ -113,20 +113,29 @@ header {
 
 .navbar .navbar-nav {
   display: inline-block;
-  float: none; }
+  float: none;
+}
 
 .navbar .navbar-collapse {
   text-align: center; }
 
 .dropdown-menu {
-  background: $bg-gradient-2; }
+  min-width:169px;
+  margin-left:-20px;
+  background: $dropdown-color;
+    }
 
-.dropdown-menu li {
-  border-bottom: 1px solid #fff; }
+.dropdown-menu li >a{
+  border-bottom: 1px solid #ededed;
+  font-family: Roboto;
+   color:  #000000;
+   padding:13px;
+   font-size: 14px !important;
+   font-weight: 100;
+   text-align: left;}
 
 #navbar {
   max-height: 54px;
-
   margin-bottom: -1px; }
 
 .nav-collapsed {

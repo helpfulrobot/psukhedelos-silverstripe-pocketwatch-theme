@@ -55,12 +55,12 @@
                                     <li class="$LinkingMode dropdown ">
                                         <a href="$Link"  class="$LinkingMode " data-toggle="dropdown"
                                            aria-haspopup="true" aria-expanded="false">
-                                            $MenuTitle.UpperCase
+                                            $MenuTitle
                                         </a>
                                         <ul class="container-fluid dropdown-menu" role="menu">
-                                            <li class="$LinkingMode "><a href="$Link" >$MenuTitle.UpperCase</a></li>
+                                            <li class="$LinkingMode "><a href="$Link" >$MenuTitle</a></li>
                                             <% control $Children %>
-                                                <li><a href="$Link"  class="$LinkingMode ">$MenuTitle.UpperCase</a></li>
+                                                <li><a href="$Link"  class="$LinkingMode ">$MenuTitle</a></li>
                                             <% end_control %>
                                         </ul>
                                     </li>

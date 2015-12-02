@@ -33,6 +33,9 @@
         max-height:100px;
         margin:5px;
     }
+    .navbar .navbar-nav {
+      border-top:1px solid #ccc;
+    }
     .nav-bottom-border{
       border-bottom: none;
     }
@@ -70,10 +73,10 @@
         margin-top:22px;
         margin-right:22px;
     }
-  
+
     #navbar{
        max-height:800px !important;
-        background:#ccc;
+
     }
     .nav-ul li{
       margin:10px;

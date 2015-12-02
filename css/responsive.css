@@ -48,80 +48,84 @@
   }
 
   /* line 36, ../sass/responsive.scss */
+  .navbar .navbar-nav {
+    border-top: 1px solid #ccc;
+  }
+
+  /* line 39, ../sass/responsive.scss */
   .nav-bottom-border {
     border-bottom: none;
   }
 
-  /* line 39, ../sass/responsive.scss */
+  /* line 42, ../sass/responsive.scss */
   .navbar-static-top {
     -webkit-box-shadow: 0 1px 6px #ccc;
     -moz-box-shadow: 0 1px 6px #ccc;
     box-shadow: 0 1px 6px #ccc;
   }
 
-  /* line 44, ../sass/responsive.scss */
+  /* line 47, ../sass/responsive.scss */
   section {
     width: 100%;
     height: 500px !important;
   }
 
-  /* line 48, ../sass/responsive.scss */
+  /* line 51, ../sass/responsive.scss */
   .parallax-1 {
     background-attachment: scroll;
   }
 
-  /* line 51, ../sass/responsive.scss */
+  /* line 54, ../sass/responsive.scss */
   .mobile-parallax {
     margin: 0px;
   }
 
-  /* line 54, ../sass/responsive.scss */
+  /* line 57, ../sass/responsive.scss */
   .nav-header-shadow {
     text-align: left;
   }
 
-  /* line 57, ../sass/responsive.scss */
+  /* line 60, ../sass/responsive.scss */
   .navbar-nav {
     width: 100%;
     height: auto;
     max-height: 400px;
   }
 
-  /* line 62, ../sass/responsive.scss */
+  /* line 65, ../sass/responsive.scss */
   .dropdown {
     width: 100%;
   }
 
-  /* line 65, ../sass/responsive.scss */
+  /* line 68, ../sass/responsive.scss */
   .nav-collapsed {
     margin-top: 18px;
   }
 
-  /* line 68, ../sass/responsive.scss */
+  /* line 71, ../sass/responsive.scss */
   .navbar-toggle {
     background: #ddd;
     margin-top: 22px;
     margin-right: 22px;
   }
 
-  /* line 74, ../sass/responsive.scss */
+  /* line 77, ../sass/responsive.scss */
   #navbar {
     max-height: 800px !important;
-    background: #ccc;
   }
 
-  /* line 78, ../sass/responsive.scss */
+  /* line 81, ../sass/responsive.scss */
   .nav-ul li {
     margin: 10px;
   }
 
-  /* line 82, ../sass/responsive.scss */
+  /* line 85, ../sass/responsive.scss */
   .main-nav li > a {
     padding-left: 45px;
     text-align: left;
   }
 
-  /* line 86, ../sass/responsive.scss */
+  /* line 89, ../sass/responsive.scss */
   .dropdown-menu > li > a {
     padding-left: 100px !important;
     padding-top: 13px !important;
@@ -129,18 +133,18 @@
     margin-top: -5px;
   }
 
-  /* line 92, ../sass/responsive.scss */
+  /* line 95, ../sass/responsive.scss */
   .gallery-child .carousel-inner img {
     width: 220px;
     height: 220px !important;
   }
 
-  /* line 96, ../sass/responsive.scss */
+  /* line 99, ../sass/responsive.scss */
   section {
     height: 550px !important;
   }
 
-  /* line 99, ../sass/responsive.scss */
+  /* line 102, ../sass/responsive.scss */
   .about-text p {
     font-size: 18px;
   }
