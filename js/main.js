@@ -32,7 +32,7 @@ $('.gallery-view-more .btn').on('click', function(e) {
 
 /* fade hero text on scroll*/
 $(window).scroll(function(){
-    $(".about-text").css("opacity", 1 - $(window).scrollTop() / 300);
+    $(".about-text").css("opacity", 1 - $(window).scrollTop() / 500);
 });
 
 
