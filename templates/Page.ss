@@ -49,7 +49,7 @@
                 <div id="navbar" class="navbar-collapse collapse  tb-navbar-right nav-bottom-border">
                     <div class="row nav-header-shadow">
                         <ul class="nav navbar-nav ">
-                            <% cached 'Menu', $List('SiteTree').max('LastEdited') %>
+                            <!-- <% cached 'Menu', $List('SiteTree').max('LastEdited') %> -->
                             <% control $Menu(1) %>
                                 <% if $Children %>
                                     <li class="$LinkingMode dropdown ">
@@ -58,7 +58,7 @@
                                             $MenuTitle.UpperCase
                                         </a>
                                         <ul class="container-fluid dropdown-menu" role="menu">
-                                            <li class="$LinkingMode"><a href="$Link" >$MenuTitle.UpperCase</a></li>
+                                            <li class="$LinkingMode "><a href="$Link" >$MenuTitle.UpperCase</a></li>
                                             <% control $Children %>
                                                 <li><a href="$Link"  class="$LinkingMode ">$MenuTitle.UpperCase</a></li>
                                             <% end_control %>
@@ -68,7 +68,7 @@
                                     <li class="$LinkingMode $MenuTitle"><a href="$Link" >$MenuTitle.UpperCase</a></li>
                                 <% end_if %>
                             <% end_control %>
-                        <% end_cached %>
+                        <!-- <% end_cached %> -->
                         </ul>
                     </div>
                 </div>
