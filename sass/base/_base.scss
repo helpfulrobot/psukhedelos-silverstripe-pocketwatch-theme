@@ -7,6 +7,11 @@
 // Import Bootstrap for Sass
 @import "bootstrap";
 
+// Import FontAwesome for Sass
+@import "font-awesome-compass";
+@import "font-awesome";
+@import "../vendors/font-awesome/font-awesome";
+
 // Import include-media, a Sass library for writing CSS media queries in an easy and maintainable way,
 // using a natural and simplistic syntax.  See: http://include-media.com/
 @import "../vendors/_include-media";
