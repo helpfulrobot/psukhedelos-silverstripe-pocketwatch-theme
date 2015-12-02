@@ -16,11 +16,23 @@
   }
 
   /* line 13, ../sass/responsive.scss */
+  .nav-bottom-border {
+    border-bottom: none;
+  }
+
+  /* line 16, ../sass/responsive.scss */
+  .navbar-static-top {
+    -webkit-box-shadow: 0 1px 6px #ccc;
+    -moz-box-shadow: 0 1px 6px #ccc;
+    box-shadow: 0 1px 6px #ccc;
+  }
+
+  /* line 21, ../sass/responsive.scss */
   #navbar {
     margin-top: 30px;
   }
 
-  /* line 16, ../sass/responsive.scss */
+  /* line 24, ../sass/responsive.scss */
   .main-logo-in-mobile {
     width: 120px;
     max-height: 100px;
@@ -28,81 +40,88 @@
   }
 }
 @media (max-width: 768px) {
-  /* line 23, ../sass/responsive.scss */
+  /* line 31, ../sass/responsive.scss */
   .main-logo-in-mobile {
     width: 110px;
     max-height: 100px;
     margin: 5px;
   }
 
-  /* line 28, ../sass/responsive.scss */
+  /* line 36, ../sass/responsive.scss */
+  .nav-bottom-border {
+    border-bottom: none;
+  }
+
+  /* line 39, ../sass/responsive.scss */
+  .navbar-static-top {
+    -webkit-box-shadow: 0 1px 6px #ccc;
+    -moz-box-shadow: 0 1px 6px #ccc;
+    box-shadow: 0 1px 6px #ccc;
+  }
+
+  /* line 44, ../sass/responsive.scss */
   section {
     width: 100%;
     height: 500px !important;
   }
 
-  /* line 32, ../sass/responsive.scss */
+  /* line 48, ../sass/responsive.scss */
   .parallax-1 {
     background-attachment: scroll;
   }
 
-  /* line 35, ../sass/responsive.scss */
+  /* line 51, ../sass/responsive.scss */
   .mobile-parallax {
     margin: 0px;
   }
 
-  /* line 38, ../sass/responsive.scss */
+  /* line 54, ../sass/responsive.scss */
   .nav-header-shadow {
     text-align: left;
   }
 
-  /* line 41, ../sass/responsive.scss */
+  /* line 57, ../sass/responsive.scss */
   .navbar-nav {
     width: 100%;
     height: auto;
     max-height: 400px;
   }
 
-  /* line 46, ../sass/responsive.scss */
+  /* line 62, ../sass/responsive.scss */
   .dropdown {
     width: 100%;
   }
 
-  /* line 49, ../sass/responsive.scss */
+  /* line 65, ../sass/responsive.scss */
   .nav-collapsed {
     margin-top: 18px;
   }
 
-  /* line 52, ../sass/responsive.scss */
+  /* line 68, ../sass/responsive.scss */
   .navbar-toggle {
     background: #ddd;
     margin-top: 22px;
     margin-right: 22px;
   }
 
-  /* line 57, ../sass/responsive.scss */
-  .navbar-header {
-    border-bottom: 1px solid #777;
-  }
-
-  /* line 60, ../sass/responsive.scss */
+  /* line 74, ../sass/responsive.scss */
   #navbar {
     max-height: 800px !important;
     background: #ccc;
   }
 
-  /* line 64, ../sass/responsive.scss */
+  /* line 78, ../sass/responsive.scss */
   .nav-ul li {
     margin: 10px;
   }
 
-  /* line 68, ../sass/responsive.scss */
+  /* line 82, ../sass/responsive.scss */
   .main-nav li > a {
     padding-left: 45px;
     text-align: left;
   }
 
-  /* line 72, ../sass/responsive.scss */
+  /* line 86, ../sass/responsive.scss */
   .dropdown-menu > li > a {
     padding-left: 100px !important;
     padding-top: 13px !important;
@@ -110,18 +129,18 @@
     margin-top: -5px;
   }
 
-  /* line 78, ../sass/responsive.scss */
+  /* line 92, ../sass/responsive.scss */
   .gallery-child .carousel-inner img {
     width: 220px;
     height: 220px !important;
   }
 
-  /* line 82, ../sass/responsive.scss */
+  /* line 96, ../sass/responsive.scss */
   section {
     height: 550px !important;
   }
 
-  /* line 85, ../sass/responsive.scss */
+  /* line 99, ../sass/responsive.scss */
   .about-text p {
     font-size: 18px;
   }
