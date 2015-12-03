@@ -2,7 +2,7 @@
 /**
  * Gallery
  * This holds all of our Gallery Albums.
- *
+ * @TODO: rename Gallery Holder
  * @package white-rabbits
  * @subpackage pocket-watch
  *
