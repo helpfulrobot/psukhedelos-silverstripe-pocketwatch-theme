@@ -279,11 +279,47 @@ margin-right:10px;}
   width: 360px;
   height: 482px;
 }
+.form-header{
+  color:  #000000;
+  font-size: 36px;
+  font-weight: 400;
+  text-align: left;
+}
+.form-name label,.form-email label,.form-message label{
+  font-family: Roboto;
+  color:  #000000;
+  font-size: 18px;/* Approximation due to font substitution */
+  font-weight: 300;
+  text-align: left;
+  margin-top:28px;
+}
+input.form-name{
+  border:none;
+  width:100%;
+  margin-top:22px;
+  border-bottom:1px solid #777;
+}
+input.form-email{
+  border:none;
+  width:100%;
+  margin-top:22px;
+  border-bottom:1px solid #777;
+}
+textarea.form-message{
+  width:100%;
+  margin-top:22px;
+}
+#UserForm_Form_action_process{
+  margin-top:40px;
+  border:1px solid #333;
+  background:none;
+  padding:7px 22px 7px 22px;
+}
 /*-------------------footer-section-------------------*/
 .footer-section {
   min-height: 300px;
   background:#231f20;
-  padding-bottom: 50px;
+
   }
 
 .footer-line {

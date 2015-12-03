@@ -4,7 +4,7 @@
     <div class="row  footer-line">
         <div class="footer ">
             <div>
-              
+
             <% if $HeaderImage %>
                 <img class="img-responsive center-block" src="$HeaderImage.CroppedImage(82,47).Url" />
             <% else %>
