@@ -2,7 +2,7 @@
 
 @import "base/base";
 @import "base/typography";
-@import "responsive";
+
 
 $bg-white: #fff;
 $grey: #333;
@@ -47,10 +47,6 @@ $nav-font-hover: rgba(242,242,242,0.7);
   display: block;
   position: inherit;
   width: 100%;
-}
-.Home a {
-  display: none !important;
-  width: 0px;
 }
 .home-section {
     min-height: 100%;
@@ -138,7 +134,7 @@ header {
   font-family: Roboto;
    color:  #000000;
    padding:13px;
-   font-size: 14px !important;
+   font-size: 14px ;
    font-weight: 100;
    text-align: left;
  margin-left:10px;
@@ -178,7 +174,7 @@ margin-right:10px;}
 }
 
 .thumbnail:hover {
-  text-decoration: none !important; }
+  text-decoration: none; }
 
 .gallery-view-more img {
   width: 100%; }
@@ -540,12 +536,6 @@ textarea.form-message{
   text-align: center;
   vertical-align: top; }
 
-.carousel-control.left, .right {
-  background: none !important; }
-
-.carousel-control.left, .right span {
-  color: #ccc; }
-
 /* carousel */
 .media-carousel {
   margin-bottom: 0;
@@ -556,7 +546,7 @@ textarea.form-message{
 .media-carousel .carousel-control.left {
   left: -142px;
   background-image: none;
-  background: none repeat scroll 0 0 #222222;
+
   border-radius: 23px 23px 23px 23px;
   height: 40px;
   width: 40px;
@@ -564,9 +554,9 @@ textarea.form-message{
 
 /* Next button  */
 .media-carousel .carousel-control.right {
-  right: -142px !important;
+  right: -142px ;
   background-image: none;
-  background: none repeat scroll 0 0 #222222;
+
   border-radius: 23px 23px 23px 23px;
   height: 40px;
   width: 40px;
@@ -586,6 +576,13 @@ textarea.form-message{
 .media-carousel .carousel-indicators .active {
   background: #333333; }
 
+.carousel-control.left,.carousel-control.right {
+  background: none;}
+.gallery-cover{
+  background:none;
+}
+.carousel-control.left, .right span {
+  color: #ccc; }
 .thumbnail {
   color: #383838; }
 
@@ -593,7 +590,7 @@ textarea.form-message{
 section {
   color: #ffffff;
   min-height: 600px;
-  height: auto !important;
+  height: auto;
   height: 100%;
   padding-top: 100px; }
 
@@ -619,3 +616,4 @@ section {
   color: #222; }
 
 /*# sourceMappingURL=main.css.map */
+@import "responsive";

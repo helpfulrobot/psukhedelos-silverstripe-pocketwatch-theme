@@ -7,7 +7,6 @@
         float:right;
     }
     .navbar-nav li>a {
-
         padding:17px 8px 17px 8px;
     }
     .nav-bottom-border{
@@ -33,6 +32,7 @@
         max-height:100px;
         margin:5px;
     }
+
     .navbar .navbar-nav {
       border-top:1px solid #ccc;
     }
@@ -46,7 +46,7 @@
     }
     section{
       width:100%;
-      height:500px !important;
+      height:500px;
     }
     .parallax-1{
       background-attachment: scroll;
@@ -60,7 +60,7 @@
     .navbar-nav {
       width:100%;
       height: auto;
-     max-height: 400px;
+      max-height: 400px;
      }
     .dropdown{
         width:100%;
@@ -73,33 +73,32 @@
         margin-top:22px;
         margin-right:22px;
     }
-
     #navbar{
-       max-height:800px !important;
-
+       max-height:800px;
     }
     .nav-ul li{
       margin:10px;
     }
-
     .main-nav li>a{
         padding-left:45px;
         text-align:left;
     }
-    .dropdown-menu>li>a{
-        padding-left:100px !important;
-        padding-top:13px !important;
-        padding-bottom:13px !important;
+    .mobile-dropdown{
+      padding-left:60px;
+        padding-top:13px ;
+        padding-bottom:13px ;
         margin-top:-5px;
     }
+  
     .gallery-child .carousel-inner img{
       width:220px;
-      height:220px !important;
+      height:220px;
     }
     section{
-        height:550px !important;
+        height:550px ;
     }
     .about-text p{
       font-size:18px;
     }
+
 }

@@ -8,7 +8,7 @@
             <% if $HeaderImage %>
                 <img class="img-responsive center-block" src="$HeaderImage.CroppedImage(82,47).Url" />
             <% else %>
-                <img class="img-responsive center-block " src="./pocket-watch/images/logo.png" />
+                <img class="img-responsive center-block " src="./pocket-watch/images/new.png" />
             <% end_if %>
             </div>
 

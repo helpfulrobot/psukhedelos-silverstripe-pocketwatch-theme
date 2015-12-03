@@ -52,20 +52,20 @@
                             <%--<!-- <% cached 'Menu', $List('SiteTree').max('LastEdited') %> -->--%>
                               <% control $Menu(1) %>
                                 <% if $Children %>
-                                    <li class="  dropdown">
+                                    <li class=" mobile-mainnav  dropdown">
                                         <a href="$Link"  class="" data-toggle="dropdown"
                                            aria-haspopup="true" aria-expanded="false">
                                             $MenuTitle
                                         </a>
                                         <ul class="container-fluid dropdown-menu" role="menu">
-                                            <li><a href="$Link" >$MenuTitle</a></li>
+                                            <li class="mobile-dropdown"><a href="$Link" class="dropdown-link" >$MenuTitle</a></li>
                                             <% control $Children %>
-                                                <li><a href="$Link" >$MenuTitle</a></li>
+                                                <li class="mobile-dropdown"><a href="$Link" class="dropdown-link" >$MenuTitle</a></li>
                                             <% end_control %>
                                         </ul>
                                     </li>
                                 <% else %>
-                                    <li class=""><a href="$Link" class="">$MenuTitle.UpperCase</a></li>
+                                    <li class="mobile-mainnav"><a href="$Link" class="">$MenuTitle.UpperCase</a></li>
                                 <% end_if %>
                             <% end_control %>
                           <%--<!-- <% end_cached %> -->--%>
