@@ -48,27 +48,27 @@
                 </div>
                 <div id="navbar" class="navbar-collapse collapse  tb-navbar-right nav-bottom-border">
                     <div class="row nav-header-shadow">
-                        <ul class="nav navbar-nav ">
+                        <ul class="nav navbar-nav">
                             <!-- <% cached 'Menu', $List('SiteTree').max('LastEdited') %> -->
-                            <% control $Menu(1) %>
+                              <% control $Menu(1) %>
                                 <% if $Children %>
-                                    <li class="$LinkingMode dropdown ">
-                                        <a href="$Link"  class="$LinkingMode " data-toggle="dropdown"
+                                    <li class="dropdown">
+                                        <a href="$Link"  class="$LinkingMode" data-toggle="dropdown"
                                            aria-haspopup="true" aria-expanded="false">
                                             $MenuTitle
                                         </a>
                                         <ul class="container-fluid dropdown-menu" role="menu">
-                                            <li class="$LinkingMode "><a href="$Link" >$MenuTitle</a></li>
+                                            <li><a href="$Link" >$MenuTitle</a></li>
                                             <% control $Children %>
-                                                <li><a href="$Link"  class="$LinkingMode ">$MenuTitle</a></li>
+                                                <li><a href="$Link" >$MenuTitle</a></li>
                                             <% end_control %>
                                         </ul>
                                     </li>
                                 <% else %>
-                                    <li class="$LinkingMode $MenuTitle"><a href="$Link" >$MenuTitle.UpperCase</a></li>
+                                    <li ><a href="$Link" class="$LinkingMode">$MenuTitle.UpperCase</a></li>
                                 <% end_if %>
                             <% end_control %>
-                        <!-- <% end_cached %> -->
+                          <!-- <% end_cached %> -->
                         </ul>
                     </div>
                 </div>
