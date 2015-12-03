@@ -30,7 +30,7 @@ $('.gallery-view-more .btn').on('click', function(e) {
     $collapse.collapse('toggle');
 });
 
-/* fade hero text on scroll*/
+/* fade hero text on scroll + change navigaiton bottom border*/
 $(window).scroll(function(){
   var scroll = $(window).scrollTop();
   $(".about-text").css("opacity", 1 - $(window).scrollTop() / 300);
@@ -47,6 +47,12 @@ $(window).scroll(function(){
   }
 });
 
+//navigation add current page on click
+$(".navbar-nav > li > a ").on('click', function(){
+    console.log('nav li clicked');
+    $(this).parent().addClass('active').siblings().removeClass('active');
+
+  });
 
 //dropdown hover show function
 //$('ul.nav li.dropdown').hover(function() {

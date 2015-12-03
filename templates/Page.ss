@@ -52,8 +52,8 @@
                             <!-- <% cached 'Menu', $List('SiteTree').max('LastEdited') %> -->
                               <% control $Menu(1) %>
                                 <% if $Children %>
-                                    <li class="dropdown">
-                                        <a href="$Link"  class="$LinkingMode" data-toggle="dropdown"
+                                    <li class="  dropdown">
+                                        <a href="$Link"  class="" data-toggle="dropdown"
                                            aria-haspopup="true" aria-expanded="false">
                                             $MenuTitle
                                         </a>
@@ -65,7 +65,7 @@
                                         </ul>
                                     </li>
                                 <% else %>
-                                    <li ><a href="$Link" class="$LinkingMode">$MenuTitle.UpperCase</a></li>
+                                    <li class=""><a href="$Link" class="">$MenuTitle.UpperCase</a></li>
                                 <% end_if %>
                             <% end_control %>
                           <!-- <% end_cached %> -->
