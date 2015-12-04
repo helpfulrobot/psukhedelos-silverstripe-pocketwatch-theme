@@ -12,16 +12,32 @@
             <% end_if %>
             </div>
 
-            <div class="footer-social">
-                <ul class="social-ul">
-                    <li><a href="#" class="social-icon fa fa-2x fa-facebook"></a></li>
-                    <li><a href="#" class="social-icon fa  fa-2x fa-twitter"></a></li>
-                    <li><a href="#" class="social-icon fa fa-2x fa-google-plus"></a></li>
-                    <li><a href="#" class="social-icon fa  fa-2x fa-rss"></a></li>
-                </ul>
+            <div class="social">
+                <% if $SiteConfig.Facebook %>
+                    <div class="social-icon">
+                        <a href="http://$SiteConfig.Facebook" class="fa fa-facebook"></a>
+                    </div>
+                <% end_if %>
+
+                <% if $SiteConfig.Twitter %>
+                    <div class="social-icon">
+                        <a href="http://$SiteConfig.Twitter" class="fa fa-twitter"></a>
+                    </div>
+                <% end_if %>
+                <% if $SiteConfig.Linkedin %>
+                    <div class="social-icon">
+                        <a href="http://$SiteConfig.Linkedin" class="fa fa-linkedin"></a>
+                    </div>
+                <% end_if %>
+                <% if $SiteConfig.Instagram %>
+                    <div class="social-icon">
+                    <a href="http://$SiteConfig.Instagram" class="fa fa-instagram"></a>
+                </div>
+                <% end_if %>
             </div>
+
             <div class="footer-email">
-                <div class="email-address">jess@silverstripe.com</div>
+                <div class="email-address">$SiteConfig.Email</div>
             </div>
 
         </div>

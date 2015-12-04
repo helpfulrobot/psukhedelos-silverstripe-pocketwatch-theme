@@ -335,7 +335,8 @@ textarea.form-message{
 .footer {
   width: 240px;
   margin: 0px auto;
-  margin-top: 50px; }
+  margin-top: 50px;
+}
 
 .footer-section img {
   width: 82px;
@@ -343,7 +344,8 @@ textarea.form-message{
 
 .footer-social {
   margin: 0px auto;
-  display: block; }
+  display: block;
+}
 
 .footer-email{
   margin-top:20px;
@@ -356,23 +358,24 @@ textarea.form-message{
 
   transform: scaleY(1.0012);/* width and height properties ommitted due to transform */
 }
-.social-ul {
-  list-style: none;
-  width: 260px;
-  margin: 0px auto;
-  margin-top: 10px;
-  margin-left:-10px;}
+.social {
+  width: 100%;
+  text-align: center;
+}
 
-.social-ul li{
-  padding:5px;
-  display: inline-block; }
+$icon-size: 20px;
+$icon-height: $icon-size + 10;
+$icon-width: $icon-size + 10;
 
 .social-icon{
-  padding:5px 8px 5px 8px;
-  font-size:20px;
-  border-radius: 0px;
+  display:inline-block;
+  vertical-align:middle;
+  height: $icon-height;
+  width: $icon-width;
   background: #d7d7d7;
-  }
+  font-size: $icon-size;
+}
+
 .social-icon:hover{
   color: #d7d7d7;
   background: #333333; }
