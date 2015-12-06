@@ -367,8 +367,8 @@ th {
 }
 @font-face {
   font-family: 'Glyphicons Halflings';
-  src: url(../fonts/bootstrap/glyphicons-halflings-regular.eot?1449016624);
-  src: url(../fonts/bootstrap/glyphicons-halflings-regular.eot?&1449016624#iefix) format("embedded-opentype"), url(../fonts/bootstrap/glyphicons-halflings-regular.woff2?1449016624) format("woff2"), url(../fonts/bootstrap/glyphicons-halflings-regular.woff?1449016624) format("woff"), url(../fonts/bootstrap/glyphicons-halflings-regular.ttf?1449016624) format("truetype"), url(../fonts/bootstrap/glyphicons-halflings-regular.svg?1449016624#glyphicons_halflingsregular) format("svg");
+  src: url(../fonts/bootstrap/glyphicons-halflings-regular.eot?1449015768);
+  src: url(../fonts/bootstrap/glyphicons-halflings-regular.eot?&1449015768#iefix) format("embedded-opentype"), url(../fonts/bootstrap/glyphicons-halflings-regular.woff2?1449015768) format("woff2"), url(../fonts/bootstrap/glyphicons-halflings-regular.woff?1449015768) format("woff"), url(../fonts/bootstrap/glyphicons-halflings-regular.ttf?1449015768) format("truetype"), url(../fonts/bootstrap/glyphicons-halflings-regular.svg?1449015768#glyphicons_halflingsregular) format("svg");
 }
 /* line 24, ../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/_glyphicons.scss */
 .glyphicon {
@@ -8799,8 +8799,8 @@ button.close {
  * -------------------------- */
 @font-face {
   font-family: 'FontAwesome';
-  src: url(../fonts/font-awesome/fontawesome-webfont.eot?1449086450);
-  src: url(../fonts/font-awesome/fontawesome-webfont.eot?&1449086450#iefix) format("embedded-opentype"), url(../fonts/font-awesome/fontawesome-webfont.woff2?1449086450) format("woff2"), url(../fonts/font-awesome/fontawesome-webfont.woff?1449086450) format("woff"), url(../fonts/font-awesome/fontawesome-webfont.ttf?1449086450) format("truetype"), url(../fonts/font-awesome/fontawesome-webfont.svg?1449086450#fontawesomeregular) format("svg");
+  src: url(../fonts/font-awesome/fontawesome-webfont.eot?1449086123);
+  src: url(../fonts/font-awesome/fontawesome-webfont.eot?&1449086123#iefix) format("embedded-opentype"), url(../fonts/font-awesome/fontawesome-webfont.woff2?1449086124) format("woff2"), url(../fonts/font-awesome/fontawesome-webfont.woff?1449086124) format("woff"), url(../fonts/font-awesome/fontawesome-webfont.ttf?1449086124) format("truetype"), url(../fonts/font-awesome/fontawesome-webfont.svg?1449086123#fontawesomeregular) format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -12582,19 +12582,19 @@ textarea.form-message {
   margin-top: 50px;
 }
 
-/* line 340, ../sass/main.scss */
+/* line 341, ../sass/main.scss */
 .footer-section img {
   width: 82px;
   height: 47px;
 }
 
-/* line 344, ../sass/main.scss */
+/* line 345, ../sass/main.scss */
 .footer-social {
   margin: 0px auto;
   display: block;
 }
 
-/* line 348, ../sass/main.scss */
+/* line 350, ../sass/main.scss */
 .footer-email {
   margin-top: 20px;
   margin-left: 10px;
@@ -12608,36 +12608,29 @@ textarea.form-message {
   /* width and height properties ommitted due to transform */
 }
 
-/* line 359, ../sass/main.scss */
-.social-ul {
-  list-style: none;
-  width: 260px;
-  margin: 0px auto;
-  margin-top: 10px;
-  margin-left: -10px;
-}
-
-/* line 366, ../sass/main.scss */
-.social-ul li {
-  padding: 5px;
-  display: inline-block;
+/* line 361, ../sass/main.scss */
+.social {
+  width: 100%;
+  text-align: center;
 }
 
 /* line 370, ../sass/main.scss */
 .social-icon {
-  padding: 5px 8px 5px 8px;
-  font-size: 20px;
-  border-radius: 0px;
+  display: inline-block;
+  vertical-align: middle;
+  height: 30px;
+  width: 30px;
   background: #d7d7d7;
+  font-size: 20px;
 }
 
-/* line 376, ../sass/main.scss */
+/* line 379, ../sass/main.scss */
 .social-icon:hover {
   color: #d7d7d7;
   background: #333333;
 }
 
-/* line 380, ../sass/main.scss */
+/* line 383, ../sass/main.scss */
 .footer-copyright {
   font-family: Roboto;
   color: #ffffff;
@@ -12650,49 +12643,49 @@ textarea.form-message {
 
 /*-------------------------media carousel---------------*/
 /* gallery */
-/* line 392, ../sass/main.scss */
+/* line 395, ../sass/main.scss */
 .album-container {
   margin-top: 20px;
 }
 
-/* line 395, ../sass/main.scss */
+/* line 398, ../sass/main.scss */
 .gallery-slice {
   background: #f9f5f4;
 }
 
-/* line 398, ../sass/main.scss */
+/* line 401, ../sass/main.scss */
 .carousel-inner h4 {
   text-align: center;
 }
 
-/* line 401, ../sass/main.scss */
+/* line 404, ../sass/main.scss */
 #Container .mix {
   display: none;
 }
 
-/* line 404, ../sass/main.scss */
+/* line 407, ../sass/main.scss */
 .gallery-child {
   margin-top: 50px;
   padding-bottom: 50px;
 }
 
-/* line 408, ../sass/main.scss */
+/* line 411, ../sass/main.scss */
 .gallery-child .controls {
   margin-bottom: 20px;
 }
 
-/* line 411, ../sass/main.scss */
+/* line 414, ../sass/main.scss */
 .gallery-child .tags-display {
   margin-bottom: 20px;
 }
 
-/* line 414, ../sass/main.scss */
+/* line 417, ../sass/main.scss */
 .active-tag {
   background-color: rgba(235, 235, 235, 0.5);
   border: none;
 }
 
-/* line 418, ../sass/main.scss */
+/* line 421, ../sass/main.scss */
 .btn-tags {
   font-family: Roboto;
   color: #000000;
@@ -12701,27 +12694,27 @@ textarea.form-message {
   text-align: left;
 }
 
-/* line 425, ../sass/main.scss */
+/* line 428, ../sass/main.scss */
 .gallery-child .controls > .btn {
   margin-top: 10px;
   border-radius: 0px;
 }
 
-/* line 429, ../sass/main.scss */
+/* line 432, ../sass/main.scss */
 #myCarousel h3 {
   color: #030202;
   font-size: 24px;
   font-weight: 500;
 }
 
-/* line 434, ../sass/main.scss */
+/* line 437, ../sass/main.scss */
 #myCarousel p {
   color: #030202;
   font-size: 16px;
   font-weight: 300;
 }
 
-/* line 439, ../sass/main.scss */
+/* line 442, ../sass/main.scss */
 .work-gallery-section a {
   font-size: 18px;
   font-weight: 100;
@@ -12729,25 +12722,25 @@ textarea.form-message {
   margin-left: 12px;
 }
 
-/* line 445, ../sass/main.scss */
+/* line 448, ../sass/main.scss */
 .gallery-seperator {
   border-radius: 45px;
   border: 1px solid #ddd;
   margin-bottom: 20px;
 }
 
-/* line 450, ../sass/main.scss */
+/* line 453, ../sass/main.scss */
 .work-gallery-section h2 {
   margin-top: 60px;
 }
 
-/* line 453, ../sass/main.scss */
+/* line 456, ../sass/main.scss */
 #Container {
   margin-top: 40px;
   padding-bottom: 50px;
 }
 
-/* line 457, ../sass/main.scss */
+/* line 460, ../sass/main.scss */
 .box {
   cursor: pointer;
   height: 220px;
@@ -12756,7 +12749,7 @@ textarea.form-message {
   width: 220px;
 }
 
-/* line 464, ../sass/main.scss */
+/* line 467, ../sass/main.scss */
 .box img {
   position: absolute;
   width: 100%;
@@ -12764,7 +12757,7 @@ textarea.form-message {
   z-index: -1;
 }
 
-/* line 470, ../sass/main.scss */
+/* line 473, ../sass/main.scss */
 .box .overbox {
   background-color: rgba(200, 200, 200, 0.8);
   top: 0;
@@ -12777,18 +12770,18 @@ textarea.form-message {
   padding: 90px 10px;
 }
 
-/* line 481, ../sass/main.scss */
+/* line 484, ../sass/main.scss */
 .box:hover .overbox {
   opacity: 1;
 }
 
-/* line 484, ../sass/main.scss */
+/* line 487, ../sass/main.scss */
 .box .overtext {
   transform: translateY(0px);
   -webkit-transform: translateY(40px);
 }
 
-/* line 488, ../sass/main.scss */
+/* line 491, ../sass/main.scss */
 .box .title {
   font-family: Roboto;
   color: #ffffff;
@@ -12801,7 +12794,7 @@ textarea.form-message {
   transition-duration: 0.2s;
 }
 
-/* line 499, ../sass/main.scss */
+/* line 502, ../sass/main.scss */
 .box:hover .title,
 .box:focus .title {
   opacity: 1;
@@ -12809,7 +12802,7 @@ textarea.form-message {
   -webkit-transform: translateY(0px);
 }
 
-/* line 505, ../sass/main.scss */
+/* line 508, ../sass/main.scss */
 .box .tagline {
   font-size: 0.8em;
   opacity: 0;
@@ -12817,7 +12810,7 @@ textarea.form-message {
   transition-duration: 0.2s;
 }
 
-/* line 511, ../sass/main.scss */
+/* line 514, ../sass/main.scss */
 .box:hover .tagline,
 .box:focus .tagline {
   opacity: 1;
@@ -12825,24 +12818,24 @@ textarea.form-message {
   -webkit-transform: translateX(0px);
 }
 
-/* line 517, ../sass/main.scss */
+/* line 520, ../sass/main.scss */
 .gallery-child {
   margin-top: 50px;
 }
 
-/* line 520, ../sass/main.scss */
+/* line 523, ../sass/main.scss */
 .home-gallery p {
   font-size: 14px;
   font-weight: 500;
   margin: 0px 55px 0px 55px;
 }
 
-/* line 525, ../sass/main.scss */
+/* line 528, ../sass/main.scss */
 .gallery-control {
   position: absolute;
 }
 
-/* line 528, ../sass/main.scss */
+/* line 531, ../sass/main.scss */
 .gallery i {
   font-weight: 100;
   background: #ddd;
@@ -12856,7 +12849,7 @@ textarea.form-message {
 }
 
 /* carousel */
-/* line 540, ../sass/main.scss */
+/* line 543, ../sass/main.scss */
 .media-carousel {
   margin-bottom: 0;
   padding: 0 40px 30px 40px;
@@ -12864,7 +12857,7 @@ textarea.form-message {
 }
 
 /* Previous button  */
-/* line 546, ../sass/main.scss */
+/* line 549, ../sass/main.scss */
 .media-carousel .carousel-control.left {
   left: -142px;
   background-image: none;
@@ -12875,7 +12868,7 @@ textarea.form-message {
 }
 
 /* Next button  */
-/* line 556, ../sass/main.scss */
+/* line 559, ../sass/main.scss */
 .media-carousel .carousel-control.right {
   right: -142px;
   background-image: none;
@@ -12886,7 +12879,7 @@ textarea.form-message {
 }
 
 /* Changes the position of the indicators */
-/* line 566, ../sass/main.scss */
+/* line 569, ../sass/main.scss */
 .media-carousel .carousel-indicators {
   right: 50%;
   top: 50%;
@@ -12895,38 +12888,38 @@ textarea.form-message {
 }
 
 /* Changes the colour of the indicators */
-/* line 573, ../sass/main.scss */
+/* line 576, ../sass/main.scss */
 .media-carousel .carousel-indicators li {
   background: #c0c0c0;
 }
 
-/* line 576, ../sass/main.scss */
+/* line 579, ../sass/main.scss */
 .media-carousel .carousel-indicators .active {
   background: #333333;
 }
 
-/* line 579, ../sass/main.scss */
+/* line 582, ../sass/main.scss */
 .carousel-control.left, .carousel-control.right {
   background: none;
 }
 
-/* line 581, ../sass/main.scss */
+/* line 584, ../sass/main.scss */
 .gallery-cover {
   background: none;
 }
 
-/* line 584, ../sass/main.scss */
+/* line 587, ../sass/main.scss */
 .carousel-control.left, .right span {
   color: #ccc;
 }
 
-/* line 586, ../sass/main.scss */
+/* line 589, ../sass/main.scss */
 .thumbnail {
   color: #383838;
 }
 
 /* End carousel */
-/* line 590, ../sass/main.scss */
+/* line 593, ../sass/main.scss */
 section {
   color: #ffffff;
   min-height: 600px;
@@ -12935,7 +12928,7 @@ section {
   padding-top: 100px;
 }
 
-/* line 597, ../sass/main.scss */
+/* line 600, ../sass/main.scss */
 .parallax-1 {
   background: no-repeat center center fixed;
   -webkit-background-size: cover;
@@ -12944,7 +12937,7 @@ section {
   background-size: cover;
 }
 
-/* line 605, ../sass/main.scss */
+/* line 608, ../sass/main.scss */
 .scroll-top {
   position: fixed;
   bottom: 0;
@@ -12956,7 +12949,7 @@ section {
   border-top-right-radius: 3px;
 }
 
-/* line 615, ../sass/main.scss */
+/* line 618, ../sass/main.scss */
 .scroll-top a:link, .scroll-top a:visited {
   color: #222;
 }
