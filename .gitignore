@@ -13,3 +13,6 @@ _ss_environment.php
 # ignore sass files
 .sass-cache/
 *.css.map
+
+# ignore phpstorm ide settings
+.idea/
