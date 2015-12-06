@@ -12488,12 +12488,10 @@ header {
   margin-top: 30px;
   background-color: rgba(229, 229, 229, 0.39);
   width: 361px;
-  height: 120px;
 }
 
-/* line 269, ../sass/main.scss */
+/* line 268, ../sass/main.scss */
 .contact-detail .map {
-  display: block;
   border-width: 0.48000000000000004px;
   border-color: #444444;
   border-style: solid;
@@ -12502,12 +12500,13 @@ header {
   height: 482px;
 }
 
-/* line 278, ../sass/main.scss */
+/* line 277, ../sass/main.scss */
 .form-header {
   color: #000000;
   font-size: 36px;
   font-weight: 400;
   text-align: left;
+  margin-top: -10px;
 }
 
 /* line 284, ../sass/main.scss */

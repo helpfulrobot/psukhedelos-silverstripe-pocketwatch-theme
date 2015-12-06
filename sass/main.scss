@@ -264,10 +264,9 @@ margin-right:10px;}
   margin-top:30px;
   background-color:  rgba(229, 229, 229, 0.39);
   width: 361px;
-  height: 120px;
 }
 .contact-detail .map{
-  display:block;
+  //display:block;
   border-width: 0.48000000000000004px;
   border-color:  #444444;
   border-style: solid;
@@ -280,6 +279,7 @@ margin-right:10px;}
   font-size: 36px;
   font-weight: 400;
   text-align: left;
+  margin-top: -10px;
 }
 .form-name label,.form-email label,.form-message label{
   font-family: Roboto;
