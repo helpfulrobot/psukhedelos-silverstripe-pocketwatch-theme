@@ -14,10 +14,37 @@ $nav-font-color: #000;
 $nav-font-hover: rgba(242,242,242,0.7);
 
 /*------------ pre define class in CSS---------*/
+@mixin breakpoint($class) {
+  @if $class == xs {
+    @media (max-width: 767px) { @content; }
+  }
+
+  @else if $class == sm {
+    @media (min-width: 768px) and (max-width: 991px){ @content; }
+  }
+
+  @else if $class == md {
+    @media (min-width: 992px) and (max-width: 1199px) { @content; }
+  }
+
+  @else if $class == lg {
+    @media (min-width: 1200px) { @content; }
+  }
+
+  @else {
+    @warn "Breakpoint mixin supports: xs, sm, md, lg";
+  }
+}
+
 @mixin font-mixin($font-family, $font-size, $color) {
   font-family: $font-family;
   font-size: $font-size;
   color:$color;
+}
+@mixin box-shadow-mixin($color){
+  -webkit-box-shadow: 0 1px 6px $color;
+     -moz-box-shadow: 0 1px 6px $color;
+          box-shadow: 0 1px 6px $color;
 }
 .nav-font{
   @include font-mixin(Roboto,18px,#000);
@@ -40,14 +67,18 @@ border-bottom:3px solid #333;
 }
 .nav-bottom-border{
   border-bottom: 1px solid #333;
+  @include breakpoint(xs){
+      border-bottom: none;
+  }
+  @include breakpoint(sm) {
+      border-bottom: none;
+  }
 }
 .drop-shadow{
   -webkit-box-shadow: 0 1px 6px #ccc;
      -moz-box-shadow: 0 1px 6px #ccc;
           box-shadow: 0 1px 6px #ccc;
 }
-
-
 /*-------------css start here ------------------*/
 #body_wrapper {
   display: block;
@@ -57,11 +88,16 @@ border-bottom:3px solid #333;
 .home-section {
     min-height: 100%;
 }
-.main-nav li > a {
+.main-nav li>a {
   @extend .nav-font;
+  @include breakpoint(xs) {
+    padding-left:45px;
+    text-align:left;
+  }
  }
 .top-logo {
   margin: 0px;
+
  }
 .main-logo {
   width: 192px;
@@ -70,8 +106,25 @@ border-bottom:3px solid #333;
 
 .main-logo-in-mobile {
   width: 100px;
-  margin-top: 25px; }
+  margin-top: 25px;
+  @include breakpoint(xs) {
+    width:110px;
+    max-height:100px;
+    margin:5px;
+  }
+  @include breakpoint(sm) {
+    width:120px;
+    max-height:100px;
+    margin:5px;
+    float:left
+  }
 
+}
+.tb-navbar-right{
+    @include breakpoint(sm) {
+      float:right;
+    }
+}
 .fall-back-logo {
   width: 192px;
   height: 111px;
@@ -105,13 +158,45 @@ header {
   margin: 0px auto;
   background: $bg-white ; }
 
-.navbar-nav > li > a {
+.navbar-nav  li>a {
   @extend  .nav-font;
+  @include breakpoint(sm) {
+    padding:17px 8px 17px 8px;
   }
-
+  }
+.navbar-nav{
+  @include breakpoint(xs) {
+    width:100%;
+    height: auto;
+    max-height: 400px;
+  }
+  @include breakpoint(sm) {
+    margin-top:-3px;
+  }
+}
+.nav-header-shadow{
+    @include breakpoint(xs) {
+      text-align: left;
+    }
+}
+.navbar-toggle{
+  @include breakpoint(xs) {
+    background:#ddd;
+    margin-top:22px;
+    margin-right:22px;
+  }
+}
+.nav-collapsed{
+  @include breakpoint(xs) {
+  margin-top:18px;
+  }
+}
 .navbar-nav > li > a:hover {
   background: none;}
 
+.navbar-nav >li>a, .nav .open > a{
+    border-bottom: 3px solid #fff;
+}
 .navbar-nav > li >a:hover, .nav .open > a:focus{
     border-bottom: 3px solid #231f20;
     background: none;
@@ -123,6 +208,9 @@ header {
 .navbar .navbar-nav {
   display: inline-block;
   float: none;
+  @include breakpoint(xs) {
+    border-top:1px solid #ccc;
+  }
 }
 
 .navbar .navbar-collapse {
@@ -134,7 +222,11 @@ header {
   margin-left:-20px;
   background: $dropdown-color;
     }
-
+.dropdown{
+   @include breakpoint(xs){
+     width:100%;
+   }
+}
 
 .dropdown-menu li >a{
   @include font-mixin(Roboto,14px,#000);
@@ -144,11 +236,28 @@ header {
    text-align: left;
    margin-left:10px;
    margin-right:10px;}
-
+ .mobile-dropdown{
+   @include breakpoint(xs){
+     padding-left:60px;
+     padding-top:13px ;
+     padding-bottom:13px ;
+    margin-top:-5px;
+   }
+ }
 #navbar {
   max-height: 54px;
-  margin-bottom: -1px; }
-
+  margin-bottom: -1px;
+  @include breakpoint(xs){
+    max-height:800px;
+  }
+@include breakpoint(sm){
+  margin-top:30px;
+  }}
+.nav-ul li{
+  @include breakpoint(xs){
+    margin:10px;
+  }
+}
 .nav-collapsed {
   background: #aaa; }
 
@@ -158,18 +267,31 @@ header {
 .content-wrapper {
   overflow: hidden; }
 
+.navbar-static-top{
+  @include breakpoint(xs) {
+    @include box-shadow-mixin(#ccc);
+  }
+  @include breakpoint(sm) {
+    @include box-shadow-mixin(#ccc);
+  }
+
+}
 /*----------------------about ---------------------*/
 .about-text {
   padding-top: 80px;
-  text-align: center; }
+  text-align: center;
+
+ }
 
 .about-text h1, p {
   margin-bottom: 0px; }
 
 .about-text p {
   @extend .hero-font;
+  @include breakpoint(xs) {
+    font-size:18px;
+  }
 }
-
 /*-------------------gallery-section-----------------*/
 .work-gallery-section {
   text-align: center; }
@@ -269,7 +391,6 @@ header {
   width: 361px;
 }
 .contact-detail .map{
-  //display:block;
   border-width: 0.48000000000000004px;
   border-color:  #444444;
   border-style: solid;
@@ -283,6 +404,7 @@ header {
   font-weight: 400;
   text-align: left;
   margin-top: -10px;
+
 }
 .form-name label,.form-email label,.form-message label{
   @include font-mixin(Roboto,18px,#000);
@@ -446,6 +568,12 @@ $icon-width: $icon-size + 10;
 .work-gallery-section h2 {
   margin-top: 60px; }
 
+.gallery-child .carousel-inner img{
+    @include breakpoint(sm){
+      width:220px;
+      height:220px;
+    }
+}
 #Container {
   margin-top: 40px;
   padding-bottom: 50px; }
@@ -586,15 +714,27 @@ section {
   min-height: 600px;
   height: auto;
   height: 100%;
-  padding-top: 100px; }
+  padding-top: 100px;
+  @include breakpoint(xs) {
+    width:100%;
+    height:550px;
+  }
+}
 
 .parallax-1 {
   background: no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover; }
-
+  background-size: cover;
+  @include breakpoint(xs) {
+      background-attachment: scroll;
+  }}
+.mobile-parallax{
+  @include breakpoint(xs) {
+    margin:0px;
+  }
+}
 
 .scroll-top {
   position: fixed;
@@ -610,4 +750,3 @@ section {
   color: #222; }
 
 /*# sourceMappingURL=main.css.map */
-@import "responsive";
