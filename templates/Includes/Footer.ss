@@ -4,10 +4,10 @@
     <div class="row  footer-line">
         <div class="footer ">
             <div>
-            <% if $FooterLogo %>
-                <img class="img-responsive center-block" src="$FooterLogo.SetHeight(47).Url"/>
+            <% if $SiteConfig.FooterLogo %>
+                <img class="img-responsive center-block" src="$SiteConfig.FooterLogo.SetHeight(47).Url"/>
             <% else %>
-                <img class="img-responsive center-block" src="./pocket-watch/images/inverse.png" />
+                <img class="img-responsive center-block" src="./pocket-watch/images/logo-inverse.png" />
             <% end_if %>
 
             </div>
