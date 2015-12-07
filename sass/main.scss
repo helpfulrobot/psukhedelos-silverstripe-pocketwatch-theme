@@ -9,12 +9,10 @@ $grey: #333;
 
 $bg-gradient-1 : rgba(232,232,232,0.5);
 $dropdown-color: #fff;
-
 $nav-font-color: #000;
 $nav-font-hover: rgba(242,242,242,0.7);
 
 /*------------ pre define class in CSS---------*/
-
 .nav-font{
   @include font-mixin(Roboto,18px,#000);
   font-weight: 100;
@@ -29,7 +27,6 @@ $nav-font-hover: rgba(242,242,242,0.7);
 }
 .navbar-nav > li > a.current{
 border-bottom:3px solid #333;
-
 }
 #main-nav.active{
   border-bottom: 3px solid #333;
@@ -356,7 +353,7 @@ header {
   background-color:  rgba(229, 229, 229, 0.39);
 
     width:100%;
-  
+
 }
 .contact-detail .map{
   border-width: 0.48000000000000004px;
@@ -366,7 +363,7 @@ header {
   width: 100%;
   display:block;
   height: 482px;
-  @include breakpoint(md){
+  @include breakpoint(md) {
     width:100%;
   }
 
