@@ -15,15 +15,39 @@
         <div class="col-md-offset-1 col-md-10 contact-map ">
             <div class=" map"> </div>
             <div class="address">
-            <% if $SiteConfig.Address %>
-                <p class="first-address"><i class="fa fa-map-marker"></i>$SiteConfig.Address</p>
-            <% end_if %>
-            <% if $SiteConfig.Phone %>
-                <p><i class="fa fa-phone"></i></i>$SiteConfig.Phone</p>
-            <% end_if %>
-            <% if $SiteConfig.Email %>
-                <p><i class="fa fa-envelope"></i>$SiteConfig.Email</p>
-            <% end_if %>
+
+                <% if $SiteConfig.Address %>
+                    <div class="row">
+                        <div class="col-xs-1">
+                            <p class="first-address"><i class="fa fa-map-marker"></i></p>
+                        </div>
+                        <div class="col-xs-11 pull-left">
+                            <p class="first-address">$SiteConfig.Address</p>
+                        </div>
+                    </div>
+                <% end_if %>
+
+                <% if $SiteConfig.Phone %>
+                    <div class="row">
+                        <div class="col-xs-1">
+                            <p><i class="fa fa-phone"></i></i></p>
+                        </div>
+                        <div class="col-xs-11 pull-left">
+                            <p>$SiteConfig.Phone</p>
+                        </div>
+                    </div>
+                <% end_if %>
+
+                <% if $SiteConfig.Email %>
+                    <div class="row">
+                        <div class="col-xs-1">
+                            <p><i class="fa fa-envelope"></i></p>
+                        </div>
+                        <div class="col-xs-11 pull-left">
+                            <p>$SiteConfig.Email</p>
+                        </div>
+                    </div>
+                <% end_if %>
             </div>
         </div>
 

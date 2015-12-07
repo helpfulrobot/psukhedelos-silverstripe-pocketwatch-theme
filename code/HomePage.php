@@ -5,7 +5,8 @@ class HomePage extends Page {
 
 	private static $has_one = array(
 		'HeaderImage' => 'Image',
-		'HeroImage' => 'Image'
+		'HeroImage' => 'Image',
+		'FooterLogo' => 'Image'
 	);
 
 	function getCMSFields() {
@@ -31,6 +32,17 @@ class HomePage extends Page {
 		);
 
 		$uploadHeroField->setFolderName('Hero');
+		$uploadHeroField->setAllowedFileCategories('image');
+
+		$fields->addFieldToTab(
+				'Root.Upload',
+				$uploadHeroField = new UploadField(
+						'FooterLogo',
+						'Please upload an image to be used as your Footer Logo Image.'
+				)
+		);
+
+		$uploadHeroField->setFolderName('Footer');
 		$uploadHeroField->setAllowedFileCategories('image');
 
 

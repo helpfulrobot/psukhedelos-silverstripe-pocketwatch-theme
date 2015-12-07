@@ -1,16 +1,18 @@
-<header class="hidden-xs hidden-sm">
-    <div id="main-logo " class="main-wrapper">
+<header class="masthead hidden-xs hidden-sm ">
+    <div id=" ">
         <div class="container">
             <div class="top-logo">
                 <% if $HeaderImage %>
-                    <img class="main-logo img-responsive center-block" src="$HeaderImage.Url" />
-
+                    <a href="home">
+                        <img class="main-logo img-responsive center-block"
+                             src="$HeaderImage.Url" />
+                    </a>
                 <% else %>
-                    <img class="main-logo img-responsive center-block" src="$HeaderImage.Url" />
-
+                    <a href="home">
+                        <img class=" main-logo img-responsive center-block fall-back-logo"
+                             src="./pocket-watch/images/logo.png" />
+                    </a>
                 <% end_if %>
-
-
 
             </div>
         </div>
