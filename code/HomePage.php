@@ -38,6 +38,10 @@ class HomePage_Controller extends ContentController {
 				->limit(12);
 	}
 
+	public function AllPages(){
+		return DataObject::get("SiteTree", "\"ParentID\" = 0");
+	}
+
 
 
 
