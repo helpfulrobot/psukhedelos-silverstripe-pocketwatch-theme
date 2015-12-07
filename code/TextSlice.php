@@ -3,8 +3,14 @@ class TextSlice extends Page {
 
     private static $description = "Pocketwatch: A Plain Text Slice that is displayed on the home page";
 
+    private static $allowed_children = false;
+
     private static $has_one = array(
         'BackgroundImage' => 'Image',
+    );
+
+    static $defaults = array(
+        'ShowInMenus' => false
     );
 
     function getCMSFields() {
