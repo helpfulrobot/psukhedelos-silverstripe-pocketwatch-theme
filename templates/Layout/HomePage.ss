@@ -1,5 +1,5 @@
 <% include Hero %>
-<% include Gallery %>
+<% include GallerySlice %>
 <% include Award %>
 <% include MyBlog %>
 <% include Contact %>
