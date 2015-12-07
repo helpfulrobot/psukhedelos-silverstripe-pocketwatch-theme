@@ -22,14 +22,12 @@
 
         <div class="col-md-6 ">
         <div class="col-md-10">
-
-                <h2 class="form-header">SEND A MESSAGE</h2>
-                $Form
-          
-
+            <h2 class="form-header">SEND A MESSAGE</h2>
+            <div class="content">
+                $Content
+            </div>
         </div>
       </div>
-
 </div>
 </div>
 </div>
