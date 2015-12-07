@@ -2,10 +2,10 @@
     <div id=" ">
         <div class="container">
             <div class="top-logo">
-                <% if $HeaderImage %>
+                <% if $SiteConfig.HeaderImage %>
                     <a href="home">
                         <img class="main-logo img-responsive center-block"
-                             src="$HeaderImage.Url" />
+                             src="$SiteConfig.HeaderImage.Url" />
                     </a>
                 <% else %>
                     <a href="home">
