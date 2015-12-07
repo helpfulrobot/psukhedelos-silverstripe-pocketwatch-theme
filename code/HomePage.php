@@ -13,18 +13,7 @@ class HomePage extends Page {
 		$fields = parent::getCMSFields();
 
 		$fields->addFieldToTab(
-			'Root.Upload',
-			$uploadHeaderField = new UploadField(
-				'HeaderImage',
-				'Please upload the logo you would like to display in your header.'
-			)
-		);
-
-		$uploadHeaderField->setFolderName('Header');
-		$uploadHeaderField->setAllowedFileCategories('image');
-
-		$fields->addFieldToTab(
-				'Root.Upload',
+				'Root.Image Upload',
 				$uploadHeroField = new UploadField(
 						'HeroImage',
 						'Please upload an image to be used as your Hero Image.  Remember, this is usually the first thing your visitors will see.'
@@ -33,18 +22,6 @@ class HomePage extends Page {
 
 		$uploadHeroField->setFolderName('Hero');
 		$uploadHeroField->setAllowedFileCategories('image');
-
-		$fields->addFieldToTab(
-				'Root.Upload',
-				$uploadHeroField = new UploadField(
-						'FooterLogo',
-						'Please upload an image to be used as your Footer Logo Image.'
-				)
-		);
-
-		$uploadHeroField->setFolderName('Footer');
-		$uploadHeroField->setAllowedFileCategories('image');
-
 
 		return $fields;
 	}
