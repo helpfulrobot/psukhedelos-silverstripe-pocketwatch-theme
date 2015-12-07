@@ -32,6 +32,16 @@ We've chosen to use compass and sass to generate our CSS.
 #### Gallery Slice ####
 See HomePage Slices
 
+### Contact ###
+Contact Forms need to be very specifically set up.  To create our user form, we used the `silverstripe/userforms` module.  
+Create three fields
+
+    - `Textfield` Name
+    - `Emailfield` Email
+    - `Textfield` Message
+
+
+
 ### Blog ###
 #### Blog Post ####
 #### Blog Slice ####
