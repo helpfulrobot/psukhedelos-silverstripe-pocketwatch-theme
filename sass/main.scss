@@ -303,13 +303,15 @@ header {
   .blog-container{
     border:1px solid red;
   }
-  .blog-row{
-    border:1px solid blue;
-  }
-  .blog-single-post{
-    border:1px solid green;
-  }
 
+.blog-single-post{
+  border:1px solid green;
+}
+.post-summary{
+  border:1px solid red;
+  min-height:500px;
+  text-align:left;
+}
 /*-------------------video-section-------------------*/
 .video-section {
   padding-top: 100px;

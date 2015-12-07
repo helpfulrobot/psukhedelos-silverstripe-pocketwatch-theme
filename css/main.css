@@ -12577,75 +12577,77 @@ header {
   border: 1px solid red;
 }
 
-/* line 306, ../sass/main.scss */
-.blog-row {
-  border: 1px solid blue;
-}
-
-/* line 309, ../sass/main.scss */
+/* line 307, ../sass/main.scss */
 .blog-single-post {
   border: 1px solid green;
 }
 
+/* line 310, ../sass/main.scss */
+.post-summary {
+  border: 1px solid red;
+  min-height: 500px;
+  text-align: left;
+}
+
 /*-------------------video-section-------------------*/
-/* line 314, ../sass/main.scss */
+/* line 316, ../sass/main.scss */
 .video-section {
   padding-top: 100px;
   padding-bottom: 40px;
 }
 
-/* line 318, ../sass/main.scss */
+/* line 320, ../sass/main.scss */
 .video-section h2 {
   text-align: center;
 }
 
 /*-------------------contact-section-----------------*/
-/* line 322, ../sass/main.scss */
+/* line 324, ../sass/main.scss */
 .contact-section {
   background: #efefef;
   min-height: 400px;
 }
 
-/* line 326, ../sass/main.scss */
+/* line 328, ../sass/main.scss */
 .contact-section h2 {
   margin-top: 20px;
   color: #383838;
 }
 
-/* line 330, ../sass/main.scss */
+/* line 332, ../sass/main.scss */
 .contact-sectoin p {
   margin-bottom: 10px;
 }
 
-/* line 333, ../sass/main.scss */
+/* line 335, ../sass/main.scss */
 .contact-section-text-area {
   margin-top: 10px;
   padding: 20px;
   background-color: rgba(235, 235, 235, 0.8);
 }
 
-/* line 338, ../sass/main.scss */
+/* line 340, ../sass/main.scss */
 .contact-section h2, p {
   text-align: center;
 }
 
 /*------------contact-page------*/
-/* line 341, ../sass/main.scss */
+/* line 343, ../sass/main.scss */
 .contact-page-section {
   margin-bottom: 100px;
 }
 
-/* line 344, ../sass/main.scss */
+/* line 346, ../sass/main.scss */
 .contact-row {
   margin-top: 100px;
 }
 
-/* line 347, ../sass/main.scss */
+/* line 349, ../sass/main.scss */
 .address i {
   margin-right: 20px;
 }
 
-/* line 350, ../sass/main.scss */
+/* line 352, ../sass/main.scss */
 .address p {
   font-family: Roboto;
   font-size: 18px;
@@ -12657,19 +12659,19 @@ header {
   margin-left: 30px;
 }
 
-/* line 357, ../sass/main.scss */
+/* line 359, ../sass/main.scss */
 .first-address {
   padding-top: 10px;
 }
 
-/* line 360, ../sass/main.scss */
+/* line 362, ../sass/main.scss */
 .address {
   margin-top: 30px;
   background-color: rgba(229, 229, 229, 0.39);
   width: 100%;
 }
 
-/* line 367, ../sass/main.scss */
+/* line 369, ../sass/main.scss */
 .contact-detail .map {
   border-width: 0.48000000000000004px;
   border-color: #444444;
@@ -12680,26 +12682,26 @@ header {
   height: 482px;
 }
 @media (min-width: 992px) and (max-width: 1199px) {
-  /* line 367, ../sass/main.scss */
+  /* line 369, ../sass/main.scss */
   .contact-detail .map {
     width: 100%;
   }
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
-  /* line 380, ../sass/main.scss */
+  /* line 382, ../sass/main.scss */
   .contact-map {
     float: right;
   }
 }
 @media (min-width: 1200px) and (max-width: 2900px) {
-  /* line 380, ../sass/main.scss */
+  /* line 382, ../sass/main.scss */
   .contact-map {
     float: right;
   }
 }
 
-/* line 388, ../sass/main.scss */
+/* line 390, ../sass/main.scss */
 .form-header {
   color: #000000;
   font-size: 36px;
@@ -12708,7 +12710,7 @@ header {
   margin-top: -10px;
 }
 
-/* line 395, ../sass/main.scss */
+/* line 397, ../sass/main.scss */
 .form-name label, .form-email label, .form-message label {
   font-family: Roboto;
   font-size: 18px;
@@ -12718,7 +12720,7 @@ header {
   margin-top: 28px;
 }
 
-/* line 401, ../sass/main.scss */
+/* line 403, ../sass/main.scss */
 input.form-name {
   border: none;
   width: 100%;
@@ -12726,7 +12728,7 @@ input.form-name {
   border-bottom: 1px solid #777;
 }
 
-/* line 407, ../sass/main.scss */
+/* line 409, ../sass/main.scss */
 input.form-email {
   border: none;
   width: 100%;
@@ -12734,13 +12736,13 @@ input.form-email {
   border-bottom: 1px solid #777;
 }
 
-/* line 413, ../sass/main.scss */
+/* line 415, ../sass/main.scss */
 textarea.form-message {
   width: 100%;
   margin-top: 22px;
 }
 
-/* line 417, ../sass/main.scss */
+/* line 419, ../sass/main.scss */
 #UserForm_Form_action_process {
   margin-top: 40px;
   border: 1px solid #333;
@@ -12748,32 +12750,32 @@ textarea.form-message {
   padding: 7px 22px 7px 22px;
 }
 
-/* line 423, ../sass/main.scss */
+/* line 425, ../sass/main.scss */
 .content-form {
   padding-bottom: 50px;
   display: block;
 }
 @media (min-width: 992px) and (max-width: 1199px) {
-  /* line 423, ../sass/main.scss */
+  /* line 425, ../sass/main.scss */
   .content-form {
     float: right;
   }
 }
 @media (min-width: 1200px) and (max-width: 2900px) {
-  /* line 423, ../sass/main.scss */
+  /* line 425, ../sass/main.scss */
   .content-form {
     float: right;
   }
 }
 
 /*-------------------footer-section-------------------*/
-/* line 434, ../sass/main.scss */
+/* line 436, ../sass/main.scss */
 .footer-section {
   min-height: 300px;
   background: #231f20;
 }
 
-/* line 438, ../sass/main.scss */
+/* line 440, ../sass/main.scss */
 .footer-line {
   margin-left: 0px;
   margin-right: 0px;
@@ -12781,7 +12783,7 @@ textarea.form-message {
   padding-bottom: 30px;
 }
 
-/* line 444, ../sass/main.scss */
+/* line 446, ../sass/main.scss */
 .footer-divider {
   width: 100%;
   height: 1px;
@@ -12790,26 +12792,26 @@ textarea.form-message {
   display: block;
 }
 
-/* line 451, ../sass/main.scss */
+/* line 453, ../sass/main.scss */
 .footer {
   width: 240px;
   margin: 0px auto;
   margin-top: 50px;
 }
 
-/* line 457, ../sass/main.scss */
+/* line 459, ../sass/main.scss */
 .footer-section img {
   width: 82px;
   height: 47px;
 }
 
-/* line 461, ../sass/main.scss */
+/* line 463, ../sass/main.scss */
 .footer-social {
   margin: 0px auto;
   display: block;
 }
 
-/* line 466, ../sass/main.scss */
+/* line 468, ../sass/main.scss */
 .footer-email {
   font-family: Roboto;
   font-size: 13.98px;
@@ -12822,13 +12824,13 @@ textarea.form-message {
   /* width and height properties ommitted due to transform */
 }
 
-/* line 474, ../sass/main.scss */
+/* line 476, ../sass/main.scss */
 .social {
   width: 100%;
   text-align: center;
 }
 
-/* line 483, ../sass/main.scss */
+/* line 485, ../sass/main.scss */
 .social-icon {
   display: inline-block;
   vertical-align: middle;
@@ -12838,13 +12840,13 @@ textarea.form-message {
   font-size: 20px;
 }
 
-/* line 492, ../sass/main.scss */
+/* line 494, ../sass/main.scss */
 .social-icon:hover {
   color: #d7d7d7;
   background: #333333;
 }
 
-/* line 496, ../sass/main.scss */
+/* line 498, ../sass/main.scss */
 .footer-copyright {
   font-family: Roboto;
   font-size: 11.99px;
@@ -12855,49 +12857,49 @@ textarea.form-message {
 
 /*-------------------------media carousel---------------*/
 /* gallery */
-/* line 505, ../sass/main.scss */
+/* line 507, ../sass/main.scss */
 .album-container {
   margin-top: 20px;
 }
 
-/* line 508, ../sass/main.scss */
+/* line 510, ../sass/main.scss */
 .gallery-slice {
   background: #f9f5f4;
 }
 
-/* line 511, ../sass/main.scss */
+/* line 513, ../sass/main.scss */
 .carousel-inner h4 {
   text-align: center;
 }
 
-/* line 514, ../sass/main.scss */
+/* line 516, ../sass/main.scss */
 #Container .mix {
   display: none;
 }
 
-/* line 517, ../sass/main.scss */
+/* line 519, ../sass/main.scss */
 .gallery-child {
   margin-top: 50px;
   padding-bottom: 50px;
 }
 
-/* line 521, ../sass/main.scss */
+/* line 523, ../sass/main.scss */
 .gallery-child .controls {
   margin-bottom: 20px;
 }
 
-/* line 524, ../sass/main.scss */
+/* line 526, ../sass/main.scss */
 .gallery-child .tags-display {
   margin-bottom: 20px;
 }
 
-/* line 527, ../sass/main.scss */
+/* line 529, ../sass/main.scss */
 .active-tag {
   background-color: rgba(235, 235, 235, 0.5);
   border: none;
 }
 
-/* line 531, ../sass/main.scss */
+/* line 533, ../sass/main.scss */
 .btn-tags {
   font-family: Roboto;
   font-size: 18px;
@@ -12906,27 +12908,27 @@ textarea.form-message {
   text-align: left;
 }
 
-/* line 536, ../sass/main.scss */
+/* line 538, ../sass/main.scss */
 .gallery-child .controls > .btn {
   margin-top: 10px;
   border-radius: 0px;
 }
 
-/* line 540, ../sass/main.scss */
+/* line 542, ../sass/main.scss */
 #myCarousel h3 {
   color: #030202;
   font-size: 24px;
   font-weight: 500;
 }
 
-/* line 545, ../sass/main.scss */
+/* line 547, ../sass/main.scss */
 #myCarousel p {
   color: #030202;
   font-size: 16px;
   font-weight: 300;
 }
 
-/* line 550, ../sass/main.scss */
+/* line 552, ../sass/main.scss */
 .work-gallery-section a {
   font-size: 18px;
   font-weight: 100;
@@ -12934,33 +12936,33 @@ textarea.form-message {
   margin-left: 12px;
 }
 
-/* line 556, ../sass/main.scss */
+/* line 558, ../sass/main.scss */
 .gallery-seperator {
   border-radius: 45px;
   border: 1px solid #ddd;
   margin-bottom: 20px;
 }
 
-/* line 561, ../sass/main.scss */
+/* line 563, ../sass/main.scss */
 .work-gallery-section h2 {
   margin-top: 60px;
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-  /* line 564, ../sass/main.scss */
+  /* line 566, ../sass/main.scss */
   .gallery-child .carousel-inner img {
     width: 220px;
     height: 220px;
   }
 }
 
-/* line 570, ../sass/main.scss */
+/* line 572, ../sass/main.scss */
 #Container {
   margin-top: 40px;
   padding-bottom: 50px;
 }
 
-/* line 574, ../sass/main.scss */
+/* line 576, ../sass/main.scss */
 .box {
   cursor: pointer;
   height: 220px;
@@ -12969,7 +12971,7 @@ textarea.form-message {
   width: 220px;
 }
 
-/* line 581, ../sass/main.scss */
+/* line 583, ../sass/main.scss */
 .box img {
   position: absolute;
   width: 100%;
@@ -12977,7 +12979,7 @@ textarea.form-message {
   z-index: -1;
 }
 
-/* line 587, ../sass/main.scss */
+/* line 589, ../sass/main.scss */
 .box .overbox {
   background-color: rgba(200, 200, 200, 0.8);
   top: 0;
@@ -12990,18 +12992,18 @@ textarea.form-message {
   padding: 90px 10px;
 }
 
-/* line 598, ../sass/main.scss */
+/* line 600, ../sass/main.scss */
 .box:hover .overbox {
   opacity: 1;
 }
 
-/* line 601, ../sass/main.scss */
+/* line 603, ../sass/main.scss */
 .box .overtext {
   transform: translateY(0px);
   -webkit-transform: translateY(40px);
 }
 
-/* line 605, ../sass/main.scss */
+/* line 607, ../sass/main.scss */
 .box .title {
   font-family: Roboto;
   font-size: 24px;
@@ -13014,7 +13016,7 @@ textarea.form-message {
   transition-duration: 0.2s;
 }
 
-/* line 614, ../sass/main.scss */
+/* line 616, ../sass/main.scss */
 .box:hover .title,
 .box:focus .title {
   opacity: 1;
@@ -13022,7 +13024,7 @@ textarea.form-message {
   -webkit-transform: translateY(0px);
 }
 
-/* line 620, ../sass/main.scss */
+/* line 622, ../sass/main.scss */
 .box .tagline {
   font-size: 0.8em;
   opacity: 0;
@@ -13030,7 +13032,7 @@ textarea.form-message {
   transition-duration: 0.2s;
 }
 
-/* line 626, ../sass/main.scss */
+/* line 628, ../sass/main.scss */
 .box:hover .tagline,
 .box:focus .tagline {
   opacity: 1;
@@ -13038,24 +13040,24 @@ textarea.form-message {
   -webkit-transform: translateX(0px);
 }
 
-/* line 632, ../sass/main.scss */
+/* line 634, ../sass/main.scss */
 .gallery-child {
   margin-top: 50px;
 }
 
-/* line 635, ../sass/main.scss */
+/* line 637, ../sass/main.scss */
 .home-gallery p {
   font-size: 14px;
   font-weight: 500;
   margin: 0px 55px 0px 55px;
 }
 
-/* line 640, ../sass/main.scss */
+/* line 642, ../sass/main.scss */
 .gallery-control {
   position: absolute;
 }
 
-/* line 643, ../sass/main.scss */
+/* line 645, ../sass/main.scss */
 .gallery i {
   font-weight: 100;
   background: #ddd;
@@ -13069,7 +13071,7 @@ textarea.form-message {
 }
 
 /* carousel */
-/* line 655, ../sass/main.scss */
+/* line 657, ../sass/main.scss */
 .media-carousel {
   margin-bottom: 0;
   padding: 0 40px 30px 40px;
@@ -13077,7 +13079,7 @@ textarea.form-message {
 }
 
 /* Previous button  */
-/* line 661, ../sass/main.scss */
+/* line 663, ../sass/main.scss */
 .media-carousel .carousel-control.left {
   left: -142px;
   background-image: none;
@@ -13088,7 +13090,7 @@ textarea.form-message {
 }
 
 /* Next button  */
-/* line 671, ../sass/main.scss */
+/* line 673, ../sass/main.scss */
 .media-carousel .carousel-control.right {
   right: -142px;
   background-image: none;
@@ -13099,7 +13101,7 @@ textarea.form-message {
 }
 
 /* Changes the position of the indicators */
-/* line 681, ../sass/main.scss */
+/* line 683, ../sass/main.scss */
 .media-carousel .carousel-indicators {
   right: 50%;
   top: 50%;
@@ -13108,38 +13110,38 @@ textarea.form-message {
 }
 
 /* Changes the colour of the indicators */
-/* line 688, ../sass/main.scss */
+/* line 690, ../sass/main.scss */
 .media-carousel .carousel-indicators li {
   background: #c0c0c0;
 }
 
-/* line 691, ../sass/main.scss */
+/* line 693, ../sass/main.scss */
 .media-carousel .carousel-indicators .active {
   background: #333333;
 }
 
-/* line 694, ../sass/main.scss */
+/* line 696, ../sass/main.scss */
 .carousel-control.left, .carousel-control.right {
   background: none;
 }
 
-/* line 696, ../sass/main.scss */
+/* line 698, ../sass/main.scss */
 .gallery-cover {
   background: none;
 }
 
-/* line 699, ../sass/main.scss */
+/* line 701, ../sass/main.scss */
 .carousel-control.left, .right span {
   color: #ccc;
 }
 
-/* line 701, ../sass/main.scss */
+/* line 703, ../sass/main.scss */
 .thumbnail {
   color: #383838;
 }
 
 /* End carousel */
-/* line 705, ../sass/main.scss */
+/* line 707, ../sass/main.scss */
 section {
   color: #ffffff;
   min-height: 600px;
@@ -13148,14 +13150,14 @@ section {
   padding-top: 100px;
 }
 @media (max-width: 767px) {
-  /* line 705, ../sass/main.scss */
+  /* line 707, ../sass/main.scss */
   section {
     width: 100%;
     height: 550px;
   }
 }
 
-/* line 717, ../sass/main.scss */
+/* line 719, ../sass/main.scss */
 .parallax-1 {
   background: no-repeat center center fixed;
   -webkit-background-size: cover;
@@ -13164,20 +13166,20 @@ section {
   background-size: cover;
 }
 @media (max-width: 767px) {
-  /* line 717, ../sass/main.scss */
+  /* line 719, ../sass/main.scss */
   .parallax-1 {
     background-attachment: scroll;
   }
 }
 
 @media (max-width: 767px) {
-  /* line 726, ../sass/main.scss */
+  /* line 728, ../sass/main.scss */
   .mobile-parallax {
     margin: 0px;
   }
 }
 
-/* line 732, ../sass/main.scss */
+/* line 734, ../sass/main.scss */
 .scroll-top {
   position: fixed;
   bottom: 0;
@@ -13189,7 +13191,7 @@ section {
   border-top-right-radius: 3px;
 }
 
-/* line 742, ../sass/main.scss */
+/* line 744, ../sass/main.scss */
 .scroll-top a:link, .scroll-top a:visited {
   color: #222;
 }
