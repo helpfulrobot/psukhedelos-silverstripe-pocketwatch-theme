@@ -199,8 +199,8 @@ header {
 .award-container {
   background: rgba(255, 255, 255, 0.8); }
 
-.text-area-section h2, p {
-  text-align: center; }
+//.text-area-section h2, p {
+//  text-align: center; }
 
 .blockquote {
   border-left: 0px; }
@@ -226,22 +226,26 @@ header {
 /*-------------------contact-section-----------------*/
 .contact-section {
   background: #efefef;
-  min-height: 400px; }
+  min-height: 400px;
+}
 
 .contact-section h2 {
   margin-top: 20px;
-  color: #383838; }
+  color: #383838;
+}
 
-.contact-sectoin p {
-  margin-bottom: 10px; }
+.contact-section p {
+  margin-bottom: 10px;
+}
 
 .contact-section-text-area {
   margin-top: 10px;
   padding: 20px;
-  background-color: rgba(235, 235, 235, 0.8); }
+  background-color: rgba(235, 235, 235, 0.8);
+}
 
-.contact-section h2, p {
-  text-align: center; }
+//.contact-section h2, p {
+//  text-align: center; }
 /*------------contact-page------*/
 .contact-page-section{
   margin-bottom:100px;
