@@ -2,9 +2,18 @@
 <div class="container contact-container">
 <div class="row contact-row">
 
-    <div class="col-md-6 contact-detail clearfix">
-        <div class=" pull-right">
-            <div class="map"> </div>
+    <div class="col-md-6  content-form ">
+    <div class="col-md-10">
+        <h2 class="form-header">SEND A MESSAGE</h2>
+        <div class="">
+            $Content
+        </div>
+    </div>
+  </div>
+
+    <div class="col-md-6 contact-detail ">
+        <div class="col-md-offset-1 col-md-10 contact-map ">
+            <div class=" map"> </div>
             <div class="address">
             <% if $SiteConfig.Address %>
                 <p class="first-address"><i class="fa fa-map-marker"></i>$SiteConfig.Address</p>
@@ -20,14 +29,7 @@
 
       </div>
 
-        <div class="col-md-6 ">
-        <div class="col-md-10">
-            <h2 class="form-header">SEND A MESSAGE</h2>
-            <div class="content">
-                $Content
-            </div>
-        </div>
-      </div>
+
 </div>
 </div>
 </div>

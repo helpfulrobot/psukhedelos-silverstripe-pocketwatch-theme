@@ -41,8 +41,8 @@ $(window).scroll(function(){
 
 //navigation add current page on click
 
-$(".mobile-mainnav a").on('click', function(){
-
-  $(this).parent().addClass('active').siblings().removeClass('active');
-
-});
+// $(".mobile-mainnav a").on('click', function(){
+//
+//   $(this).parent().addClass('active').siblings().removeClass('active');
+//
+// });

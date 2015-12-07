@@ -47,7 +47,6 @@ border-bottom:3px solid #333;
   -webkit-box-shadow: 0 1px 6px #ccc;
      -moz-box-shadow: 0 1px 6px #ccc;
           box-shadow: 0 1px 6px #ccc;
-
 }
 /*-------------css start here ------------------*/
 #body_wrapper {
@@ -88,7 +87,6 @@ border-bottom:3px solid #333;
     margin:5px;
     float:left
   }
-
 }
 .tb-navbar-right{
     @include breakpoint(sm) {
@@ -197,7 +195,6 @@ header {
      width:100%;
    }
 }
-
 .dropdown-menu li >a{
   @include font-mixin(Roboto,14px,#000);
   border-bottom: 1px solid #ededed;
@@ -340,7 +337,6 @@ header {
 }
 .contact-row{
   margin-top:100px;
-
 }
 .address i {
   margin-right:20px;
@@ -365,8 +361,21 @@ header {
   border-color:  #444444;
   border-style: solid;
   background-color:  #0076a3;
-  width: 360px;
+  width: 100%;
+  display:block;
   height: 482px;
+  @include breakpoint(md){
+    width:100%;
+  }
+
+}
+.contact-map{
+  @include breakpoint(md) {
+  float:right;
+  }
+  @include breakpoint(lg) {
+  float:right;
+  }
 }
 .form-header{
   color:  #000000;
@@ -374,7 +383,6 @@ header {
   font-weight: 400;
   text-align: left;
   margin-top: -10px;
-
 }
 .form-name label,.form-email label,.form-message label{
   @include font-mixin(Roboto,18px,#000);
@@ -404,20 +412,27 @@ textarea.form-message{
   background:none;
   padding:7px 22px 7px 22px;
 }
+.content-form{
+  padding-bottom:50px;
+  display:block;
+  @include breakpoint(md) {
+  float:right;
+  }
+  @include breakpoint(lg) {
+  float:right;
+  }
+}
 /*-------------------footer-section-------------------*/
 .footer-section {
   min-height: 300px;
   background:#231f20;
-
   }
-
 .footer-line {
   margin-left: 0px;
   margin-right: 0px;
   border-top: 1px solid #777;
   padding-bottom:30px;
   }
-
 .footer-divider{
   width:100%;
   height:1px;
@@ -718,5 +733,3 @@ section {
 
 .scroll-top a:link, .scroll-top a:visited {
   color: #222; }
-
-/*# sourceMappingURL=main.css.map */
