@@ -15,24 +15,24 @@
             <div class="social">
                 <% if $SiteConfig.Facebook %>
                     <div class="social-icon">
-                        <a href="http://$SiteConfig.Facebook" class="fa fa-facebook"></a>
+                        <a href="$SiteConfig.Facebook" class="fa fa-facebook"></a>
                     </div>
                 <% end_if %>
 
                 <% if $SiteConfig.Twitter %>
                     <div class="social-icon">
-                        <a href="http://$SiteConfig.Twitter" class="fa fa-twitter"></a>
+                        <a href="$SiteConfig.Twitter" class="fa fa-twitter"></a>
                     </div>
                 <% end_if %>
                 <% if $SiteConfig.Linkedin %>
                     <div class="social-icon">
-                        <a href="http://$SiteConfig.Linkedin" class="fa fa-linkedin"></a>
+                        <a href="$SiteConfig.Linkedin" class="fa fa-linkedin"></a>
                     </div>
                 <% end_if %>
                 <% if $SiteConfig.Instagram %>
                     <div class="social-icon">
-                    <a href="http://$SiteConfig.Instagram" class="fa fa-instagram"></a>
-                </div>
+                        <a href="$SiteConfig.Instagram" class="fa fa-instagram"></a>
+                    </div>
                 <% end_if %>
             </div>
 
