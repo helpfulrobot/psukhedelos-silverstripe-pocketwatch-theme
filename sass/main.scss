@@ -31,8 +31,11 @@ $nav-font-hover: rgba(242,242,242,0.7);
   text-align: center;
 }
 .navbar-nav > li > a.current{
-  border-bottom:3px solid #333;
+border-bottom:3px solid #333;
 
+}
+#main-nav.active{
+  border-bottom: 3px solid #333;
 }
 .nav-bottom-border{
   border-bottom: 1px solid #333;

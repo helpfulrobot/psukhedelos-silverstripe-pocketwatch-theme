@@ -48,7 +48,7 @@
                 </div>
                 <div id="navbar" class="navbar-collapse collapse  tb-navbar-right nav-bottom-border">
                     <div class="row nav-header-shadow">
-                        <ul class="nav navbar-nav">
+                        <ul id="main-nav" class="nav navbar-nav">
                             <%--<!-- <% cached 'Menu', $List('SiteTree').max('LastEdited') %> -->--%>
                               <% control $Menu(1) %>
                                 <% if $Children %>
