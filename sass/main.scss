@@ -36,7 +36,7 @@ border-bottom:3px solid #333;
 }
 .nav-bottom-border{
   border-bottom: 1px solid #333;
-  @include breakpoint(xs){
+  @include breakpoint(xs) {
       border-bottom: none;
   }
   @include breakpoint(sm) {
@@ -47,6 +47,7 @@ border-bottom:3px solid #333;
   -webkit-box-shadow: 0 1px 6px #ccc;
      -moz-box-shadow: 0 1px 6px #ccc;
           box-shadow: 0 1px 6px #ccc;
+
 }
 /*-------------css start here ------------------*/
 #body_wrapper {
@@ -192,7 +193,7 @@ header {
   background: $dropdown-color;
     }
 .dropdown{
-   @include breakpoint(xs){
+   @include breakpoint(xs) {
      width:100%;
    }
 }
@@ -206,7 +207,7 @@ header {
    margin-left:10px;
    margin-right:10px;}
  .mobile-dropdown{
-   @include breakpoint(xs){
+   @include breakpoint(xs) {
      padding-left:60px;
      padding-top:13px ;
      padding-bottom:13px ;
@@ -216,14 +217,14 @@ header {
 #navbar {
   max-height: 54px;
   margin-bottom: -1px;
-  @include breakpoint(xs){
+  @include breakpoint(xs) {
     max-height:800px;
   }
-@include breakpoint(sm){
+@include breakpoint(sm) {
   margin-top:30px;
   }}
 .nav-ul li{
-  @include breakpoint(xs){
+  @include breakpoint(xs) {
     margin:10px;
   }
 }

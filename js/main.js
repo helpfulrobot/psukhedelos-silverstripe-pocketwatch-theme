@@ -26,7 +26,7 @@ $('.gallery-view-more .btn').on('click', function(e) {
 $(window).scroll(function(){
   var scroll = $(window).scrollTop();
   $(".about-text").css("opacity", 1 - $(window).scrollTop() / 300);
-  if (scroll >= 200) {
+  if (scroll >= 130) {
 
     $(".toggle-shadow").addClass("drop-shadow");
     $(".tb-navbar-right").removeClass("nav-bottom-border");
