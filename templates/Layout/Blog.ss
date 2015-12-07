@@ -1,8 +1,9 @@
 <% require themedCSS('blog', 'blog') %>
 
-<div class="blog-entry content-container container <% if $SideBarView %>unit size3of4<% end_if %>">
-
-	<article>
+<div class="blog-entry content-container container blog-container<% if $SideBarView %>unit size3of4<% end_if %>">
+<div class="row blog-row ">
+	<article class="col-md-3 col-lg-3 blog-single-post">
+		<div>
 		<h1>
 			<% if $ArchiveYear %>
 				<%t Blog.Archive 'Archive' %>:
@@ -22,7 +23,7 @@
 			<% end_if %>
 		</h1>
 
-		<div class="content">$Content</div>
+		<div class="content blog-summary">$Content</div>
 
 		<% if $PaginatedList.Exists %>
 			<% loop $PaginatedList %>
@@ -31,14 +32,16 @@
 		<% else %>
 			<p><%t Blog.NoPosts 'There are no posts' %></p>
 		<% end_if %>
+</div>
 	</article>
-
+</div>
 	$Form
 	$CommentsForm
 
 	<% with $PaginatedList %>
 		<% include Pagination %>
 	<% end_with %>
+
 </div>
 
-<% include BlogSideBar %>
+<!-- <% include BlogSideBar %> -->

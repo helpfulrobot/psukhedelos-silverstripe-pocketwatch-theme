@@ -291,7 +291,7 @@ header {
 .blockquote {
   border-left: 0px; }
 
-/*-------------------textarea-section-----------------*/
+/*-------------------blog-section-----------------*/
 .blog-section {
   background: #efefef;
   padding-bottom: 100px; }
@@ -300,6 +300,15 @@ header {
   margin-top: 100px;
   text-align: center;
   margin-bottom: 40px; }
+  .blog-container{
+    border:1px solid red;
+  }
+  .blog-row{
+    border:1px solid blue;
+  }
+  .blog-single-post{
+    border:1px solid green;
+  }
 
 /*-------------------video-section-------------------*/
 .video-section {
