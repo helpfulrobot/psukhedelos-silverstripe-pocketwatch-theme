@@ -3,28 +3,17 @@
 <div class="blog-entry content-container container blog-container<% if $SideBarView %>unit size3of4<% end_if %>">
 <div class="row blog-row">
 	<article class="blog-single-post">
-		<div>
-		<h1>
-			<% if $ArchiveYear %>
-				<%t Blog.Archive 'Archive' %>:
-				<% if $ArchiveDay %>
-					$ArchiveDate.Nice
-				<% else_if $ArchiveMonth %>
-					$ArchiveDate.format('F, Y')
-				<% else %>
-					$ArchiveDate.format('Y')
-				<% end_if %>
-			<% else_if $CurrentTag %>
-				<%t Blog.Tag 'Tag' %>: $CurrentTag.Title
-			<% else_if $CurrentCategory %>
-				<%t Blog.Category 'Category' %>: $CurrentCategory.Title
-			<% else %>
-				$Title
+
+		<div class=" text-center">
+			<% if $Categories.exists %>
+				<a class="btn btn-default btn-categories" href="$Link" title="$Title">ALL</a>
+				<% loop $Categories %>
+					<a class="btn btn-default btn-categories" href="$Link" title="$Title">$Title</a><% if not Last %><% else %><% end_if %>
+				<% end_loop %>
 			<% end_if %>
-		</h1>
+		</div>
 
 		<div class="content blog-summary">$Content</div>
-
 		<% if $PaginatedList.Exists %>
 			<% loop $PaginatedList %>
 				<% include PostSummary %>
@@ -32,7 +21,7 @@
 		<% else %>
 			<p><%t Blog.NoPosts 'There are no posts' %></p>
 		<% end_if %>
-</div>
+
 	</article>
 
 	$Form
@@ -43,5 +32,3 @@
 	<% end_with %>
 </div>
 </div>
-
-<!-- <% include BlogSideBar %> -->
