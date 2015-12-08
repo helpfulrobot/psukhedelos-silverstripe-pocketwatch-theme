@@ -3,6 +3,7 @@
 @import "base/base";
 @import "base/typography";
 @import "utils/_mixins";
+@import "pages/textslice";
 
 $bg-white: #fff;
 $grey: #333;
@@ -11,6 +12,11 @@ $bg-gradient-1 : rgba(232,232,232,0.5);
 $dropdown-color: #fff;
 $nav-font-color: #000;
 $nav-font-hover: rgba(242,242,242,0.7);
+
+/*-- Global --*/
+h2{
+  text-transform: uppercase;
+}
 
 /*------------ pre define class in CSS---------*/
 .nav-font{
@@ -422,25 +428,32 @@ header {
 .video-section h2 {
   text-align: center; }
 
-/*-------------------contact-section-----------------*/
-.contact-section {
-  background: #efefef;
-  min-height: 400px; }
+/*-------------------text-slice-section-----------------*/
 
-.contact-section h2 {
-  margin-top: 20px;
-  color: #383838; }
+//.text-slice-section {
+//  background: #efefef;
+//  min-height: 400px;
+//}
+//
+//.text-slice-section h2 {
+//  margin-top: 20px;
+//  color: #383838;
+//}
+//
+//.text-slice-section p {
+//  margin-bottom: 10px;
+//}
+//
+//.text-slice-section-text-area {
+//  margin-top: 10px;
+//  padding: 20px;
+//  background-color: rgba(235, 235, 235, 0.8);
+//}
+//
+//.text-slice-section h2, p {
+//  text-align: center;
+//}
 
-.contact-sectoin p {
-  margin-bottom: 10px; }
-
-.contact-section-text-area {
-  margin-top: 10px;
-  padding: 20px;
-  background-color: rgba(235, 235, 235, 0.8); }
-
-.contact-section h2, p {
-  text-align: center; }
 /*------------contact-page------*/
 .contact-page-section{
   margin-bottom:100px;

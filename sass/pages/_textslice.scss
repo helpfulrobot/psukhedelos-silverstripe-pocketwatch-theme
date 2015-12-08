@@ -1,0 +1,23 @@
+.text-slice-section {
+  background: #efefef;
+  min-height: 400px;
+}
+
+.text-slice-section h2 {
+  margin-top: 20px;
+  color: #383838;
+}
+
+.text-slice-section p {
+  margin-bottom: 10px;
+}
+
+.text-slice-section-text-area {
+  margin-top: 10px;
+  padding: 20px;
+  background-color: rgba(235, 235, 235, 0.8);
+}
+
+.text-slice-section h2, p {
+  text-align: center;
+}
