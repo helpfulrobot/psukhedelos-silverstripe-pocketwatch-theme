@@ -32,12 +32,6 @@ class HomePage_Controller extends ContentController {
 		// See: http://doc.silverstripe.org/framework/en/reference/requirements
 
 
-	public function GalleryAlbums() {
-		return GalleryAlbum::get()
-				->sort('Sort', 'ASC')
-				->limit(12);
-	}
-
 	public function BlogPosts(){
 		return BlogPost::get()
 				->sort('Sort', 'ASC')
