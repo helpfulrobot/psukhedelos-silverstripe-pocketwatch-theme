@@ -469,10 +469,12 @@ header {
 
 }
 .contact-detail .map{
+  background-size:contain;
+  background-repeat:no-repeat;
+  background-position:center;
   border-width: 0.48000000000000004px;
   border-color:  #444444;
   border-style: solid;
-  background-color:  #0076a3;
   width: 100%;
   display:block;
   height: 482px;
