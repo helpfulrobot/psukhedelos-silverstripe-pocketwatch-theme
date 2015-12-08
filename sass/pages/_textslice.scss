@@ -1,23 +1,24 @@
+//section {
+//  min-height: 0px !important;
+//  padding-top: 0px !important;
+//}
+
 .text-slice-section {
-  background: #efefef;
-  min-height: 400px;
+  background: white;
 }
 
 .text-slice-section h2 {
-  margin-top: 20px;
-  color: #383838;
+  //margin-top: 40px;
+  //margin-bottom: 20px;
+  color: black;
 }
 
 .text-slice-section p {
-  margin-bottom: 10px;
+  font-size: 1.5em;
+  line-height: 1.25;
+  //margin-bottom: 40px;
 }
 
 .text-slice-section-text-area {
-  margin-top: 10px;
-  padding: 20px;
-  background-color: rgba(235, 235, 235, 0.8);
-}
-
-.text-slice-section h2, p {
-  text-align: center;
+  padding: 0px;
 }

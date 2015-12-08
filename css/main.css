@@ -12139,33 +12139,25 @@ a:hover, a:focus, a:active, a:visited {
   text-decoration: none;
 }
 
-/* line 1, ../sass/pages/_textslice.scss */
-.text-slice-section {
-  background: #efefef;
-  min-height: 400px;
-}
-
 /* line 6, ../sass/pages/_textslice.scss */
+.text-slice-section {
+  background: white;
+}
+
+/* line 10, ../sass/pages/_textslice.scss */
 .text-slice-section h2 {
-  margin-top: 20px;
-  color: #383838;
+  color: black;
 }
 
-/* line 11, ../sass/pages/_textslice.scss */
+/* line 16, ../sass/pages/_textslice.scss */
 .text-slice-section p {
-  margin-bottom: 10px;
+  font-size: 1.5em;
+  line-height: 1.25;
 }
 
-/* line 15, ../sass/pages/_textslice.scss */
+/* line 22, ../sass/pages/_textslice.scss */
 .text-slice-section-text-area {
-  margin-top: 10px;
-  padding: 20px;
-  background-color: rgba(235, 235, 235, 0.8);
-}
-
-/* line 21, ../sass/pages/_textslice.scss */
-.text-slice-section h2, p {
-  text-align: center;
+  padding: 0px;
 }
 
 /*-- Global --*/
