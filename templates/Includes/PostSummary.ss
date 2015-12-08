@@ -15,20 +15,18 @@
 	</h2>
 	<div class="post-tag">
 		<% if $Tags.exists %>
-
 			<% loop $Tags %>
 				<a href="$Link" title="$Title" >$Title</a><% if not Last %>, <% else %>	<% end_if %>
 			<% end_loop %>
 		<% end_if %>
 	</div>
 
-	<div class="post-time">
-
-		<a href="$MonthlyArchiveLink">$PublishDate.Format("d/m/Y")</a>
+<div class="post-time">
+	<a href="$MonthlyArchiveLink">$PublishDate.Format("d/m/Y")</a>
 </div>
 
 	<% if $Summary %>
-		<p>$Summary.LimitCharacters(80)
+		<p>$Summary
 	<% else %>
 		<p>$Excerpt
 	<% end_if %>
