@@ -6,9 +6,12 @@ class BlogPostExtension extends DataExtension {
         'FeaturedPost' => 'Boolean'
     );
 
-//    //TODO: add title to checkbox
-//    public function updateSettingsFields(FieldList $fields) {
-//        $fields->addFieldsToTab('Root.Featured', new CheckboxField ("FeaturedPost", "Featured Post"));
-//    }
+    public function updateCMSFields(FieldList $fields) {
+        $fields->fieldByName('blog-admin-sidebar')->push(
+            FieldGroup::create(
+                CheckboxField::create('FeaturedPost','Enable')
+            )->setTitle('Featured Post')->setName('FeaturedPostOption')
+        );
+    }
 
 }

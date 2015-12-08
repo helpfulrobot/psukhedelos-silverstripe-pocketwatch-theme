@@ -6,7 +6,6 @@ class BlogExtension extends DataExtension {
         'FeaturedPosts' => 'Boolean'
     );
 
-    //TODO: add title to checkbox
     public function updateSettingsFields(FieldList $fields) {
             $fields->addFieldToTab(
                 'Root.Settings',
