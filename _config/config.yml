@@ -7,6 +7,3 @@ BlogPost:
 Blog:
   extensions:
     - BlogExtension
-#BlogAdminSidebar:
-#  extensions:
-#    - BlogAdminSidebarExtension
