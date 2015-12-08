@@ -348,7 +348,7 @@ header {
 .post-tag a{
   font-family: Roboto;
   color:  #030202;
-  font-size: 14px;/* Approximation due to font substitution */
+  font-size: 14px;
   font-weight: bold;
   line-height: 4px;
    text-transform: uppercase;
@@ -357,7 +357,7 @@ header {
 .post-detail-tag a{
   font-family: Roboto;
   color:  #030202;
-  font-size: 14px;/* Approximation due to font substitution */
+  font-size: 14px;
 
   line-height: 4px;
    text-transform: uppercase;
@@ -384,9 +384,9 @@ header {
 .blog-detail-header h1{
   font-family: RobotoCondensed;
   color:  #030202;
-  font-size: 36px;/* Approximation due to font substitution */
+  font-size: 36px;
   font-weight: 400;
-  line-height: 30px;/* Approximation due to font substitution */
+  line-height: 30px;
   text-align: left;
 
 }
@@ -397,24 +397,22 @@ header {
   text-align:left;
   margin-top:20px;
 }
-.pagination {
-  font-size:24px;
-
-  .next i{
-    font-size:50px;
-    margin-left:10px;
-
-  }
-
+.pagination i  {
+  position:absolute;
+  margin-top:-14px;
+  color:#ccc;
+  font-weight: 100;
 }
-.prev .pagi-prev{
-  font-size:50px;
-  margin-right:20px;
-  padding-top:20px;
-
+.pagi-prev{
+  margin-left:-30px;
 }
-.page-number{
-  margin-top:-10px;
+.next i{
+  margin-top:-35px;
+  margin-left:30px;
+}
+.pagination span{
+  margin-left:5px;
+  margin-right:5px;
 }
 /*-------------------video-section-------------------*/
 .video-section {
@@ -456,7 +454,7 @@ header {
 .address p{
   @include font-mixin(Roboto,18px,#000);
   font-weight: 300;
-  line-height: 36px;/* Approximation due to font substitution */
+  line-height: 36px;
   text-align: left;
   margin-left:30px;
 }
