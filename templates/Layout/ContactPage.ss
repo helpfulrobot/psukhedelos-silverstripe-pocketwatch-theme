@@ -13,7 +13,7 @@
 
     <div class="col-md-6 contact-detail ">
         <div class="col-md-offset-1 col-md-10 contact-map ">
-            <div class="map" style="background-image: url($ContactImage.Url)"> </div>
+            <div class="map" style="background-image:url($ContactImage.Url);background-size:contain;background-repeat:no-repeat;background-position:center;"> </div>
             <div class="address">
 
                 <% if $SiteConfig.Address %>
