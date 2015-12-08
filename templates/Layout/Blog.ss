@@ -13,7 +13,7 @@
 	<% end_if %>
 	</div>
 
-	<div class="">
+	<div class="current-tag">
 		<% if $CurrentTag %>
 		 $CurrentTag.Title
 		<% end_if %>

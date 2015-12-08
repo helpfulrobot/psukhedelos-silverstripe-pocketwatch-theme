@@ -317,10 +317,20 @@ header {
 .blog-summary{
   margin-top:50px;
 }
+.current-tag{
+  text-transform: uppercase;
+  margin-left:20px;
+}
 .blog-entry{
   padding-bottom:180px;
 }
 .btn-categories{
+  border-radius:0px;
+  margin-right:10px;
+  text-transform:uppercase;
+  margin-top:5px;
+}
+.btn-details{
   border-radius:0px;
   margin-right:10px;
   text-transform:uppercase;
@@ -335,17 +345,26 @@ header {
   text-align: left;
   margin-top:10px;
 }
-.post-tag,.post-detail-tag a{
+.post-tag a{
   font-family: Roboto;
   color:  #030202;
   font-size: 14px;/* Approximation due to font substitution */
   font-weight: bold;
-  line-height: 12px;
+  line-height: 4px;
    text-transform: uppercase;
    padding-bottom:5px;
 }
-.post-detail-tag{
-  padding-top:15px;
+.post-detail-tag a{
+  font-family: Roboto;
+  color:  #030202;
+  font-size: 14px;/* Approximation due to font substitution */
+  font-weight: bold;
+  line-height: 4px;
+   text-transform: uppercase;
+   padding-bottom:5px;
+}
+.post-detail-time{
+  padding-left:10px;
 }
 .post-detail{
   margin-top:80px;

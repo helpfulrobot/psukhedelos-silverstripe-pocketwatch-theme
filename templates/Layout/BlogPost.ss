@@ -21,16 +21,22 @@
   <div class="blog-detail-header">
       	<h1>$Title</h1>
   </div>
+<div class ="clearfix">
 
-<div class="post-detail-category">
+<div class="post-detail-category pull-left">
   <% if $Categories.exists %>
   <% loop $Categories %>
-  	<a href="$Link" title="$Title" class="btn btn-default btn-categories">$Title</a><% if not Last %>, <% else %><% end_if %>
+  	<a href="$Link" title="$Title" class="btn-details ">$Title</a><% if not Last %>, <% else %><% end_if %>
   <% end_loop %>
   <% end_if %>
+
+
+
+
+
 </div>
 
-<div class="post-detail-tag">
+<div class="post-detail-tag  pull-left">
   <% if $Tags.exists %>
   <% loop $Tags %>
     <a href="$Link" title="$Title">$Title</a><% if not Last %>, <% else %><% end_if %>
@@ -38,9 +44,11 @@
   <% end_if %>
 </div>
 
-<div class="post-time">
-	<a href="$MonthlyArchiveLink">$PublishDate.Format("d/m/Y")</a>
+<div class="post-detail-time  pull-left">
+  <a href="$MonthlyArchiveLink">$PublishDate.Format("d/m/Y")</a>
 </div>
+</div>
+
 
 <div class="post-detail-content">
 <div class="content">$Content</div>

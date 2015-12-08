@@ -1,18 +1,19 @@
 <div class="post-summary col-lg-4 col-md-4 col-sm-6 clearfix ">
 
 
-	<p class="post-image">
-		<a href="$Link" <%t Blog.ReadMoreAbout "Read more about '{title}'..." title=$Title %>>
-			$FeaturedImage.CroppedImage(795,500)
-		</a>
-	</p>
+<p class="post-image">
+	<a href="$Link" <%t Blog.ReadMoreAbout "Read more about '{title}'..." title=$Title %>>
+		$FeaturedImage.CroppedImage(795,500)
+	</a>
+</p>
 
-	<h2>
-		<a href="$Link" title="<%t Blog.ReadMoreAbout "Read more about '{title}'..." title=$Title %>">
-			<% if $MenuTitle %>$MenuTitle
-			<% else %>$Title<% end_if %>
-		</a>
-	</h2>
+<h2>
+	<a href="$Link" title="<%t Blog.ReadMoreAbout "Read more about '{title}'..." title=$Title %>">
+		<% if $MenuTitle %>$MenuTitle
+		<% else %>$Title<% end_if %>
+	</a>
+</h2>
+
 	<div class="post-tag">
 		<% if $Tags.exists %>
 			<% loop $Tags %>
