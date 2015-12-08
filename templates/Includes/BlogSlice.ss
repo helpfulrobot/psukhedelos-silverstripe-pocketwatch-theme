@@ -8,7 +8,7 @@
 
                     <div class="col-sm-6 col-md-4">
                         <div class="thumbnail">
-                            <a href="$Link"><img data-src="$FeaturedImage.Url" alt="100%x200" src="$FeaturedImage.Url" data-holder-rendered="true" style="height: 200px; width: 100%; display: block;"></a>
+                            <a href="$Link"><img data-src="$FeaturedImage.Url" alt="$Title" src="$FeaturedImage.Url" data-holder-rendered="true" style="height: 200px; width: 100%; display: block;"></a>
                             <div class="caption">
                                 <h4>$Title</h4>
                                 $Content.Summary()
