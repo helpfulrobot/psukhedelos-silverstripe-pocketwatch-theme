@@ -9,7 +9,8 @@
 	<% if $Categories.exists %>
 		<a class="btn btn-default btn-categories" href="$Link" title="$Title">ALL</a>
 		<% loop $Categories %>
-			<a class="btn btn-default btn-categories" href="$Link" title="$Title">$Title</a><% if not Last %><% else %><% end_if %>
+			<a class="btn btn-default btn-categories" href="$Link" title="$Title">$Title</a>
+			<% if not Last %><% else %><% end_if %>
 		<% end_loop %>
 	<% end_if %>
 	</div>
@@ -35,9 +36,13 @@
 	$Form
 	$CommentsForm
 
-	<% with $PaginatedList %>
-		<% include Pagination %>
-	<% end_with %>
+
 </div>
+
+</div>
+<div class="container text-center">
+<% with $PaginatedList %>
+	<% include Pagination %>
+<% end_with %>
 </div>
 </div>

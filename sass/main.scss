@@ -106,12 +106,12 @@ border-bottom:3px solid #333;
   position: fixed;
   top: 0;
   z-index: 10;
+
   -webkit-transition: all .6s ease-in-out;
-  -webkit-transition: all 6s ease-in-out;
-  -moz-transition: all 6s ease-in-out;
-  -ms-transition: all 6s ease-in-out;
-  -o-transition: all 6s ease-in-out;
-  transition: all 6s ease-in-out;
+  -moz-transition: all .6s ease-in-out;
+  -ms-transition: all .6s ease-in-out;
+  -o-transition: all .6s ease-in-out;
+  transition: all .6s ease-in-out;
  }
 
 header {
@@ -358,7 +358,7 @@ header {
   font-family: Roboto;
   color:  #030202;
   font-size: 14px;/* Approximation due to font substitution */
-  font-weight: bold;
+
   line-height: 4px;
    text-transform: uppercase;
    padding-bottom:5px;
@@ -397,8 +397,24 @@ header {
   text-align:left;
   margin-top:20px;
 }
-.post-detail-content p{
+.pagination {
+  font-size:24px;
 
+  .next i{
+    font-size:50px;
+    margin-left:10px;
+
+  }
+
+}
+.prev .pagi-prev{
+  font-size:50px;
+  margin-right:20px;
+  padding-top:20px;
+
+}
+.page-number{
+  margin-top:-10px;
 }
 /*-------------------video-section-------------------*/
 .video-section {
