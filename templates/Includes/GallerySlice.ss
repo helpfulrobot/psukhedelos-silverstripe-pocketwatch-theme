@@ -5,7 +5,7 @@
 
         <div class="container">
             <!-- This is not the proper title, we want to know the gallery's name it refers to-->
-            <h2>WORK</h2>
+            <h2>$MenuTitle</h2>
         </div>
 
         <div class='row'>
@@ -13,7 +13,7 @@
                 <div class="carousel slide media-carousel home-gallery" id="media">
 
                     <div class="carousel-inner">
-                        <% loop $GalleryAlbums %>
+                        <% loop $Children.Limit(12) %>
                             <% if $First %>
                                 <div class="item active"><div class="row">
                             <% else_if $MultipleOf(3,3) %>

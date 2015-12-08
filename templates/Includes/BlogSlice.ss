@@ -3,8 +3,8 @@
     <div class="row ">
         <div class="blog container" >
             <div class="row">
-                <h2>Blog</h2>
-                <% loop $BlogPosts %>
+                <h2>$Title</h2>
+                <% loop $BlogPosts.Limit(3) %>
 
                     <div class="col-sm-6 col-md-4">
                         <div class="thumbnail">
