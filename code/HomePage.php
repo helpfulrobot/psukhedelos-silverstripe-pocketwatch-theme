@@ -28,22 +28,8 @@ class HomePage extends Page {
 }
 class HomePage_Controller extends ContentController {
 
-		// You can include any CSS or JS required by your project here.
-		// See: http://doc.silverstripe.org/framework/en/reference/requirements
-
-
-	public function BlogPosts(){
-		return BlogPost::get()
-				->sort('Sort', 'ASC')
-				->limit(3);
-	}
-
 	public function AllPages(){
-		//TODO: adding in sorting to guarantee order
-		return DataObject::get("SiteTree", "\"ParentID\" = 0");
+		return DataObject::get('SiteTree', 'ParentID = 0', 'Sort');
 	}
-
-
-
-
+	
 }
