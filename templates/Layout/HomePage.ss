@@ -3,7 +3,7 @@
 <% loop $AllPages %>
 
     <% if $ClassName == "Blog" %>
-        <% include BlogSlice %>
+        <% include BlogSlice BlogPosts=$Up.BlogPosts%>
     <% end_if %>
 
     <% if $ClassName == "Gallery" %>
