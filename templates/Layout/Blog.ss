@@ -2,6 +2,7 @@
 
 <div class="blog-entry content-container container blog-container<% if $SideBarView %>unit size3of4<% end_if %>">
 <div class="row blog-row">
+<div class="col-lg-10 col-md-10 col-lg-offset-1 col-md-offset-1">
 	<article class="blog-single-post">
 
 	<div class=" text-center">
@@ -37,5 +38,6 @@
 	<% with $PaginatedList %>
 		<% include Pagination %>
 	<% end_with %>
+</div>
 </div>
 </div>
