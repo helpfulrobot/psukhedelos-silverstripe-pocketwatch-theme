@@ -3,7 +3,7 @@
       <div class="container">
 
         <div class="about-text col-lg-offset-1 col-lg-10">
-            <p>$Content</p>
+            $Content
         </div>
       </div>
     </div>

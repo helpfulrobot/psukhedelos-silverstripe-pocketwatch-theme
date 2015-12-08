@@ -2,7 +2,8 @@
 
 @import "base/base";
 @import "base/typography";
-@import "utils/_mixins";
+@import "utils/mixins";
+@import "pages/textslice";
 
 $bg-white: #fff;
 $grey: #333;
@@ -248,9 +249,7 @@ header {
 }
 /*----------------------about ---------------------*/
 .about-text {
-  padding-top: 80px;
   text-align: center;
-
  }
 
 .about-text h1, p {
@@ -300,12 +299,11 @@ header {
 /*-------------------blog-section-----------------*/
 .blog-section {
   background: #efefef;
-  padding-bottom: 100px; }
+}
 
 .blog h2 {
-  margin-top: 100px;
   text-align: center;
-  margin-bottom: 40px; }
+}
 
 .blog-single-post{
   margin-top:50px;
@@ -484,24 +482,24 @@ header {
   text-align: center; }
 
 /*-------------------contact-section-----------------*/
-.contact-section {
-  background: #efefef;
-  min-height: 400px; }
-
-.contact-section h2 {
-  margin-top: 20px;
-  color: #383838; }
-
-.contact-sectoin p {
-  margin-bottom: 10px; }
-
-.contact-section-text-area {
-  margin-top: 10px;
-  padding: 20px;
-  background-color: rgba(235, 235, 235, 0.8); }
-
-.contact-section h2, p {
-  text-align: center; }
+//.contact-section {
+//  background: #efefef;
+//  min-height: 400px; }
+//
+//.contact-section h2 {
+//  margin-top: 20px;
+//  color: #383838; }
+//
+//.contact-sectoin p {
+//  margin-bottom: 10px; }
+//
+//.contact-section-text-area {
+//  margin-top: 10px;
+//  padding: 20px;
+//  background-color: rgba(235, 235, 235, 0.8); }
+//
+//.contact-section h2, p {
+//  text-align: center; }
 /*------------contact-page------*/
 .contact-page-section{
   margin-bottom:100px;
@@ -530,10 +528,12 @@ header {
 
 }
 .contact-detail .map{
+  background-size:contain;
+  background-repeat:no-repeat;
+  background-position:center;
   border-width: 0.48000000000000004px;
   border-color:  #444444;
   border-style: solid;
-  background-color:  #0076a3;
   width: 100%;
   display:block;
   height: 482px;
@@ -716,15 +716,13 @@ $icon-width: $icon-size + 10;
   font-size: 18px;
   font-weight: 100;
   text-align: left;
-  margin-left: 12px; }
+  margin-left: 12px;
+}
 
 .gallery-seperator {
   border-radius: 45px;
   border: 1px solid #ddd;
   margin-bottom: 20px; }
-
-.work-gallery-section h2 {
-  margin-top: 60px; }
 
 .gallery-child .carousel-inner img{
     @include breakpoint(sm){
@@ -819,7 +817,7 @@ $icon-width: $icon-size + 10;
 /* carousel */
 .media-carousel {
   margin-bottom: 0;
-  padding: 0 40px 30px 40px;
+  padding: 0 40px 0px 40px;
   margin-top: 30px; }
 
 /* Previous button  */
@@ -869,10 +867,8 @@ $icon-width: $icon-size + 10;
 /* End carousel */
 section {
   color: #ffffff;
-  min-height: 600px;
   height: auto;
   height: 100%;
-  padding-top: 100px;
   @include breakpoint(xs) {
     width:100%;
     height:550px;
