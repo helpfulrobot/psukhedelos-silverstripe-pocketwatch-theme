@@ -4,9 +4,10 @@
 <div class="row blog-row">
 <div class="col-lg-10 col-md-10 col-lg-offset-1 col-md-offset-1">
 
-	<div class="post-feature">
+
 
 		<% control $BlogPosts.Filter('FeaturedPost', '1').Sort(Sort, DESC).Limit(1) %>
+		<div class="post-feature">
 			<div class="post-feature-image">
 				 $FeaturedImage.CroppedImage(795,500)
 			</div>
@@ -35,7 +36,7 @@
 					<div class="post-feature-category pull-left">
 					  <% if $Categories.exists %>
 					  <% loop $Categories %>
-					  	<a href="$Link" title="$Title" class="btn-details ">$Title</a><% if not Last %>, <% else %>|<% end_if %>
+					  	<a href="$Link" title="$Title" class="btn-details ">$Title</a><% if not Last %>, <% else %> | <% end_if %>
 					  <% end_loop %>
 					  <% end_if %>
 
@@ -49,8 +50,9 @@
 						<% end_if %>
 					</div>
 			</div>
+			</div>
 	 <% end_control %>
-</div>
+
 
 <div class="blog-single-post">
 	<article >
@@ -73,7 +75,7 @@
 			 $CurrentTag.Title
 			<% end_if %>
 		</div>
-		
+
 		$Content
 	</div>
 

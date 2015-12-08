@@ -367,8 +367,8 @@ th {
 }
 @font-face {
   font-family: 'Glyphicons Halflings';
-  src: url(../fonts/bootstrap/glyphicons-halflings-regular.eot?1449015768);
-  src: url(../fonts/bootstrap/glyphicons-halflings-regular.eot?&1449015768#iefix) format("embedded-opentype"), url(../fonts/bootstrap/glyphicons-halflings-regular.woff2?1449015768) format("woff2"), url(../fonts/bootstrap/glyphicons-halflings-regular.woff?1449015768) format("woff"), url(../fonts/bootstrap/glyphicons-halflings-regular.ttf?1449015768) format("truetype"), url(../fonts/bootstrap/glyphicons-halflings-regular.svg?1449015768#glyphicons_halflingsregular) format("svg");
+  src: url(../fonts/bootstrap/glyphicons-halflings-regular.eot?1449016624);
+  src: url(../fonts/bootstrap/glyphicons-halflings-regular.eot?&1449016624#iefix) format("embedded-opentype"), url(../fonts/bootstrap/glyphicons-halflings-regular.woff2?1449016624) format("woff2"), url(../fonts/bootstrap/glyphicons-halflings-regular.woff?1449016624) format("woff"), url(../fonts/bootstrap/glyphicons-halflings-regular.ttf?1449016624) format("truetype"), url(../fonts/bootstrap/glyphicons-halflings-regular.svg?1449016624#glyphicons_halflingsregular) format("svg");
 }
 /* line 24, ../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/_glyphicons.scss */
 .glyphicon {
@@ -8799,8 +8799,8 @@ button.close {
  * -------------------------- */
 @font-face {
   font-family: 'FontAwesome';
-  src: url(../fonts/font-awesome/fontawesome-webfont.eot?1449086123);
-  src: url(../fonts/font-awesome/fontawesome-webfont.eot?&1449086123#iefix) format("embedded-opentype"), url(../fonts/font-awesome/fontawesome-webfont.woff2?1449086124) format("woff2"), url(../fonts/font-awesome/fontawesome-webfont.woff?1449086124) format("woff"), url(../fonts/font-awesome/fontawesome-webfont.ttf?1449086124) format("truetype"), url(../fonts/font-awesome/fontawesome-webfont.svg?1449086123#fontawesomeregular) format("svg");
+  src: url(../fonts/font-awesome/fontawesome-webfont.eot?1449086450);
+  src: url(../fonts/font-awesome/fontawesome-webfont.eot?&1449086450#iefix) format("embedded-opentype"), url(../fonts/font-awesome/fontawesome-webfont.woff2?1449086450) format("woff2"), url(../fonts/font-awesome/fontawesome-webfont.woff?1449086450) format("woff"), url(../fonts/font-awesome/fontawesome-webfont.ttf?1449086450) format("truetype"), url(../fonts/font-awesome/fontawesome-webfont.svg?1449086450#fontawesomeregular) format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -12588,39 +12588,39 @@ header {
   background: #efefef;
 }
 
-/* line 304, ../sass/main.scss */
+/* line 303, ../sass/main.scss */
 .blog h2 {
   text-align: center;
 }
 
-/* line 308, ../sass/main.scss */
+/* line 306, ../sass/main.scss */
 .blog-single-post {
   margin-top: 50px;
 }
 
-/* line 312, ../sass/main.scss */
+/* line 309, ../sass/main.scss */
 .post-summary {
   min-height: 470px;
 }
 
-/* line 315, ../sass/main.scss */
+/* line 312, ../sass/main.scss */
 .blog-summary {
   margin-top: 50px;
 }
 
-/* line 318, ../sass/main.scss */
+/* line 315, ../sass/main.scss */
 .current-tag {
   text-transform: uppercase;
   margin-left: 20px;
   font-weight: bold;
 }
 
-/* line 323, ../sass/main.scss */
+/* line 320, ../sass/main.scss */
 .blog-entry {
   padding-bottom: 180px;
 }
 
-/* line 326, ../sass/main.scss */
+/* line 323, ../sass/main.scss */
 .btn-categories {
   border-radius: 0px;
   margin-right: 10px;
@@ -12628,7 +12628,7 @@ header {
   margin-top: 5px;
 }
 
-/* line 332, ../sass/main.scss */
+/* line 329, ../sass/main.scss */
 .btn-details {
   border-radius: 0px;
   margin-right: 10px;
@@ -12636,7 +12636,7 @@ header {
   margin-top: 5px;
 }
 
-/* line 338, ../sass/main.scss */
+/* line 335, ../sass/main.scss */
 .post-summary p {
   font-family: Roboto;
   color: #030202;
@@ -12649,7 +12649,7 @@ header {
   margin-top: 10px;
 }
 
-/* line 347, ../sass/main.scss */
+/* line 344, ../sass/main.scss */
 .post-tag a {
   font-family: Roboto;
   color: #030202;
@@ -12660,13 +12660,7 @@ header {
   padding-bottom: 5px;
 }
 
-/* line 356, ../sass/main.scss */
-.post-detail-tag {
-  margin-left: 10px;
-  margin-right: 10px;
-}
-
-/* line 360, ../sass/main.scss */
+/* line 354, ../sass/main.scss */
 .post-detail-tag a {
   font-family: Roboto;
   color: #030202;
@@ -12674,25 +12668,26 @@ header {
   line-height: 4px;
   text-transform: uppercase;
   padding-bottom: 5px;
+  margin-right: 5px;
 }
 
-/* line 368, ../sass/main.scss */
+/* line 364, ../sass/main.scss */
 .post-detail-time {
   padding-left: 10px;
 }
 
-/* line 371, ../sass/main.scss */
+/* line 368, ../sass/main.scss */
 .post-detail {
   margin-top: 80px;
 }
 
-/* line 374, ../sass/main.scss */
+/* line 372, ../sass/main.scss */
 .btn-return-blog {
   border-radius: 0px;
   margin-top: 20px;
 }
 
-/* line 378, ../sass/main.scss */
+/* line 377, ../sass/main.scss */
 .post-detail-content img {
   width: 100%;
   height: 400px;

@@ -300,14 +300,11 @@ header {
 .blog-section {
   background: #efefef;
 }
-
 .blog h2 {
   text-align: center;
 }
-
 .blog-single-post{
   margin-top:50px;
-
 }
 .post-summary{
   min-height:470px;
@@ -353,10 +350,7 @@ header {
    text-transform: uppercase;
    padding-bottom:5px;
 }
-.post-detail-tag{
-  margin-left:10px;
-  margin-right:10px;
-}
+
 .post-detail-tag a{
   font-family: Roboto;
   color:  #030202;
@@ -364,21 +358,27 @@ header {
   line-height: 4px;
    text-transform: uppercase;
    padding-bottom:5px;
+   margin-right:5px;
 }
+
 .post-detail-time{
   padding-left:10px;
 }
+
 .post-detail{
   margin-top:80px;
 }
+
 .btn-return-blog{
   border-radius:0px;
   margin-top:20px;
 }
+
 .post-detail-content img{
   width:100%;
   height:400px;
 }
+
 .img.leftAlone{
   width:100%;
   height:468px;

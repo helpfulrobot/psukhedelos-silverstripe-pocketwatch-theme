@@ -18,7 +18,7 @@
 <div class="post-detail-category pull-left">
   <% if $Categories.exists %>
   <% loop $Categories %>
-  	<a href="$Link" title="$Title" class="btn-details ">$Title</a><% if not Last %>, <% else %>|<% end_if %>
+  	<a href="$Link" title="$Title" class="btn-details ">$Title</a><% if not Last %>, <% else %> | <% end_if %>
   <% end_loop %>
   <% end_if %>
 
@@ -27,7 +27,7 @@
 <div class="post-detail-tag  pull-left">
   <% if $Tags.exists %>
   <% loop $Tags %>
-    <a href="$Link" title="$Title">$Title</a><% if not Last %>, <% else %>|<% end_if %>
+    <a href="$Link" title="$Title">$Title</a><% if not Last %>, <% else %> | <% end_if %>
   <% end_loop %>
   <% end_if %>
 </div>
