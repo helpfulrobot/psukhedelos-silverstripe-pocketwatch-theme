@@ -38,7 +38,14 @@ class HomePage_Controller extends ContentController {
 				->limit(12);
 	}
 
+	public function BlogPosts(){
+		return BlogPost::get()
+				->sort('Sort', 'ASC')
+				->limit(3);
+	}
+
 	public function AllPages(){
+		//TODO: adding in sorting to guarantee order
 		return DataObject::get("SiteTree", "\"ParentID\" = 0");
 	}
 
