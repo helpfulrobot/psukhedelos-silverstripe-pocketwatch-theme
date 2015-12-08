@@ -14,13 +14,23 @@
 	</a>
 </h2>
 
-	<div class="post-tag">
-		<% if $Tags.exists %>
-			<% loop $Tags %>
-				<a href="$Link" title="$Title" >$Title</a><% if not Last %>, <% else %>	<% end_if %>
-			<% end_loop %>
-		<% end_if %>
-	</div>
+
+<div class="post-detail-category pull-left">
+  <% if $Categories.exists %>
+  <% loop $Categories %>
+  	<a href="$Link" title="$Title" class="btn-details ">$Title</a><% if not Last %>, <% else %>|<% end_if %>
+  <% end_loop %>
+  <% end_if %>
+
+</div>
+
+<div class="post-detail-tag  pull-left">
+  <% if $Tags.exists %>
+  <% loop $Tags %>
+    <a href="$Link" title="$Title">$Title</a><% if not Last %>, <% else %>|<% end_if %>
+  <% end_loop %>
+  <% end_if %>
+</div>
 
 <div class="post-time">
 	<a href="$MonthlyArchiveLink">$PublishDate.Format("d/m/Y")</a>

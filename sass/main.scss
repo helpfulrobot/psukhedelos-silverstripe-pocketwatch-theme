@@ -3,7 +3,6 @@
 @import "base/base";
 @import "base/typography";
 @import "utils/_mixins";
-@import "pages/textslice";
 
 $bg-white: #fff;
 $grey: #333;
@@ -12,11 +11,6 @@ $bg-gradient-1 : rgba(232,232,232,0.5);
 $dropdown-color: #fff;
 $nav-font-color: #000;
 $nav-font-hover: rgba(242,242,242,0.7);
-
-/*-- Global --*/
-h2{
-  text-transform: uppercase;
-}
 
 /*------------ pre define class in CSS---------*/
 .nav-font{
@@ -326,6 +320,7 @@ header {
 .current-tag{
   text-transform: uppercase;
   margin-left:20px;
+  font-weight: bold;
 }
 .blog-entry{
   padding-bottom:180px;
@@ -360,11 +355,14 @@ header {
    text-transform: uppercase;
    padding-bottom:5px;
 }
+.post-detail-tag{
+  margin-left:10px;
+  margin-right:10px;
+}
 .post-detail-tag a{
   font-family: Roboto;
   color:  #030202;
   font-size: 14px;
-
   line-height: 4px;
    text-transform: uppercase;
    padding-bottom:5px;
@@ -420,6 +418,63 @@ header {
   margin-left:5px;
   margin-right:5px;
 }
+.post-feature{
+  position:inherit;
+  height:500px;
+  margin-top:80px;
+  color:#fff;
+
+  img{
+    width:100%;
+    height:500px;
+    }
+
+  .post-feature-image{
+    position:absolute;
+    width:100%;
+    }
+
+  .post-feature-text{
+    position:absolute;
+    z-index: 0;
+    background:#111;
+    opacity:0.8;
+    height:200px;
+    left:10px;
+    right:10px;
+    top:58%;
+    color:#fff;
+
+    .post-feature-category {
+      margin-right:10px;
+    }
+
+    a,p{
+      z-index:1;
+      color:#fff;
+      }
+
+      a{
+        text-transform: uppercase;
+      }
+
+
+    .post-feature-summary{
+      height:auto;
+
+
+      p{
+        font-family: Roboto;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 24px;
+        text-align: left;
+
+      }
+    }
+  }
+}
+
 /*-------------------video-section-------------------*/
 .video-section {
   padding-top: 100px;
@@ -428,32 +483,25 @@ header {
 .video-section h2 {
   text-align: center; }
 
-/*-------------------text-slice-section-----------------*/
+/*-------------------contact-section-----------------*/
+.contact-section {
+  background: #efefef;
+  min-height: 400px; }
 
-//.text-slice-section {
-//  background: #efefef;
-//  min-height: 400px;
-//}
-//
-//.text-slice-section h2 {
-//  margin-top: 20px;
-//  color: #383838;
-//}
-//
-//.text-slice-section p {
-//  margin-bottom: 10px;
-//}
-//
-//.text-slice-section-text-area {
-//  margin-top: 10px;
-//  padding: 20px;
-//  background-color: rgba(235, 235, 235, 0.8);
-//}
-//
-//.text-slice-section h2, p {
-//  text-align: center;
-//}
+.contact-section h2 {
+  margin-top: 20px;
+  color: #383838; }
 
+.contact-sectoin p {
+  margin-bottom: 10px; }
+
+.contact-section-text-area {
+  margin-top: 10px;
+  padding: 20px;
+  background-color: rgba(235, 235, 235, 0.8); }
+
+.contact-section h2, p {
+  text-align: center; }
 /*------------contact-page------*/
 .contact-page-section{
   margin-bottom:100px;
@@ -482,12 +530,10 @@ header {
 
 }
 .contact-detail .map{
-  background-size:contain;
-  background-repeat:no-repeat;
-  background-position:center;
   border-width: 0.48000000000000004px;
   border-color:  #444444;
   border-style: solid;
+  background-color:  #0076a3;
   width: 100%;
   display:block;
   height: 482px;
@@ -841,7 +887,9 @@ section {
   background-size: cover;
   @include breakpoint(xs) {
       background-attachment: scroll;
-  }}
+  }
+}
+
 .mobile-parallax{
   @include breakpoint(xs) {
     margin:0px;
