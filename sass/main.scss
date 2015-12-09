@@ -291,9 +291,6 @@ header {
 .award-container {
   background: rgba(255, 255, 255, 0.8); }
 
-.text-area-section h2, p {
-  text-align: center; }
-
 .blockquote {
   border-left: 0px; }
 
@@ -304,7 +301,8 @@ header {
   padding-bottom: 40px; }
 
 .video-section h2 {
-  text-align: center; }
+  text-align: center;
+}
 
 /*------------contact-page------*/
 .contact-page-section{
@@ -710,3 +708,4 @@ section {
 
 .scroll-top a:link, .scroll-top a:visited {
   color: #222; }
+
