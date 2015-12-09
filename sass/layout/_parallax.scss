@@ -1,5 +1,5 @@
 section {
-  color: #ffffff;
+  color: #fff;
   height: auto;
   height: 100%;
   @include breakpoint(xs) {
@@ -10,9 +10,6 @@ section {
 
 .parallax-1 {
   background: no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
   background-size: cover;
   @include breakpoint(xs) {
       background-attachment: scroll;

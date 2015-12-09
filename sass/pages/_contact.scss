@@ -1,31 +1,33 @@
 //Contact specific styles
-.contact-page-section{
+.contact-page-section {
   margin-bottom:100px;
 }
-.contact-row{
+
+.contact-row {
   margin-top:100px;
 }
+
 .address i {
   margin-right:20px;
 }
-.address p{
-  @include font-mixin(Roboto,18px,#000);
-  font-weight: 300;
+
+.address p {
+  @include font-mixin(Roboto,300,left,18px,#000);
   line-height: 36px;
-  text-align: left;
   margin-left:30px;
 }
-.first-address{
+
+.first-address {
   padding-top:10px;
 }
-.address{
+
+.address {
   margin-top:30px;
   background-color:  rgba(229, 229, 229, 0.39);
-
-    width:100%;
-
+  width:100%;
 }
-.contact-detail .map{
+
+.contact-detail .map {
   background-size:contain;
   background-repeat:no-repeat;
   background-position:center;
@@ -35,60 +37,66 @@
   width: 100%;
   display:block;
   height: 482px;
+
   @include breakpoint(md) {
     width:100%;
   }
-
 }
-.contact-map{
+
+.contact-map {
   @include breakpoint(md) {
   float:right;
   }
+
   @include breakpoint(lg) {
   float:right;
   }
 }
-.form-header{
-  color:  #000000;
-  font-size: 36px;
+
+.form-header {
+  @include font-mixin(Roboto,400,left,36px,#000);
   font-weight: 400;
-  text-align: left;
   margin-top: -10px;
 }
-.form-name label,.form-email label,.form-message label{
-  @include font-mixin(Roboto,18px,#000);
-  font-weight: 300;
-  text-align: left;
+
+.form-name label,.form-email label,.form-message label {
+  @include font-mixin(Roboto,300,left,18px,#000);
   margin-top:28px;
 }
-input.form-name{
+
+input.form-name {
   border:none;
   width:100%;
   margin-top:22px;
   border-bottom:1px solid #777;
 }
-input.form-email{
+
+input.form-email {
   border:none;
   width:100%;
   margin-top:22px;
   border-bottom:1px solid #777;
 }
-textarea.form-message{
+
+textarea.form-message {
   width:100%;
   margin-top:22px;
 }
-#UserForm_Form_action_process{
+
+#UserForm_Form_action_process {
   margin-top:40px;
   border:1px solid #333;
   background:none;
   padding:7px 22px 7px 22px;
 }
-.content-form{
+.content-form {
   padding-bottom:50px;
   display:block;
+
   @include breakpoint(md) {
   float:right;
   }
+
   @include breakpoint(lg) {
   float:right;
   }
