@@ -1,5 +1,5 @@
 
-<div class="blog-section container-fluid">
+<section class="blog-slice container-fluid">
     <div class="row ">
         <div class="blog container" >
             <div class="row">
@@ -20,4 +20,4 @@
             </div>
         </div>
     </div>
-</div><!---blog-section-end--->
+</section>

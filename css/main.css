@@ -367,8 +367,8 @@ th {
 }
 @font-face {
   font-family: 'Glyphicons Halflings';
-  src: url(../fonts/bootstrap/glyphicons-halflings-regular.eot?1449016624);
-  src: url(../fonts/bootstrap/glyphicons-halflings-regular.eot?&1449016624#iefix) format("embedded-opentype"), url(../fonts/bootstrap/glyphicons-halflings-regular.woff2?1449016624) format("woff2"), url(../fonts/bootstrap/glyphicons-halflings-regular.woff?1449016624) format("woff"), url(../fonts/bootstrap/glyphicons-halflings-regular.ttf?1449016624) format("truetype"), url(../fonts/bootstrap/glyphicons-halflings-regular.svg?1449016624#glyphicons_halflingsregular) format("svg");
+  src: url(../fonts/bootstrap/glyphicons-halflings-regular.eot?1449015768);
+  src: url(../fonts/bootstrap/glyphicons-halflings-regular.eot?&1449015768#iefix) format("embedded-opentype"), url(../fonts/bootstrap/glyphicons-halflings-regular.woff2?1449015768) format("woff2"), url(../fonts/bootstrap/glyphicons-halflings-regular.woff?1449015768) format("woff"), url(../fonts/bootstrap/glyphicons-halflings-regular.ttf?1449015768) format("truetype"), url(../fonts/bootstrap/glyphicons-halflings-regular.svg?1449015768#glyphicons_halflingsregular) format("svg");
 }
 /* line 24, ../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/_glyphicons.scss */
 .glyphicon {
@@ -8799,8 +8799,8 @@ button.close {
  * -------------------------- */
 @font-face {
   font-family: 'FontAwesome';
-  src: url(../fonts/font-awesome/fontawesome-webfont.eot?1449086450);
-  src: url(../fonts/font-awesome/fontawesome-webfont.eot?&1449086450#iefix) format("embedded-opentype"), url(../fonts/font-awesome/fontawesome-webfont.woff2?1449086450) format("woff2"), url(../fonts/font-awesome/fontawesome-webfont.woff?1449086450) format("woff"), url(../fonts/font-awesome/fontawesome-webfont.ttf?1449086450) format("truetype"), url(../fonts/font-awesome/fontawesome-webfont.svg?1449086450#fontawesomeregular) format("svg");
+  src: url(../fonts/font-awesome/fontawesome-webfont.eot?1449086123);
+  src: url(../fonts/font-awesome/fontawesome-webfont.eot?&1449086123#iefix) format("embedded-opentype"), url(../fonts/font-awesome/fontawesome-webfont.woff2?1449086124) format("woff2"), url(../fonts/font-awesome/fontawesome-webfont.woff?1449086124) format("woff"), url(../fonts/font-awesome/fontawesome-webfont.ttf?1449086124) format("truetype"), url(../fonts/font-awesome/fontawesome-webfont.svg?1449086123#fontawesomeregular) format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -12169,8 +12169,8 @@ a:hover, a:focus, a:active, a:visited {
 }
 
 /* line 1, ../sass/pages/_blogslice.scss */
-.blog-section {
-  background: #efefef;
+.blog-slice {
+  background: #f2f2f2;
 }
 
 /* line 5, ../sass/pages/_blogslice.scss */
