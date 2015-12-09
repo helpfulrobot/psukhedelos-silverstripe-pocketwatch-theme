@@ -12,10 +12,11 @@ class ContactPage extends UserDefinedForm {
 
         $fields->addFieldToTab(
             'Root.Image Upload',
-            $uploadHeroField = new UploadField(
+            $uploadHeroField = UploadField::create(
                 'ContactImage',
-                'Please upload an image to be used as your Contact Image.'
-            )
+                'Please upload an image to be displayed on your Contact Page. '
+            )   ->setDescription('We recommend a <strong>360x482</strong> image.')
+
         );
 
         $uploadHeroField->setFolderName('Contact');
@@ -24,4 +25,12 @@ class ContactPage extends UserDefinedForm {
         return $fields;
     }
 }
-class ContactPage_Controller extends UserDefinedForm_Controller {}
+class ContactPage_Controller extends UserDefinedForm_Controller {
+    /*
+     *
+     * TextField::create('MyText', 'My Text Label')
+    ->setDescription('More <strong>detailed</strong> help')
+    ->addExtraClass('cms-description-toggle')
+    ->setRightTitle('<a class="cms-description-trigger">My custom icon</a>');
+     * */
+}
