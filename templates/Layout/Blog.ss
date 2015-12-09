@@ -13,12 +13,12 @@
 			</div>
 
 			<div class="post-feature-text col-md-5">
-					<h2>
+					<h3>
 						<a href="$Link" title="<%t Blog.ReadMoreAbout "Read more about '{title}'..." title=$Title %>">
 							<% if $MenuTitle %>$MenuTitle
 							<% else %>$Title<% end_if %>
 						</a>
-					</h2>
+					</h3>
 
 					<div class="post-feature-time">
 						<a href="$MonthlyArchiveLink">$PublishDate.Format("d/m/Y")</a>

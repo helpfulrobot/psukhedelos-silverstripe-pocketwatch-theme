@@ -18,7 +18,7 @@
 		<% end_if %>
 
   <div class="blog-detail-header">
-      	<h1>$Title</h1>
+      	<h3>$Title</h3>
   </div>
 <div class ="clearfix">
 

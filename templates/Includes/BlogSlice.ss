@@ -9,7 +9,7 @@
                         <div class="thumbnail">
                             <a href="$Link"><img data-src="$FeaturedImage.Url" alt="$Title" src="$FeaturedImage.Url" data-holder-rendered="true" style="height: 200px; width: 100%; display: block;"></a>
                             <div class="blog-slice-post caption">
-                                <h4 class="blog-slice-title">$Title</h4>
+                                <h3 class="blog-slice-title">$Title</h3>
                                 <p >$Content.Summary()</p>
                                 <a href="$Link">read more</a>
                             </div>
