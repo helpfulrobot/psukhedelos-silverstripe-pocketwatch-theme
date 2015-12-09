@@ -5,16 +5,67 @@
 <div class="col-lg-10 col-md-10 col-lg-offset-1 col-md-offset-1">
 
 	<div class="text-center blog-btn-group">
-	<% if $Categories.exists %>
-		<a class="btn btn-default btn-categories" href="$Link" title="$Title">ALL</a>
-		<% loop $Categories %>
-			<a class="btn btn-default btn-categories" href="$Link" title="$Title">$Title</a>
-			<% if not Last %><% else %><% end_if %>
-		<% end_loop %>
-	<% end_if %>
+		<% if $Categories.exists %>
+			<a class="btn btn-default btn-categories" href="$Link" title="$Title">ALL</a>
+			<% loop $Categories %>
+				<a class="btn btn-default btn-categories" href="$Link" title="$Title">$Title</a>
+				<% if not Last %><% else %><% end_if %>
+			<% end_loop %>
+		<% end_if %>
 	</div>
 
-		<% control $BlogPosts.Filter('FeaturedPost', '1').Sort(Sort, DESC).Limit(1) %>
+	<% if $FeaturedPosts %>
+		<% if $CurrentCategory %>
+			<% if $getFeaturedByCategoryID($CurrentCategory.ID) %>
+			<% control $getFeaturedByCategoryID($CurrentCategory.ID) %>
+                <div class="post-feature">
+                    <div class="post-feature-image">
+						$FeaturedImage.CroppedImage(795,500)
+                    </div>
+
+                    <div class="post-feature-text col-md-5">
+                        <h3>
+                            <a href="$Link" title="<%t Blog.ReadMoreAbout "Read more about '{title}'..." title=$Title %>">
+								<% if $MenuTitle %>$MenuTitle
+								<% else %>$Title<% end_if %>
+                            </a>
+                        </h3>
+
+                        <div class="post-feature-time">
+                            <a href="$MonthlyArchiveLink">$PublishDate.Format("d/m/Y")</a>
+                        </div>
+
+                        <div class=" post-feature-summary ">
+							<% if $Summary %>
+                            <p>$Summary
+							<% else %>
+                            <p>$Excerpt
+							<% end_if %>
+                        </p>
+                        </div>
+
+                        <div class="post-feature-category pull-left">
+							<% if $Categories.exists %>
+								<% loop $Categories %>
+                                    <a href="$Link" title="$Title" class="btn-details ">$Title</a><% if not Last %>, <% else %> | <% end_if %>
+								<% end_loop %>
+							<% end_if %>
+
+                        </div>
+
+                        <div class="post-feature-tag">
+							<% if $Tags.exists %>
+								<% loop $Tags %>
+                                    <a href="$Link" title="$Title" >$Title</a><% if not Last %>, <% else %>	<% end_if %>
+								<% end_loop %>
+							<% end_if %>
+                        </div>
+                    </div>
+                </div>
+			<% end_control %>
+			<% end_if %>
+		<% else %>
+		<% control $BlogPosts.Filter('FeaturedPost', '1').Sort(PublishDate, DESC).Limit(1) %>
 		<div class="post-feature">
 			<div class="post-feature-image">
 				 $FeaturedImage.CroppedImage(795,500)
@@ -60,6 +111,9 @@
 			</div>
 			</div>
 	 <% end_control %>
+		<% end_if %>
+
+	<% end_if %>
 
 <div class= "row">
 <div class="blog-single-post">
