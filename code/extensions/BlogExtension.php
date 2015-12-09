@@ -15,15 +15,26 @@ class BlogExtension extends DataExtension {
             );
     }
 
-    public function getFeaturedByCategoryID($id){
+    public function getCategory(){
+        $params = Controller::curr()->getURLParams();
 
-        return DataObject::get(
-            'BlogPost',
-            'FeaturedPost = 1 AND BlogCategoryID = '.$id,
-            'PublishDate DESC'
-        )   ->leftJoin('BlogPost_Categories','BlogPost_Categories.BlogPostID = BlogPost.ID')
-            ->first();
+        if (isset($params["Category"])) {
+            return $params["Category"];
+        }
 
+        return null;
+    }
+
+    public function getFeaturedBlogPost(){
+        $category = $this->getCategory();
+
+        if ($category) {
+            $category = BlogCategory::get()->filter("URLSegment", $category)->first();
+
+            return $category->BlogPosts()->filter("FeaturedPost", true)->first();
+        }
+
+        return BlogPost::get()->filter("FeaturedPost", true)->first();
     }
 
     public function getBlogSlicePosts(){
