@@ -18,6 +18,7 @@
                     </div>
                 <% end_loop %>
             </div>
+            <a href="$Link" class="btn btn-default">See All</a>
         </div>
     </div>
 </section>
