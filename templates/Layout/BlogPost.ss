@@ -4,6 +4,7 @@
 
   <div class="container post-detail">
     <div class="col-lg-10 col-md-10 col-lg-offset-1 col-md-offset-1">
+
 <article>
 
 		<% if $FeaturedImage %>
@@ -52,7 +53,7 @@
 
 </article>
 <% if $Categories.exists %>
-  <a class="btn btn-default btn-return-blog" href="$Link" title="$Title">RETURN TO BLOG</a>
+  <a class="btn btn-default btn-return-blog" href="$Parent.Link" title="$Title">RETURN TO BLOG</a>
 <% end_if %>
 
 

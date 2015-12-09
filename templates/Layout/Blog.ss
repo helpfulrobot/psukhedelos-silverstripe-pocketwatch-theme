@@ -61,8 +61,9 @@
 			</div>
 	 <% end_control %>
 
-
+<div class= "row">
 <div class="blog-single-post">
+
 	<article >
 
 
@@ -90,6 +91,7 @@
 	</article>
 	$Form
 	$CommentsForm
+</div>
 </div>
 </div>
 </div>
