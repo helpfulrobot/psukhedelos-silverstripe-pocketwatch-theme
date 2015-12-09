@@ -4,7 +4,15 @@
 <div class="row blog-row">
 <div class="col-lg-10 col-md-10 col-lg-offset-1 col-md-offset-1">
 
-
+	<div class="text-center blog-btn-group">
+	<% if $Categories.exists %>
+		<a class="btn btn-default btn-categories" href="$Link" title="$Title">ALL</a>
+		<% loop $Categories %>
+			<a class="btn btn-default btn-categories" href="$Link" title="$Title">$Title</a>
+			<% if not Last %><% else %><% end_if %>
+		<% end_loop %>
+	<% end_if %>
+	</div>
 
 		<% control $BlogPosts.Filter('FeaturedPost', '1').Sort(Sort, DESC).Limit(1) %>
 		<div class="post-feature">
@@ -57,15 +65,7 @@
 <div class="blog-single-post">
 	<article >
 
-	<div class=" text-center">
-	<% if $Categories.exists %>
-		<a class="btn btn-default btn-categories" href="$Link" title="$Title">ALL</a>
-		<% loop $Categories %>
-			<a class="btn btn-default btn-categories" href="$Link" title="$Title">$Title</a>
-			<% if not Last %><% else %><% end_if %>
-		<% end_loop %>
-	<% end_if %>
-	</div>
+
 
 
 
