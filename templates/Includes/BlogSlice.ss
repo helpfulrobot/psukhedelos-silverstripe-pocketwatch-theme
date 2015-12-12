@@ -24,7 +24,12 @@
                     </div>
                 <% end_loop %>
             </div>
-            <a href="$Link" class="btn btn-default">See All</a>
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <a href="$Link" class="btn btn-default">See All</a>
+                </div>
+            </div>
+
         </div>
     </div>
 </section>
