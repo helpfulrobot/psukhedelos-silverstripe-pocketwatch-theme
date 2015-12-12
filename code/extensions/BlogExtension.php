@@ -39,37 +39,21 @@ class BlogExtension extends DataExtension {
 
     public function getBlogSlicePosts(){
 
-        $featurePost = DataObject::get(
-            'BlogPost',
-            'FeaturedPost = 1',
-            'PublishDate DESC'
-        )   ->first();
+        if($this->owner->FeaturedPosts && $this->getFeaturedBlogPost()){
+            $featured = $this->getFeaturedBlogPost();
+            $others = BlogPost::get()->exclude('ID',$featured->ID)->limit(2)->sort('PublishDate','DESC');
+            $posts = ArrayList::create();
+            $posts->push($featured);
+            foreach($others as $item){
+                $posts->push($item);
+            }
 
-        if($featurePost){
-            $otherPosts = DataObject::get(
-                'BlogPost',
-                'BlogPost.ID != '.$featurePost->ID,
-                'PublishDate DESC'
-            )->limit(2);
-
-//            $otherPosts->limit(3);
-//            $otherPosts->add($featurePost);
-//            array_unshift($otherPosts , $featurePost);
-//            var_dump($otherPosts);
-//            die();
-
-        }else{
-            $otherPosts = DataObject::get(
-                'BlogPost',
-                '',
-                'PublishDate DESC'
-            )->limit(3);
+            return $posts;
         }
 
+        return BlogPost::get()->limit(3)->sort('PublishDate','DESC');
 
-
-//        var_dump($otherPosts);
-//        die();
-        return $otherPosts;
     }
+
+
 }
