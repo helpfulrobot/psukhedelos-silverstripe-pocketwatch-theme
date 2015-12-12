@@ -12678,20 +12678,22 @@ section {
 /* line 1, ../sass/pages/_textslice.scss */
 .text-slice-section {
   background: white;
+  background: no-repeat center;
+  background-size: cover;
 }
 
-/* line 5, ../sass/pages/_textslice.scss */
+/* line 7, ../sass/pages/_textslice.scss */
 .text-slice-section h2 {
   color: black;
 }
 
-/* line 9, ../sass/pages/_textslice.scss */
+/* line 11, ../sass/pages/_textslice.scss */
 .text-slice-section p {
   font-size: 1.5em;
   line-height: 1.25;
 }
 
-/* line 14, ../sass/pages/_textslice.scss */
+/* line 16, ../sass/pages/_textslice.scss */
 .text-slice-section-text-area {
   padding: 0px;
 }
