@@ -3,9 +3,8 @@
 
     <div class="container">
 
-        <div class="container">
-            <!-- This is not the proper title, we want to know the gallery's name it refers to-->
-            <h2>$MenuTitle</h2>
+        <div class="row">
+            <h2 class="col-md-12">$Title</h2>
         </div>
 
         <div class='row'>
