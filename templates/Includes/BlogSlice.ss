@@ -8,10 +8,16 @@
                 <% loop $getBlogSlicePosts %>
                     <div class="col-sm-6 col-md-4">
                         <div class="thumbnail">
-                            <a href="$Link"><img data-src="$FeaturedImage.Url" alt="$Title" src="$FeaturedImage.Url" data-holder-rendered="true" style="height: 200px; width: 100%; display: block;"></a>
+                            <a href="$Link">
+                                <% if $FeaturedImage %>
+                                    $FeaturedImage
+                                <% else %>
+                                    <img src="pocket-watch/images/default-blog-icon.svg" alt="Default Image" />
+                                <% end_if %>
+                            </a>
                             <div class="blog-slice-post caption">
                                 <h3 class="blog-slice-title">$Title</h3>
-                                <p >$Content.Summary()</p>
+                                <p >$Content.Summary().LimitWordCount(20)</p>
                                 <a href="$Link">read more</a>
                             </div>
                         </div>

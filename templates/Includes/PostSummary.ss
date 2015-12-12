@@ -2,7 +2,11 @@
 
 <p class="post-image">
 	<a href="$Link" <%t Blog.ReadMoreAbout "Read more about '{title}'..." title=$Title %>>
-		$FeaturedImage.CroppedImage(795,500)
+		<% if $FeaturedImage %>
+			$FeaturedImage.CroppedImage(305,165)
+		<% else %>
+            <img src="pocket-watch/images/default-blog-icon.svg" alt="Default Image" />
+		<% end_if %>
 	</a>
 </p>
 
