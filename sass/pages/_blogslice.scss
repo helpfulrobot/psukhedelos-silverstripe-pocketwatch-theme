@@ -2,6 +2,44 @@
   background: #f2f2f2;
 }
 
+.blog-slice-element{
+  padding-left: 75px;
+}
+
+.blog-slice-text{
+  width: 230px;
+}
+
+.blog-slice-title{
+  padding-bottom: 15px;
+}
+
+.blog-slice-btn{
+  padding-top: 30px;
+  padding-bottom: 40px;
+  font-weight: 500;
+  background-color: transparent;
+}
+
+.blog-slice-link{
+  font-size: 14px;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.see-all{
+  border-style: solid;
+  padding: 5px 10px 5px 10px;
+  border-width: 2px;
+  font-weight: 500;
+  font-size: 14px;
+  border-color: #d7d7d7;
+}
+
+.see-all:hover{
+  background-color: #d7d7d7;
+}
+
 .blog-single-post {
   margin-top: 50px;
 }
