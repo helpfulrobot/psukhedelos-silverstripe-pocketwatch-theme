@@ -57,6 +57,9 @@
   @include font-mixin(Roboto,400,left,36px,#000);
   font-weight: 400;
   margin-top: -10px;
+  padding-top: 0px;
+  font-weight: bold;
+  font-family: "roboto condensed";
 }
 
 .form-name label,.form-email label,.form-message label {

@@ -13367,9 +13367,12 @@ section {
   color: #000;
   font-weight: 400;
   margin-top: -10px;
+  padding-top: 0px;
+  font-weight: bold;
+  font-family: "roboto condensed";
 }
 
-/* line 62, ../sass/pages/_contact.scss */
+/* line 65, ../sass/pages/_contact.scss */
 .form-name label, .form-email label, .form-message label {
   font-family: Roboto;
   font-weight: 300;
@@ -13379,7 +13382,7 @@ section {
   margin-top: 28px;
 }
 
-/* line 67, ../sass/pages/_contact.scss */
+/* line 70, ../sass/pages/_contact.scss */
 input.form-name {
   border: none;
   width: 100%;
@@ -13387,7 +13390,7 @@ input.form-name {
   border-bottom: 1px solid #777;
 }
 
-/* line 74, ../sass/pages/_contact.scss */
+/* line 77, ../sass/pages/_contact.scss */
 input.form-email {
   border: none;
   width: 100%;
@@ -13395,13 +13398,13 @@ input.form-email {
   border-bottom: 1px solid #777;
 }
 
-/* line 81, ../sass/pages/_contact.scss */
+/* line 84, ../sass/pages/_contact.scss */
 textarea.form-message {
   width: 100%;
   margin-top: 22px;
 }
 
-/* line 86, ../sass/pages/_contact.scss */
+/* line 89, ../sass/pages/_contact.scss */
 #UserForm_Form_action_process {
   margin-top: 40px;
   border: 1px solid #333;
@@ -13409,19 +13412,19 @@ textarea.form-message {
   padding: 7px 22px 7px 22px;
 }
 
-/* line 92, ../sass/pages/_contact.scss */
+/* line 95, ../sass/pages/_contact.scss */
 .content-form {
   padding-bottom: 50px;
   display: block;
 }
 @media (min-width: 992px) and (max-width: 1199px) {
-  /* line 92, ../sass/pages/_contact.scss */
+  /* line 95, ../sass/pages/_contact.scss */
   .content-form {
     float: right;
   }
 }
 @media (min-width: 1200px) and (max-width: 2900px) {
-  /* line 92, ../sass/pages/_contact.scss */
+  /* line 95, ../sass/pages/_contact.scss */
   .content-form {
     float: right;
   }

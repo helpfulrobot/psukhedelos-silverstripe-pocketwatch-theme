@@ -22,7 +22,6 @@
 					<div class="post-feature-image">
 						<% if $FeaturedImage %>
                             <img class="img-responsive" src="$FeaturedImage.Url" alt="Default Image" />
-							<%--$FeaturedImage--%>
 						<% else %>
                             <img class="img-responsive" src="pocket-watch/images/default-blog-icon.svg" alt="Default Image" />
 						<% end_if %>
