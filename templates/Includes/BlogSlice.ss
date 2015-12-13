@@ -11,7 +11,7 @@
                         <div class="blog-slice-thumbnail">
                             <a href="$Link">
                                 <% if $FeaturedImage %>
-                                    $FeaturedImage.CroppedImage(230,130)
+                                    $FeaturedImage
                                 <% else %>
                                     <img src="pocket-watch/images/default-blog-icon.svg" alt="Default Image" />
                                 <% end_if %>

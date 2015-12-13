@@ -12695,7 +12695,6 @@ section {
 
 /* line 16, ../sass/pages/_textslice.scss */
 .text-slice-section-text-area {
-  padding: 0px;
   padding-bottom: 80px;
 }
 
@@ -12707,34 +12706,47 @@ section {
 /* line 5, ../sass/pages/_blogslice.scss */
 .blog-slice-element {
   padding-left: 75px;
+  padding-bottom: 30px;
 }
 
-/* line 9, ../sass/pages/_blogslice.scss */
+/* line 10, ../sass/pages/_blogslice.scss */
 .blog-slice-text {
   width: 230px;
 }
 
-/* line 13, ../sass/pages/_blogslice.scss */
+/* line 14, ../sass/pages/_blogslice.scss */
 .blog-slice-title {
   padding-bottom: 15px;
 }
 
-/* line 17, ../sass/pages/_blogslice.scss */
+/* line 18, ../sass/pages/_blogslice.scss */
+.blog-slice-thumbnail {
+  height: 124px;
+  width: 230px;
+  overflow: hidden;
+}
+/* line 22, ../sass/pages/_blogslice.scss */
+.blog-slice-thumbnail img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* line 30, ../sass/pages/_blogslice.scss */
 .blog-slice-btn {
-  padding-top: 30px;
   padding-bottom: 40px;
   font-weight: 500;
   background-color: transparent;
 }
 
-/* line 24, ../sass/pages/_blogslice.scss */
+/* line 36, ../sass/pages/_blogslice.scss */
 .blog-slice-link {
   font-size: 14px;
   font-style: italic;
   font-weight: bold;
 }
 
-/* line 30, ../sass/pages/_blogslice.scss */
+/* line 42, ../sass/pages/_blogslice.scss */
 .see-all {
   border-style: solid;
   padding: 5px 10px 5px 10px;
@@ -12744,44 +12756,44 @@ section {
   border-color: #d7d7d7;
 }
 
-/* line 39, ../sass/pages/_blogslice.scss */
+/* line 51, ../sass/pages/_blogslice.scss */
 .see-all:hover {
   background-color: #d7d7d7;
 }
 
-/* line 43, ../sass/pages/_blogslice.scss */
+/* line 55, ../sass/pages/_blogslice.scss */
 .blog-single-post {
   margin-top: 50px;
 }
 
-/* line 47, ../sass/pages/_blogslice.scss */
+/* line 59, ../sass/pages/_blogslice.scss */
 .post-summary {
   min-height: 470px;
 }
 
-/* line 51, ../sass/pages/_blogslice.scss */
+/* line 63, ../sass/pages/_blogslice.scss */
 .blog-summary {
   margin-top: 50px;
 }
 
-/* line 55, ../sass/pages/_blogslice.scss */
+/* line 67, ../sass/pages/_blogslice.scss */
 .current-tag {
   text-transform: uppercase;
   margin-left: 20px;
   font-weight: bold;
 }
 
-/* line 61, ../sass/pages/_blogslice.scss */
+/* line 73, ../sass/pages/_blogslice.scss */
 .blog-btn-group {
   margin-top: 40px;
 }
 
-/* line 65, ../sass/pages/_blogslice.scss */
+/* line 77, ../sass/pages/_blogslice.scss */
 .blog-entry {
   padding-bottom: 180px;
 }
 
-/* line 69, ../sass/pages/_blogslice.scss */
+/* line 81, ../sass/pages/_blogslice.scss */
 .btn-categories {
   border-radius: 0px;
   margin-right: 10px;
@@ -12789,7 +12801,7 @@ section {
   margin-top: 5px;
 }
 
-/* line 76, ../sass/pages/_blogslice.scss */
+/* line 88, ../sass/pages/_blogslice.scss */
 .btn-details {
   border-radius: 0px;
   margin-right: 10px;
@@ -12797,7 +12809,7 @@ section {
   margin-top: 5px;
 }
 
-/* line 83, ../sass/pages/_blogslice.scss */
+/* line 95, ../sass/pages/_blogslice.scss */
 .post-summary p {
   font-family: Roboto;
   font-weight: 300;
@@ -12808,7 +12820,7 @@ section {
   margin-top: 10px;
 }
 
-/* line 89, ../sass/pages/_blogslice.scss */
+/* line 101, ../sass/pages/_blogslice.scss */
 .post-tag a {
   font-family: Roboto;
   font-weight: bold;
@@ -12820,13 +12832,13 @@ section {
   padding-bottom: 5px;
 }
 
-/* line 96, ../sass/pages/_blogslice.scss */
+/* line 108, ../sass/pages/_blogslice.scss */
 .post-detail-tag {
   margin-left: 10px;
   margin-right: 10px;
 }
 
-/* line 101, ../sass/pages/_blogslice.scss */
+/* line 113, ../sass/pages/_blogslice.scss */
 .post-detail-tag a {
   font-family: Roboto;
   font-weight: 300;
@@ -12837,35 +12849,35 @@ section {
   padding-bottom: 5px;
 }
 
-/* line 107, ../sass/pages/_blogslice.scss */
+/* line 119, ../sass/pages/_blogslice.scss */
 .post-detail-time {
   padding-left: 10px;
 }
 
-/* line 111, ../sass/pages/_blogslice.scss */
+/* line 123, ../sass/pages/_blogslice.scss */
 .post-detail {
   margin-top: 80px;
 }
 
-/* line 115, ../sass/pages/_blogslice.scss */
+/* line 127, ../sass/pages/_blogslice.scss */
 .btn-return-blog {
   border-radius: 0px;
   margin-top: 20px;
 }
 
-/* line 120, ../sass/pages/_blogslice.scss */
+/* line 132, ../sass/pages/_blogslice.scss */
 .post-detail-content img {
   width: 100%;
   height: 400px;
 }
 
-/* line 125, ../sass/pages/_blogslice.scss */
+/* line 137, ../sass/pages/_blogslice.scss */
 .img.leftAlone {
   width: 100%;
   height: 468px;
 }
 
-/* line 130, ../sass/pages/_blogslice.scss */
+/* line 142, ../sass/pages/_blogslice.scss */
 .blog-detail-header h1 {
   font-family: RobotoCondensed;
   color: #030202;
@@ -12875,18 +12887,18 @@ section {
   text-align: left;
 }
 
-/* line 139, ../sass/pages/_blogslice.scss */
+/* line 151, ../sass/pages/_blogslice.scss */
 .post-detail-content {
   margin-top: 20px;
 }
 
-/* line 143, ../sass/pages/_blogslice.scss */
+/* line 155, ../sass/pages/_blogslice.scss */
 .post-detail-content p, h1 {
   text-align: left;
   margin-top: 20px;
 }
 
-/* line 148, ../sass/pages/_blogslice.scss */
+/* line 160, ../sass/pages/_blogslice.scss */
 .pagination i {
   position: absolute;
   margin-top: -14px;
@@ -12894,41 +12906,38 @@ section {
   font-weight: 100;
 }
 
-/* line 155, ../sass/pages/_blogslice.scss */
+/* line 167, ../sass/pages/_blogslice.scss */
 .pagi-prev {
   margin-left: -30px;
 }
 
-/* line 159, ../sass/pages/_blogslice.scss */
+/* line 171, ../sass/pages/_blogslice.scss */
 .next i {
   margin-top: -35px;
   margin-left: 30px;
 }
 
-/* line 164, ../sass/pages/_blogslice.scss */
+/* line 176, ../sass/pages/_blogslice.scss */
 .pagination span {
   margin-left: 5px;
   margin-right: 5px;
 }
 
-/* line 169, ../sass/pages/_blogslice.scss */
+/* line 181, ../sass/pages/_blogslice.scss */
 .post-feature {
   position: inherit;
   height: 500px;
   margin-top: 50px;
   color: #fff;
 }
-/* line 175, ../sass/pages/_blogslice.scss */
-.post-feature img {
-  width: 100%;
-  height: 500px;
-}
-/* line 180, ../sass/pages/_blogslice.scss */
+/* line 187, ../sass/pages/_blogslice.scss */
 .post-feature .post-feature-image {
   position: absolute;
   width: 100%;
+  height: 500px;
+  overflow: hidden;
 }
-/* line 185, ../sass/pages/_blogslice.scss */
+/* line 194, ../sass/pages/_blogslice.scss */
 .post-feature .post-feature-text {
   position: absolute;
   z-index: 0;
@@ -12940,24 +12949,24 @@ section {
   top: 58%;
   color: #fff;
 }
-/* line 196, ../sass/pages/_blogslice.scss */
+/* line 205, ../sass/pages/_blogslice.scss */
 .post-feature .post-feature-text .post-feature-category {
   margin-right: 10px;
 }
-/* line 200, ../sass/pages/_blogslice.scss */
+/* line 209, ../sass/pages/_blogslice.scss */
 .post-feature .post-feature-text a, .post-feature .post-feature-text p {
   z-index: 1;
   color: #fff;
 }
-/* line 205, ../sass/pages/_blogslice.scss */
+/* line 214, ../sass/pages/_blogslice.scss */
 .post-feature .post-feature-text a {
   text-transform: uppercase;
 }
-/* line 209, ../sass/pages/_blogslice.scss */
+/* line 218, ../sass/pages/_blogslice.scss */
 .post-feature .post-feature-text .post-feature-summary {
   height: auto;
 }
-/* line 212, ../sass/pages/_blogslice.scss */
+/* line 221, ../sass/pages/_blogslice.scss */
 .post-feature .post-feature-text .post-feature-summary p {
   font-family: Roboto;
   font-size: 14px;

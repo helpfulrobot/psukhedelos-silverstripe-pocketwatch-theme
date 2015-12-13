@@ -7,16 +7,11 @@
 
 <article>
 
-		<% if $FeaturedImage %>
-			<p class="post-image">
-
-        <% if FeaturedImage %>
-        <img class="img-responsive post-detail-img "
-         alt="" src="$FeaturedImage.CroppedImage(920,574).Url">
+        <% if $FeaturedImage %>
+            <img class="img-responsive post-detail-img post-image" alt="" src="$FeaturedImage.CroppedImage(920,574).Url">
+        <% else %>
+            <img class="img-responsive post-detail-img post-image" src="pocket-watch/images/default-blog-icon.svg" alt="Default Image" />
         <% end_if %>
-
-      </p>
-		<% end_if %>
 
   <div class="blog-detail-header">
       	<h3>$Title</h3>
