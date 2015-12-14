@@ -18,24 +18,23 @@
 </h3>
 
 
-<div class="post-detail-category pull-left">
+<div class="post-detail-category" >
   <% if $Categories.exists %>
   <% loop $Categories %>
-  	<a href="$Link" title="$Title" class="btn-details ">$Title</a><% if not Last %>, <% else %> | <% end_if %>
+  	<a href="$Link" title="$Title" class="btn-details ">$Title</a><% if not $Last %>, <% end_if %>
   <% end_loop %>
   <% end_if %>
-
 </div>
 
-<div class="post-detail-tag  pull-left">
+<div class="post-detail-tag" >
   <% if $Tags.exists %>
   <% loop $Tags %>
-    <a href="$Link" title="$Title">$Title</a><% if not Last %>, <% else %> | <% end_if %>
+    <a href="$Link" title="$Title">$Title</a><% if not Last %>, <% end_if %>
   <% end_loop %>
   <% end_if %>
 </div>
 
-<div class="post-time">
+<div class="post-time" >
 	<a href="$MonthlyArchiveLink">$PublishDate.Format("d/m/Y")</a>
 </div>
 
