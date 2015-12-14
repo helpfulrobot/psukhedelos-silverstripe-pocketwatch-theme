@@ -13,29 +13,30 @@
             <img class="img-responsive post-detail-img post-image" src="pocket-watch/images/default-blog-icon.svg" alt="Default Image" />
         <% end_if %>
 
+
   <div class="blog-detail-header">
       	<h3>$Title</h3>
   </div>
 <div class ="clearfix">
 
-<div class="post-detail-category pull-left">
+<div class="post-detail-category pull-left" style="display: inline; padding-right: 10px">
   <% if $Categories.exists %>
   <% loop $Categories %>
-  	<a href="$Link" title="$Title" class="btn-details ">$Title</a><% if not Last %>, <% else %>|<% end_if %>
+  	<a href="$Link" title="$Title" class="btn-details ">$Title</a><% if not $Last %>, <% else %>|<% end_if %>
   <% end_loop %>
   <% end_if %>
 
 </div>
 
-<div class="post-detail-tag  pull-left">
+<div class="post-detail-tag" style="display: inline; ">
   <% if $Tags.exists %>
   <% loop $Tags %>
-    <a href="$Link" title="$Title">$Title</a><% if not Last %>, <% else %>|<% end_if %>
+    <a href="$Link" title="$Title">$Title</a><% if not Last %>, <% else %> |<% end_if %>
   <% end_loop %>
   <% end_if %>
 </div>
 
-<div class="post-detail-time  pull-left">
+<div class="post-detail-time" style="display: inline">
   <a href="$MonthlyArchiveLink">$PublishDate.Format("d/m/Y")</a>
 </div>
 </div>
