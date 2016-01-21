@@ -17,6 +17,10 @@
     <% if $ClassName == "MapSlice" %>
         <% include MapSlice %>
     <% end_if %>
+    
+    <% if $ClassName == "VideoSlice" %>
+        <% include VideoSlice %>
+    <% end_if %>
 
 <% end_loop %>
 
