@@ -14,6 +14,10 @@
         <% include TextSlice %>
     <% end_if %>
 
+    <% if $ClassName == "MapSlice" %>
+        <% include MapSlice %>
+    <% end_if %>
+
 <% end_loop %>
 
 
