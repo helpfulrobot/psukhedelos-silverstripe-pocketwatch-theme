@@ -7,8 +7,8 @@ class MapSlice extends Page {
 
     static $db = array(
       'GoogleMapsAPIKey' => 'Text',
-      'MapOrigin' => 'Text'
-
+      'MapOrigin' => 'Text',
+      'MapDestination' => 'Text'
     );
 
     static $defaults = array(
@@ -19,6 +19,7 @@ class MapSlice extends Page {
         $fields = parent::getCMSFields();
         $fields->addFieldToTab('Root.Map', new TextField('GoogleMapsAPIKey', "Google Maps API Key"));
         $fields->addFieldToTab('Root.Map', new TextField('MapOrigin', "Start Location"));
+        $fields->addFieldToTab('Root.Map', new TextField('MapDestination', "Destination"));
 
 
 
