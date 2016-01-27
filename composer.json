@@ -1,9 +1,9 @@
 {
-  "name": "white-rabbits/pocket-watch",
-  "description": "A Simple SilverStripe Bootstrap Theme",
+  "name": "psukhedelos/pocketwatch",
+  "description": "A Simple, Responsive Silverstripe Theme",
   "type": "silverstripe-module",
-  "homepage": "https://code.platform.silverstripe.com/white-rabbits/pocket-watch",
-  "keywords": ["silverstripe", "pocketwatch", "bootstrap"],
+  "homepage": "https://github.com/PsukheDelos/silverstripe-pocketwatch-theme/",
+  "keywords": ["silverstripe", "theme", "pocketwatch", "recipe", "bootstrap"],
   "license": "BSD-3-Clause",
   "authors": [
     {
@@ -12,16 +12,17 @@
     }
   ],
   "support": {
-    "issues": "https://code.platform.silverstripe.com/white-rabbits/pocket-watch/issues"
+    "issues": "https://github.com/PsukheDelos/silverstripe-pocketwatch-theme/issues"
   },
   "require": {
     "silverstripe/cms": "~3.1",
     "silverstripe/framework": "~3.1",
     "undefinedoffset/sortablegridfield": "dev-master",
     "silverstripe/userforms": "dev-master",
-	"silverstripe/blog": "~2.2@dev"
+    "silverstripe/blog": "~2.2@dev",
+    "psukhedelos/silverstripe-pocketwatch": "*"
   },
   "extra": {
-    "installer-name": "pocket-watch"
+    "installer-name": "pocketwatch"
   }
 }
