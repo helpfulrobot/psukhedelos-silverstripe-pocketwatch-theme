@@ -1,9 +1,0 @@
-SiteConfig:
-  extensions:
-    - PocketwatchSiteConfig
-BlogPost:
-  extensions:
-    - BlogPostExtension
-Blog:
-  extensions:
-    - BlogExtension
