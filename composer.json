@@ -1,7 +1,7 @@
 {
   "name": "psukhedelos/pocketwatch",
   "description": "A Simple, Responsive Silverstripe Theme",
-  "type": "silverstripe-module",
+  "type": "silverstripe-theme",
   "homepage": "https://github.com/PsukheDelos/silverstripe-pocketwatch-theme/",
   "keywords": ["silverstripe", "theme", "pocketwatch", "recipe", "bootstrap"],
   "license": "BSD-3-Clause",
