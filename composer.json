@@ -7,8 +7,12 @@
   "license": "BSD-3-Clause",
   "authors": [
     {
-      "name": "Glen Peek","email": "glen@silverstripe.com",
-      "name": "Yar Htut", "email": "yar@silverstripe.com"
+      "name": "Yar Htut",
+      "email": "yar@silverstripe.com"
+    },
+    {
+      "name": "Glen Peek",
+      "email": "glen@silverstripe.com"
     }
   ],
   "support": {
