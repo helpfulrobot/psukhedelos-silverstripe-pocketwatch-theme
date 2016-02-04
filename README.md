@@ -20,7 +20,7 @@ We've chosen to use compass and sass to generate our CSS.
 ####Random Thoughts####
 ####WorkFlow####
 - `compass watch`
-	- do this in pocket-watch module directory
+	- do this in pocketwatch theme directory ('/themes/pocketwatch')
 	- modified `.scss` files will be updated in compiled when changed, so can see results immediately
 - `_variables.scss` is where a lot of easy customisation can happen (change colours, etc.)
 
