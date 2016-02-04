@@ -16,8 +16,8 @@
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
         <% require javascript("https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js") %>
-        <% require javascript("pocket-watch/js/bootstrap.min.js") %>
-        <% require javascript("pocket-watch/js/main.js") %>
+        <% require javascript("./themes/pocketwatch/js/bootstrap.min.js") %>
+        <% require javascript("./themes/pocketwatch//js/main.js") %>
 
     </body>
 </html>

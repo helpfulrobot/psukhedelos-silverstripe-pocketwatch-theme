@@ -10,7 +10,7 @@
                 <% else %>
                     <a href="home">
                         <img class=" main-logo img-responsive center-block fall-back-logo"
-                             src="ThemeDir/images/logo.png" />
+                             src="$ThemeDir/images/logo.png" />
                     </a>
                 <% end_if %>
 
