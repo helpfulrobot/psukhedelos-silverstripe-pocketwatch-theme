@@ -1,14 +1,15 @@
 .about-text {
-  text-align: center;
- }
+	text-align: center;
 
-.about-text h1, p {
-  margin-bottom: 0px;
+	h1{
+		margin-bottom: 0px;
+	}
+
+	p{
+		@extend .hero-font;
+		@include breakpoint(xs) {
+			font-size:18px;
+		}
+	}
 }
 
-.about-text p {
-  @extend .hero-font;
-  @include breakpoint(xs) {
-    font-size:18px;
-  }
-}
