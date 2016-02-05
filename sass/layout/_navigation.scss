@@ -7,268 +7,282 @@ $dropdown-color: #fff;
 $nav-font-color: #000;
 $nav-font-hover: rgba(242,242,242,0.7);
 
-
 .nav-font {
-  @include font-mixin(Roboto,100,center,18px,#000);
+	@include font-mixin(Roboto,100,center,18px,#000);
 }
 
 .hero-font {
-  text-shadow: 1px 2px 10px #000;
-  padding: 200px 25px 200px 25px;
-  @include font-mixin(playfair,400,center,36px,#fff);
+	text-shadow: 1px 2px 10px #000;
+	padding: 200px 25px 200px 25px;
+	@include font-mixin(playfair,400,center,36px,#fff);
 }
 
 .navbar-nav > li > a.current {
-border-bottom:3px solid #333;
+	border-bottom:3px solid #333;
 }
 
 #main-nav.active {
-  border-bottom: 3px solid #333;
+	border-bottom: 3px solid #333;
 }
 
 .nav-bottom-border{
-  border-bottom: 1px solid #333;
-  @include breakpoint(xs) {
-      border-bottom: none;
-  }
-  @include breakpoint(sm) {
-      border-bottom: none;
-  }
+	border-bottom: 1px solid #333;
+
+	@include breakpoint(xs) {
+		border-bottom: none;
+	}
+
+	@include breakpoint(sm) {
+		border-bottom: none;
+	}
 }
 
 .drop-shadow {
-  -webkit-box-shadow: 0 1px 6px #ccc;
-     -moz-box-shadow: 0 1px 6px #ccc;
-          box-shadow: 0 1px 6px #ccc;
+	-webkit-box-shadow: 0 1px 6px #ccc;
+	-moz-box-shadow: 0 1px 6px #ccc;
+	box-shadow: 0 1px 6px #ccc;
 }
 
 #body_wrapper {
-  display: block;
-  position: inherit;
-  width: 100%;
+	display: block;
+	position: inherit;
+	width: 100%;
 }
 
 .home-section {
-    min-height: 100%;
+	min-height: 100%;
 }
 
 .main-nav li>a {
-  @extend .nav-font;
-  @include breakpoint(xs) {
-    padding-left:45px;
-    text-align:left;
-  }
- }
+	@extend .nav-font;
+
+	@include breakpoint(xs) {
+		padding-left:45px;
+		text-align:left;
+	}
+}
 
 .top-logo {
-  margin: 0px;
+	margin: 0px;
 
- }
+}
 
 .main-logo {
-  width: 192px;
-  height: 111px;
-  margin-top: 20px;
+	width: 192px;
+	height: 111px;
+	margin-top: 20px;
 }
 
 .main-logo-in-mobile {
-  width: 100px;
-  margin-top: 25px;
-  @include breakpoint(xs) {
-    width:110px;
-    max-height:100px;
-    margin:5px;
-  }
-  @include breakpoint(sm) {
-    width:120px;
-    max-height:100px;
-    margin:5px;
-    float:left
-  }
+	width: 100px;
+	margin-top: 25px;
+
+	@include breakpoint(xs) {
+		width:110px;
+		max-height:100px;
+		margin:5px;
+	}
+
+	@include breakpoint(sm) {
+		width:120px;
+		max-height:100px;
+		margin:5px;
+		float:left;
+	}
 }
 
 .tb-navbar-right {
-    @include breakpoint(sm) {
-      float:right;
-    }
+
+	@include breakpoint(sm) {
+		float:right;
+	}
 }
 
 .fall-back-logo {
-  width: 192px;
-  height: 111px;
-  margin-top: 20px;
+	width: 192px;
+	height: 111px;
+	margin-top: 20px;
 }
 
 .main-nav {
-  background: $bg-white;
-  text-transform: uppercase;
+	background: $bg-white;
+	text-transform: uppercase;
 }
 
 #nav {
-  position: static;
-  top: -32px;
+	position: static;
+	top: -32px;
 }
 
 #nav.affix {
-  position: fixed;
-  top: 0;
-  z-index: 10;
-  -webkit-transition: all .6s ease-in-out;
-  -moz-transition: all .6s ease-in-out;
-  -ms-transition: all .6s ease-in-out;
-  -o-transition: all .6s ease-in-out;
-  transition: all .6s ease-in-out;
- }
+	position: fixed;
+	top: 0;
+	z-index: 10;
+	-webkit-transition: all .6s ease-in-out;
+	-moz-transition: all .6s ease-in-out;
+	-ms-transition: all .6s ease-in-out;
+	-o-transition: all .6s ease-in-out;
+	transition: all .6s ease-in-out;
+}
 
 header {
-  background: $bg-white ;
-  max-height: 140px;
-  margin-bottom: 10px;
+	background: $bg-white;
+	max-height: 140px;
+	margin-bottom: 10px;
 }
 
 .navbar {
-  margin-bottom: 0px;
- }
+	margin-bottom: 0px;
+}
 
 .icon-bar {
-  background: $bg-white ;
+	background: $bg-white;
 }
 
 .nav-main-ul {
-  margin: 0px auto;
-  background: $bg-white ;
+	margin: 0px auto;
+	background: $bg-white;
 }
 
 .navbar-nav  li>a {
-  @extend  .nav-font;
-  @include breakpoint(sm) {
-    padding:17px 8px 17px 8px;
-  }
+	@extend  .nav-font;
+
+	@include breakpoint(sm) {
+		padding:17px 8px 17px 8px;
+	}
 }
 
 .navbar-nav {
-  @include breakpoint(xs) {
-    width:100%;
-    height: auto;
-    max-height: 400px;
-  }
-  @include breakpoint(sm) {
-    margin-top:-3px;
-  }
+	@include breakpoint(xs) {
+		width:100%;
+		height: auto;
+		max-height: 400px;
+	}
+
+	@include breakpoint(sm) {
+		margin-top:-3px;
+	}
 }
 
 .nav-header-shadow{
-  @include breakpoint(xs) {
-    text-align: left;
-  }
+	@include breakpoint(xs) {
+		text-align: left;
+	}
 }
 
 .navbar-toggle{
-  @include breakpoint(xs) {
-    background:#ddd;
-    margin-top:22px;
-    margin-right:22px;
-  }
+	@include breakpoint(xs) {
+		background:#ddd;
+		margin-top:22px;
+		margin-right:22px;
+	}
 }
 
 .nav-collapsed{
-  @include breakpoint(xs) {
-  margin-top:18px;
-  }
+	@include breakpoint(xs) {
+		margin-top:18px;
+	}
 }
 
 .navbar-nav > li > a:hover {
-  background: none;
+	background: none;
 }
 
 .navbar-nav >li>a, .nav .open > a {
-  border-bottom: 3px solid #fff;
+	border-bottom: 3px solid #fff;
 }
 
 .navbar-nav > li >a:hover, .nav .open > a:focus {
-  border-bottom: 3px solid #231f20;
-  background: none;
+	border-bottom: 3px solid #231f20;
+	background: none;
 }
 
 .open>a:focus, .nav .open>a:hover {
-  border-bottom: 3px solid #231f20;
-  background: none;
+	border-bottom: 3px solid #231f20;
+	background: none;
 }
 
 .navbar .navbar-nav {
-  display: inline-block;
-  float: none;
-  @include breakpoint(xs) {
-    border-top:1px solid #ccc;
-  }
+	display: inline-block;
+	float: none;
+
+	@include breakpoint(xs) {
+		border-top:1px solid #ccc;
+	}
 }
 
 .navbar .navbar-collapse {
-  text-align: center;
+	text-align: center;
 }
 
 .dropdown-menu {
-  margin-top:2px;
-  min-width:169px;
-  margin-left:-20px;
-  background: $dropdown-color;
+	margin-top:2px;
+	min-width:169px;
+	margin-left:-20px;
+	background: $dropdown-color;
 }
 
 .dropdown{
-   @include breakpoint(xs) {
-     width:100%;
-   }
+	@include breakpoint(xs) {
+		width:100%;
+	}
 }
 
 .dropdown-menu li >a{
-  @include font-mixin(Roboto, 100, left,14px,#000);
-  border-bottom: 1px solid #ededed;
-  padding:13px;
-  margin-left:10px;
-  margin-right:10px;
+	@include font-mixin(Roboto, 100, left,14px,#000);
+	border-bottom: 1px solid #ededed;
+	padding:13px;
+	margin-left:10px;
+	margin-right:10px;
 }
+
 .mobile-dropdown{
- @include breakpoint(xs) {
-   padding-left:60px;
-   padding-top:13px ;
-   padding-bottom:13px ;
-  margin-top:-5px;
- }
+	@include breakpoint(xs) {
+	padding-left:60px;
+	padding-top:13px ;
+	padding-bottom:13px ;
+	margin-top:-5px;
+	}
 }
 
 #navbar {
-  max-height: 54px;
-  margin-bottom: -1px;
-  @include breakpoint(xs) {
-    max-height:800px;
-  }
-@include breakpoint(sm) {
-  margin-top:30px;
-  }
+	max-height: 54px;
+	margin-bottom: -1px;
+
+	@include breakpoint(xs) {
+		max-height:800px;
+	}
+
+	@include breakpoint(sm) {
+		margin-top:30px;
+	}
 }
 
 .nav-ul li {
-  @include breakpoint(xs) {
-    margin:10px;
-  }
+	@include breakpoint(xs) {
+		margin:10px;
+	}
 }
+
 .nav-collapsed {
-  background: #aaa;
+	background: #aaa;
 }
 
 #nav {
-  width: 100%;
+	width: 100%;
 }
 
 .content-wrapper {
-  overflow: hidden;
+	overflow: hidden;
+	min-height: 600px;
 }
 
 .navbar-static-top {
-  @include breakpoint(xs) {
-    @include box-shadow-mixin(#ccc);
-  }
-  @include breakpoint(sm) {
-    @include box-shadow-mixin(#ccc);
-  }
+	@include breakpoint(xs) {
+		@include box-shadow-mixin(#ccc);
+	}
+
+	@include breakpoint(sm) {
+		@include box-shadow-mixin(#ccc);
+	}
 }
