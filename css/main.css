@@ -12493,10 +12493,18 @@ header {
 /* line 6, ../sass/layout/_footer.scss */
 .footer-section {
   min-height: 300px;
-  background: #231f20;
+  backgroqund: #231f20;
+}
+/* line 10, ../sass/layout/_footer.scss */
+.footer-section .footer-copyright {
+  font-family: Roboto;
+  font-weight: 100;
+  text-align: center;
+  font-size: 11.99px;
+  color: #fff;
 }
 
-/* line 11, ../sass/layout/_footer.scss */
+/* line 15, ../sass/layout/_footer.scss */
 .footer-line {
   margin-left: 0px;
   margin-right: 0px;
@@ -12504,7 +12512,7 @@ header {
   padding-bottom: 30px;
 }
 
-/* line 18, ../sass/layout/_footer.scss */
+/* line 22, ../sass/layout/_footer.scss */
 .footer-divider {
   width: 100%;
   height: 1px;
@@ -12513,26 +12521,26 @@ header {
   display: block;
 }
 
-/* line 26, ../sass/layout/_footer.scss */
+/* line 30, ../sass/layout/_footer.scss */
 .footer {
   width: 240px;
   margin: 0px auto;
   margin-top: 50px;
 }
 
-/* line 32, ../sass/layout/_footer.scss */
+/* line 36, ../sass/layout/_footer.scss */
 .footer-section img {
   width: 82px;
   height: 47px;
 }
 
-/* line 37, ../sass/layout/_footer.scss */
+/* line 41, ../sass/layout/_footer.scss */
 .footer-social {
   margin: 0px auto;
   display: block;
 }
 
-/* line 42, ../sass/layout/_footer.scss */
+/* line 46, ../sass/layout/_footer.scss */
 .footer-email {
   font-family: Roboto;
   font-weight: 100;
@@ -12544,14 +12552,13 @@ header {
   transform: scaleY(1.0012);
 }
 
-/* line 49, ../sass/layout/_footer.scss */
+/* line 53, ../sass/layout/_footer.scss */
 .social {
   width: 100%;
   text-align: center;
 }
-
-/* line 54, ../sass/layout/_footer.scss */
-.social-icon {
+/* line 57, ../sass/layout/_footer.scss */
+.social .social-icon {
   display: inline-block;
   vertical-align: middle;
   height: 30px;
@@ -12559,20 +12566,10 @@ header {
   background: #d7d7d7;
   font-size: 20px;
 }
-
-/* line 63, ../sass/layout/_footer.scss */
-.social-icon:hover {
+/* line 66, ../sass/layout/_footer.scss */
+.social:hover {
   color: #d7d7d7;
   background: #333333;
-}
-
-/* line 68, ../sass/layout/_footer.scss */
-.footer-copyright {
-  font-family: Roboto;
-  font-weight: 100;
-  text-align: center;
-  font-size: 11.99px;
-  color: #fff;
 }
 
 /* line 1, ../sass/layout/_textsection.scss */
